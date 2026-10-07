@@ -100,7 +100,7 @@ These cases are in the results on purpose.
 
 ## Integrity of this pack
 
-`SHA256SUMS.txt` lists the SHA-256 of every file. Its Merkle root will be timestamped on the Tezos
+`SHA256SUMS.txt` lists the SHA-256 of every file except itself and `.gitattributes`. Its Merkle root will be timestamped on the Tezos
 public ledger; until then it is marked as pending.
 
 ## Contents

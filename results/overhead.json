@@ -1,0 +1,21 @@
+{
+ "machine": "Windows AMD64 / Python 3.14.3",
+ "append_us_per_record": {
+  "median": 17.85,
+  "max_of_repeats": 33.87
+ },
+ "verify_us_per_record": {
+  "median": 17.35,
+  "max_of_repeats": 26.92
+ },
+ "storage_bytes_one_run": {
+  "A": 20717,
+  "B": 256957,
+  "ratio_B_over_A": 12.4,
+  "A_gzip": 17645,
+  "B_gzip": 39160,
+  "ratio_gzip": 2.22
+ },
+ "storage_note": "A counts log lines plus 48 bytes per time-series point (an assumption); B is the canonical JSON of every record, uncompressed",
+ "energy": "not measured (no energy counter available on this machine); to be measured on VTT hardware"
+}

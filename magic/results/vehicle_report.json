@@ -1,0 +1,230 @@
+{
+ "baseline_assumptions": [
+  "an event data recorder keeps the last 25 samples (speed, brake, AEB flag) before the incident",
+  "ECU logs are time-stamped with each ECU's own clock; the OTA log is kept at the backend with backend time",
+  "the software id is logged at the backend when an update is installed, not in the vehicle's event log",
+  "nothing is signed or hash-chained; someone with physical access can edit the vehicle logs"
+ ],
+ "edr_window": 25,
+ "not_a_model_of": "any vehicle or OEM system; signals and numbers are invented",
+ "questions": [
+  "software_version",
+  "sensor_inputs",
+  "aeb_recommendation",
+  "aeb_actuation_authorized",
+  "driver_input",
+  "event_order"
+ ],
+ "scenario": "vehicle incident forensics: AEB intervention, driver input, OTA update, offline period",
+ "scenarios": {
+  "clock_skew": {
+   "A_answered": {
+    "aeb_actuation_authorized": 0,
+    "aeb_recommendation": 10,
+    "driver_input": 10,
+    "event_order": 10,
+    "sensor_inputs": 0,
+    "software_version": 10
+   },
+   "B_answered": {
+    "aeb_actuation_authorized": 10,
+    "aeb_recommendation": 10,
+    "driver_input": 10,
+    "event_order": 10,
+    "sensor_inputs": 10,
+    "software_version": 10
+   },
+   "B_verifier_ok_runs": 10,
+   "edit_after_incident": false,
+   "edit_detected": {
+    "A": 0,
+    "B": 0
+   },
+   "expected_to_fail": null,
+   "no_advantage": "the event data recorder samples on one clock, so the order of events survives the ECU clock skew there too; the trail adds the full sensor context and the signed actuation, not the order",
+   "runs": 10,
+   "what": "AEB control unit clock 3 s ahead of the fusion unit"
+  },
+  "destroyed_before_sync": {
+   "A_answered": {
+    "aeb_actuation_authorized": 0,
+    "aeb_recommendation": 10,
+    "driver_input": 10,
+    "event_order": 10,
+    "sensor_inputs": 0,
+    "software_version": 10
+   },
+   "B_answered": {
+    "aeb_actuation_authorized": 0,
+    "aeb_recommendation": 0,
+    "driver_input": 0,
+    "event_order": 0,
+    "sensor_inputs": 0,
+    "software_version": 0
+   },
+   "B_verifier_ok_runs": 0,
+   "edit_after_incident": false,
+   "edit_detected": {
+    "A": 0,
+    "B": 0
+   },
+   "expected_to_fail": "the vehicle's chain was never synced; a crash-hardened event data recorder survives the impact and still answers part of the questions, while the trail answers none",
+   "no_advantage": null,
+   "runs": 10,
+   "what": "vehicle storage destroyed while still offline"
+  },
+  "offline_incident": {
+   "A_answered": {
+    "aeb_actuation_authorized": 0,
+    "aeb_recommendation": 10,
+    "driver_input": 10,
+    "event_order": 10,
+    "sensor_inputs": 0,
+    "software_version": 10
+   },
+   "B_answered": {
+    "aeb_actuation_authorized": 10,
+    "aeb_recommendation": 10,
+    "driver_input": 10,
+    "event_order": 10,
+    "sensor_inputs": 10,
+    "software_version": 10
+   },
+   "B_verifier_ok_runs": 10,
+   "edit_after_incident": false,
+   "edit_detected": {
+    "A": 0,
+    "B": 0
+   },
+   "expected_to_fail": null,
+   "no_advantage": null,
+   "runs": 10,
+   "what": "incident in a tunnel, synced later"
+  },
+  "online_incident": {
+   "A_answered": {
+    "aeb_actuation_authorized": 0,
+    "aeb_recommendation": 10,
+    "driver_input": 10,
+    "event_order": 10,
+    "sensor_inputs": 0,
+    "software_version": 10
+   },
+   "B_answered": {
+    "aeb_actuation_authorized": 10,
+    "aeb_recommendation": 10,
+    "driver_input": 10,
+    "event_order": 10,
+    "sensor_inputs": 10,
+    "software_version": 10
+   },
+   "B_verifier_ok_runs": 10,
+   "edit_after_incident": false,
+   "edit_detected": {
+    "A": 0,
+    "B": 0
+   },
+   "expected_to_fail": null,
+   "no_advantage": null,
+   "runs": 10,
+   "what": "incident with connectivity"
+  },
+  "ota_before_incident": {
+   "A_answered": {
+    "aeb_actuation_authorized": 0,
+    "aeb_recommendation": 10,
+    "driver_input": 10,
+    "event_order": 10,
+    "sensor_inputs": 0,
+    "software_version": 0
+   },
+   "B_answered": {
+    "aeb_actuation_authorized": 10,
+    "aeb_recommendation": 10,
+    "driver_input": 10,
+    "event_order": 10,
+    "sensor_inputs": 10,
+    "software_version": 10
+   },
+   "B_verifier_ok_runs": 10,
+   "edit_after_incident": false,
+   "edit_detected": {
+    "A": 0,
+    "B": 0
+   },
+   "expected_to_fail": null,
+   "no_advantage": null,
+   "runs": 10,
+   "what": "software updated over the air shortly before the incident"
+  },
+  "tamper_after_incident": {
+   "A_answered": {
+    "aeb_actuation_authorized": 0,
+    "aeb_recommendation": 0,
+    "driver_input": 10,
+    "event_order": 0,
+    "sensor_inputs": 0,
+    "software_version": 10
+   },
+   "B_answered": {
+    "aeb_actuation_authorized": 0,
+    "aeb_recommendation": 10,
+    "driver_input": 0,
+    "event_order": 0,
+    "sensor_inputs": 10,
+    "software_version": 10
+   },
+   "B_verifier_ok_runs": 0,
+   "edit_after_incident": true,
+   "edit_detected": {
+    "A": 0,
+    "B": 10
+   },
+   "expected_to_fail": null,
+   "no_advantage": null,
+   "runs": 10,
+   "what": "someone deletes the braking record after the incident"
+  },
+  "version_rollback_claim": {
+   "A_answered": {
+    "aeb_actuation_authorized": 0,
+    "aeb_recommendation": 10,
+    "driver_input": 10,
+    "event_order": 10,
+    "sensor_inputs": 0,
+    "software_version": 0
+   },
+   "B_answered": {
+    "aeb_actuation_authorized": 0,
+    "aeb_recommendation": 0,
+    "driver_input": 0,
+    "event_order": 0,
+    "sensor_inputs": 0,
+    "software_version": 0
+   },
+   "B_verifier_ok_runs": 0,
+   "edit_after_incident": true,
+   "edit_detected": {
+    "A": 0,
+    "B": 10
+   },
+   "expected_to_fail": null,
+   "no_advantage": null,
+   "runs": 10,
+   "what": "someone edits the logged software version after the incident"
+  }
+ },
+ "seeds": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9
+ ],
+ "steps_per_run": 200
+}

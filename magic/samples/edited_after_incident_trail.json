@@ -1,0 +1,2971 @@
+{
+ "checkpoints": [
+  {
+   "count": 32,
+   "first_seq": 0,
+   "head": "ccde6de95d0754cede3bbccd0800b020af3cd46203c5325cd76d9f7b36aac2bd",
+   "last_seq": 31,
+   "node": "vehicle",
+   "root": "a1cc5b58a2609287c691758453a5c1d62111e75fd678ea88b08079213ff7d537",
+   "t": 3.0
+  },
+  {
+   "count": 32,
+   "first_seq": 32,
+   "head": "476e6d04a8c532ae1f0bc13a7f14ed3c176a424714c066d6aa492c80f2e9441d",
+   "last_seq": 63,
+   "node": "vehicle",
+   "root": "f5a28657ccf98ed4f14e8d6834a361047bdd78f7739eccaff1caecd53acd4eb9",
+   "t": 6.2
+  },
+  {
+   "count": 32,
+   "first_seq": 64,
+   "head": "628e3f15e3b501f7aecd1003bb6f137440615598d236038c2eafe4d4d966cec3",
+   "last_seq": 95,
+   "node": "vehicle",
+   "root": "12ac0ace41959eaa6caa18ec9707ecaf8b96ad85ce9f0543b98a07b648aebc67",
+   "t": 9.4
+  },
+  {
+   "count": 32,
+   "first_seq": 96,
+   "head": "a7a045d87439813c6a6bbfa31d8236d023d9d2ebc0f8a5e2d068f970d3c28e8c",
+   "last_seq": 127,
+   "node": "vehicle",
+   "root": "359cb572e3e2e06d86216df7fd71055407ff2d722bcf442ecb521db8116394c7",
+   "t": 12.6
+  },
+  {
+   "count": 32,
+   "first_seq": 128,
+   "head": "fba220c51f6a09570b43ce14b5ce38b8f65d14b847e9131a0d51dc9f8a5cd052",
+   "last_seq": 159,
+   "node": "vehicle",
+   "root": "8a18aae649c4ced1d43b54510a27b95d6d194a3858f559f3b99a5052dc32a67a",
+   "t": 15.2
+  },
+  {
+   "count": 32,
+   "first_seq": 160,
+   "head": "31b3cebc5200e13acbb8767070f29430d8543c56cf04a5c91426e1746be8a616",
+   "last_seq": 191,
+   "node": "vehicle",
+   "root": "07fbed6bc3cc419a19b8638752289c7259bbd53f4db3de580d92e3b810d2cba7",
+   "t": 18.4
+  },
+  {
+   "count": 15,
+   "first_seq": 192,
+   "head": "c75d245473470f8f105f9f7bb5ee4a04e6461d0647552560c5fbb1599e8433c0",
+   "last_seq": 206,
+   "node": "vehicle",
+   "root": "b313fa3caebbda9f0e4992359169fb23d7392d3559021a1af1174d30aaf41619",
+   "t": 200
+  }
+ ],
+ "node": "vehicle",
+ "profile": {
+  "merkle": "sha256/leaf00-node01/promote-odd",
+  "record_hash": "sha256",
+  "sig": [
+   "ed25519",
+   "ml-dsa-65"
+  ]
+ },
+ "profile_name": "v2-hybrid",
+ "records": [
+  {
+   "body": {
+    "software_id": "ADAS-SW 4.1.0"
+   },
+   "hash": "b36e4d05e423c8d2bf6fc35ef435bc607ec1de4d4239802bf02c1ec0e1eeac97",
+   "kind": "state",
+   "node": "vehicle",
+   "prev": "0000000000000000000000000000000000000000000000000000000000000000",
+   "seq": 0,
+   "t": 0.0
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "31a37eb5079d28ff1546b478ba22ae819f3578b6c6f4f72ef402f6a115a721a4",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "b36e4d05e423c8d2bf6fc35ef435bc607ec1de4d4239802bf02c1ec0e1eeac97",
+   "seq": 1,
+   "t": 0.0
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "fe8ccfbac81fb63997ebc5141785f33891df8c21a3176fc79951b13627b1f1bb",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "31a37eb5079d28ff1546b478ba22ae819f3578b6c6f4f72ef402f6a115a721a4",
+   "seq": 2,
+   "t": 0.1
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "99577c623dfd09e9ad746da370b9f43b6593d5d4f5d5ca9dee99bb1fd4c6ea7d",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "fe8ccfbac81fb63997ebc5141785f33891df8c21a3176fc79951b13627b1f1bb",
+   "seq": 3,
+   "t": 0.2
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "a083e7ec823d5d3153c6a6e3b88bd6ec9ff899c916180373234c85772bd0bdad",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "99577c623dfd09e9ad746da370b9f43b6593d5d4f5d5ca9dee99bb1fd4c6ea7d",
+   "seq": 4,
+   "t": 0.3
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "738b675a87310aadec72302908ebf7da14dfb5535fd340da55191c6c1e8474f4",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "a083e7ec823d5d3153c6a6e3b88bd6ec9ff899c916180373234c85772bd0bdad",
+   "seq": 5,
+   "t": 0.4
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "c216ca9458d3c5d965a098c7ff90ece798a4cf96241c72478d299d2ca225c746",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "738b675a87310aadec72302908ebf7da14dfb5535fd340da55191c6c1e8474f4",
+   "seq": 6,
+   "t": 0.5
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "a18dac4aa343ad35c4df33ba33a370a77804b045de6f2dd4b30d20e19669dee3",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "c216ca9458d3c5d965a098c7ff90ece798a4cf96241c72478d299d2ca225c746",
+   "seq": 7,
+   "t": 0.6
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "e3cb96e663400dc462e68989800e27cbf430e69a33118e86cc827b616545ed9b",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "a18dac4aa343ad35c4df33ba33a370a77804b045de6f2dd4b30d20e19669dee3",
+   "seq": 8,
+   "t": 0.7
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "ced4ebbc5c7dbf1d719eaf6296a0780b935e1f83b867014db9ce647740144075",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "e3cb96e663400dc462e68989800e27cbf430e69a33118e86cc827b616545ed9b",
+   "seq": 9,
+   "t": 0.8
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "a5a9ec4e3e413ef0695e29c6a4d858a7e015bbd6cfc72a92932b299b3442aebe",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "ced4ebbc5c7dbf1d719eaf6296a0780b935e1f83b867014db9ce647740144075",
+   "seq": 10,
+   "t": 0.9
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "272ef64f813b346d4c62ecc7e9626496e9ff144497c2fac82594866ff2d948a6",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "a5a9ec4e3e413ef0695e29c6a4d858a7e015bbd6cfc72a92932b299b3442aebe",
+   "seq": 11,
+   "t": 1.0
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "7ba8b97389a60dbb1dd7ced92431cc2b7200996564325ebe8905ba6d70e49f87",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "272ef64f813b346d4c62ecc7e9626496e9ff144497c2fac82594866ff2d948a6",
+   "seq": 12,
+   "t": 1.1
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "307d1b88c64ab7539b465c0c6c895134603cd36897e2eccdbecdefa5ac879f73",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "7ba8b97389a60dbb1dd7ced92431cc2b7200996564325ebe8905ba6d70e49f87",
+   "seq": 13,
+   "t": 1.2
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "b32d331af78216b90a5253d1e4d98e91458fab4d8e83b20c1588e20d61ae851e",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "307d1b88c64ab7539b465c0c6c895134603cd36897e2eccdbecdefa5ac879f73",
+   "seq": 14,
+   "t": 1.3
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "5694cb177acddde9f846e150f6608565db8838c6156631a4fa9f8c62f0a24b4d",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "b32d331af78216b90a5253d1e4d98e91458fab4d8e83b20c1588e20d61ae851e",
+   "seq": 15,
+   "t": 1.4
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "a3415227d7e95c3bf12422a52dca00e8d535e2aae4dc797a7f47fe79fe1e2f61",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "5694cb177acddde9f846e150f6608565db8838c6156631a4fa9f8c62f0a24b4d",
+   "seq": 16,
+   "t": 1.5
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "92bc7832d58e767d5d53abfa1933fcb9203324a12651e12522ce862145455fb1",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "a3415227d7e95c3bf12422a52dca00e8d535e2aae4dc797a7f47fe79fe1e2f61",
+   "seq": 17,
+   "t": 1.6
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "ef436b2fe7175a1f797e76489d9a5f72d0a29b653eeaa44fb2d6879946c6bfcb",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "92bc7832d58e767d5d53abfa1933fcb9203324a12651e12522ce862145455fb1",
+   "seq": 18,
+   "t": 1.7
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "db69bae43f108c7311079c6afe5545606fcf403042f4b07d9865999ecd6ffc3a",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "ef436b2fe7175a1f797e76489d9a5f72d0a29b653eeaa44fb2d6879946c6bfcb",
+   "seq": 19,
+   "t": 1.8
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "a1fd4c0c42252883510df8090d1c0bae6bb1cdf4cd9dc5c0942944b1abe34d12",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "db69bae43f108c7311079c6afe5545606fcf403042f4b07d9865999ecd6ffc3a",
+   "seq": 20,
+   "t": 1.9
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "7d86c9ec179d3d6807eb3c56ffc59f982c929c1c71fbd9ad674760681a6a2fc7",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "a1fd4c0c42252883510df8090d1c0bae6bb1cdf4cd9dc5c0942944b1abe34d12",
+   "seq": 21,
+   "t": 2.0
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "96587bb0286cb6b8271cff7658d3b66751cb082357ed9a3c542e8875a34bc3f8",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "7d86c9ec179d3d6807eb3c56ffc59f982c929c1c71fbd9ad674760681a6a2fc7",
+   "seq": 22,
+   "t": 2.1
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "c07943f410cdd9a4e90bea9e800319909aa08caab8a8e3b5627e8de985566929",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "96587bb0286cb6b8271cff7658d3b66751cb082357ed9a3c542e8875a34bc3f8",
+   "seq": 23,
+   "t": 2.2
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "6ec070a7a115d3470101b850e3d5eb92fa452eb6ed862db6a78756e0ed9ccfb6",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "c07943f410cdd9a4e90bea9e800319909aa08caab8a8e3b5627e8de985566929",
+   "seq": 24,
+   "t": 2.3
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "9c77e32aea488ab90c1fab8cdfd523653faa37889ad911246f470136c1aa9ed7",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "6ec070a7a115d3470101b850e3d5eb92fa452eb6ed862db6a78756e0ed9ccfb6",
+   "seq": 25,
+   "t": 2.4
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "6f0f89d0a12fd87f6d0632ff8710289b08918871f2180050795fbfe588db104f",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "9c77e32aea488ab90c1fab8cdfd523653faa37889ad911246f470136c1aa9ed7",
+   "seq": 26,
+   "t": 2.5
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "4cb7e00f5311721ec4dc13fcf938d7cfea80e127873ee47335207ed7f5ee282c",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "6f0f89d0a12fd87f6d0632ff8710289b08918871f2180050795fbfe588db104f",
+   "seq": 27,
+   "t": 2.6
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "7daf9304b4cd439366c62edee9d55828abc19bd65bafebb54a8da3bb400c84f9",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "4cb7e00f5311721ec4dc13fcf938d7cfea80e127873ee47335207ed7f5ee282c",
+   "seq": 28,
+   "t": 2.7
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "c966f67737bc362f2e0c951b61a9c69f3834b0bcaeff446dac670745f01bb7f7",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "7daf9304b4cd439366c62edee9d55828abc19bd65bafebb54a8da3bb400c84f9",
+   "seq": 29,
+   "t": 2.8
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "86abf4ee5f78d59839a580b75a2be385c2433265481404fbc4b6993f1d969d2d",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "c966f67737bc362f2e0c951b61a9c69f3834b0bcaeff446dac670745f01bb7f7",
+   "seq": 30,
+   "t": 2.9
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "ccde6de95d0754cede3bbccd0800b020af3cd46203c5325cd76d9f7b36aac2bd",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "86abf4ee5f78d59839a580b75a2be385c2433265481404fbc4b6993f1d969d2d",
+   "seq": 31,
+   "t": 3.0
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "1e891ebdc1369d9223c94880ffc768e9954a3925de7bfafa95832a4d636d3b20",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "ccde6de95d0754cede3bbccd0800b020af3cd46203c5325cd76d9f7b36aac2bd",
+   "seq": 32,
+   "t": 3.1
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "302d7e17a8478a371bb13b934aa54dd41075838b7862562ddec90150adfb93bb",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "1e891ebdc1369d9223c94880ffc768e9954a3925de7bfafa95832a4d636d3b20",
+   "seq": 33,
+   "t": 3.2
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "42e2cafe12f058ac70c4c7d4793c77bfa362bdf1929119675d97062904d4667c",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "302d7e17a8478a371bb13b934aa54dd41075838b7862562ddec90150adfb93bb",
+   "seq": 34,
+   "t": 3.3
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "adc7da86aed2e19f57d379048f6e138fe6b36fd799513510d98aaf2bf0f09cd3",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "42e2cafe12f058ac70c4c7d4793c77bfa362bdf1929119675d97062904d4667c",
+   "seq": 35,
+   "t": 3.4
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "e879ce30960c68a7d6746f7db5dd4e5daa858aa591806dffda553df014f94beb",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "adc7da86aed2e19f57d379048f6e138fe6b36fd799513510d98aaf2bf0f09cd3",
+   "seq": 36,
+   "t": 3.5
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "accd241cb1fcb0e71ed00c4b172d290cc26553bcf0d9137191fbef9749d3c312",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "e879ce30960c68a7d6746f7db5dd4e5daa858aa591806dffda553df014f94beb",
+   "seq": 37,
+   "t": 3.6
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "89e5009db1ece1541c9f001fb7dc0831d14f0d1c9aac405ee1cc8cffbe5300fd",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "accd241cb1fcb0e71ed00c4b172d290cc26553bcf0d9137191fbef9749d3c312",
+   "seq": 38,
+   "t": 3.7
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "8f525e9953102f065964ece7a9b71eacdcbf9e7301f0bf9a5224b5b2121964c5",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "89e5009db1ece1541c9f001fb7dc0831d14f0d1c9aac405ee1cc8cffbe5300fd",
+   "seq": 39,
+   "t": 3.8
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "86885e39939d88ad626b954f67324aff385a44084b6db0f5e030e6e2a32d4647",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "8f525e9953102f065964ece7a9b71eacdcbf9e7301f0bf9a5224b5b2121964c5",
+   "seq": 40,
+   "t": 3.9
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "1a5a2b092c5457fac234eb3bb13f34c5bf58ec6f39929b52eb6dbfbaccf680d0",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "86885e39939d88ad626b954f67324aff385a44084b6db0f5e030e6e2a32d4647",
+   "seq": 41,
+   "t": 4.0
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "15600bda7ed4fc8141f739bcb540aee8eea1f81a1f6d78104090b45895bf6af6",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "1a5a2b092c5457fac234eb3bb13f34c5bf58ec6f39929b52eb6dbfbaccf680d0",
+   "seq": 42,
+   "t": 4.1
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "5001b97c6eea4944a7d8e48499c1df119f3eeef45f21a499debc699a3cd0bca3",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "15600bda7ed4fc8141f739bcb540aee8eea1f81a1f6d78104090b45895bf6af6",
+   "seq": 43,
+   "t": 4.2
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "9a8248ce7eef7747942daa49aecd50b19f433c4f9e764d1b4c8a09dacb3f1954",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "5001b97c6eea4944a7d8e48499c1df119f3eeef45f21a499debc699a3cd0bca3",
+   "seq": 44,
+   "t": 4.3
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "33dfe28e839ee60e7ca7036e9057d1ffb7006e637ddd3c6dad6e0fdcd1e557ee",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "9a8248ce7eef7747942daa49aecd50b19f433c4f9e764d1b4c8a09dacb3f1954",
+   "seq": 45,
+   "t": 4.4
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "1a66cb47f4640747f845032c012ea8331119acd50dbf894306506597447bf0d7",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "33dfe28e839ee60e7ca7036e9057d1ffb7006e637ddd3c6dad6e0fdcd1e557ee",
+   "seq": 46,
+   "t": 4.5
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "5e315d268825ed8e33463280a03e53790cfd88584d2c8fc971ec4b669d104964",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "1a66cb47f4640747f845032c012ea8331119acd50dbf894306506597447bf0d7",
+   "seq": 47,
+   "t": 4.6
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "4b07cfb697f329f467ee0e2c2193d73e8132bc99d599723c1a94e09b552f5432",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "5e315d268825ed8e33463280a03e53790cfd88584d2c8fc971ec4b669d104964",
+   "seq": 48,
+   "t": 4.7
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "1cb3dbeab05e566b31d584913afcfd2de1031cac1fd5921617ebb2cca533c1e1",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "4b07cfb697f329f467ee0e2c2193d73e8132bc99d599723c1a94e09b552f5432",
+   "seq": 49,
+   "t": 4.8
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "f4522a883a71355bcb8fd2a667c14eab6ac4ee33a170e0b09ee13d75c9c853c3",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "1cb3dbeab05e566b31d584913afcfd2de1031cac1fd5921617ebb2cca533c1e1",
+   "seq": 50,
+   "t": 4.9
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "91f253acf3c2a5e9d284e968bdd93b5ddab72a1e415e4a518bb91555652fc55d",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "f4522a883a71355bcb8fd2a667c14eab6ac4ee33a170e0b09ee13d75c9c853c3",
+   "seq": 51,
+   "t": 5.0
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "744043c29128830fbf51ebba902312ae447614bb0415025a2fc693c0e80421b3",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "91f253acf3c2a5e9d284e968bdd93b5ddab72a1e415e4a518bb91555652fc55d",
+   "seq": 52,
+   "t": 5.1
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "6af869a543917a663d944acea0d6b449dc99649a803549f38c9083a3bab383cb",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "744043c29128830fbf51ebba902312ae447614bb0415025a2fc693c0e80421b3",
+   "seq": 53,
+   "t": 5.2
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "29925b1ea360ca8337b99448c0bc50da65f8228be51b3f5974babb4ae1e75959",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "6af869a543917a663d944acea0d6b449dc99649a803549f38c9083a3bab383cb",
+   "seq": 54,
+   "t": 5.3
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "59d73bdc8a04a1928de7eaa11557ff1530fe64763924056717048f7387aef512",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "29925b1ea360ca8337b99448c0bc50da65f8228be51b3f5974babb4ae1e75959",
+   "seq": 55,
+   "t": 5.4
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "bd1168e8792d8fcf95bce0d785303c91e93c82b2dfdbd60fb2edbddfc3237dec",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "59d73bdc8a04a1928de7eaa11557ff1530fe64763924056717048f7387aef512",
+   "seq": 56,
+   "t": 5.5
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "a125d8e3a7472328862c240e505060862b252b3eb8d7dc79b605021c448c9900",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "bd1168e8792d8fcf95bce0d785303c91e93c82b2dfdbd60fb2edbddfc3237dec",
+   "seq": 57,
+   "t": 5.6
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "e79f7009daefd606675ff675d9545de4df39d55e563bb5d112d210d9dd2c3fef",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "a125d8e3a7472328862c240e505060862b252b3eb8d7dc79b605021c448c9900",
+   "seq": 58,
+   "t": 5.7
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "1faf20ed4114599903f4c8ba624f29f6ccff3123d918a9bf782ef457b05d1256",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "e79f7009daefd606675ff675d9545de4df39d55e563bb5d112d210d9dd2c3fef",
+   "seq": 59,
+   "t": 5.8
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "946599acd1fd967544a89516c2cbb1083f3ab6352b558fb0195ddeb4aab5f481",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "1faf20ed4114599903f4c8ba624f29f6ccff3123d918a9bf782ef457b05d1256",
+   "seq": 60,
+   "t": 5.9
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "0b43526eadd0a5a3a789ae5d11d0ada10f9cf75e88a583c075876c7a0c238651",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "946599acd1fd967544a89516c2cbb1083f3ab6352b558fb0195ddeb4aab5f481",
+   "seq": 61,
+   "t": 6.0
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "ca4ad89d09a4ccc8bf7a7d324aedd2cc5592ab7f6867c49a77bf3b0e1cca0d9f",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "0b43526eadd0a5a3a789ae5d11d0ada10f9cf75e88a583c075876c7a0c238651",
+   "seq": 62,
+   "t": 6.1
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "476e6d04a8c532ae1f0bc13a7f14ed3c176a424714c066d6aa492c80f2e9441d",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "ca4ad89d09a4ccc8bf7a7d324aedd2cc5592ab7f6867c49a77bf3b0e1cca0d9f",
+   "seq": 63,
+   "t": 6.2
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "437bc1a85fd6d5cabd51e8e91a2b66f8200d0fef9092509f7f51c748e1c1fef3",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "476e6d04a8c532ae1f0bc13a7f14ed3c176a424714c066d6aa492c80f2e9441d",
+   "seq": 64,
+   "t": 6.3
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "19274a98f2cbbc04cc80ed81bbf09e723f11fe26d97c7f9aac62df06f6fcf43e",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "437bc1a85fd6d5cabd51e8e91a2b66f8200d0fef9092509f7f51c748e1c1fef3",
+   "seq": 65,
+   "t": 6.4
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "39cacc9fee7f88bab841e4f90f0d091484329fd5c3cf69730a08d0f5c97c51d5",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "19274a98f2cbbc04cc80ed81bbf09e723f11fe26d97c7f9aac62df06f6fcf43e",
+   "seq": 66,
+   "t": 6.5
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "646164dcd8195068489c3a0687a65a5adf77d0a552b3e77a7ebd2ce1f8c11d3a",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "39cacc9fee7f88bab841e4f90f0d091484329fd5c3cf69730a08d0f5c97c51d5",
+   "seq": 67,
+   "t": 6.6
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "ecdeb66d5b129d5458c6b19c4be3d26a7c5070ee4c23b656106f321b49004d95",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "646164dcd8195068489c3a0687a65a5adf77d0a552b3e77a7ebd2ce1f8c11d3a",
+   "seq": 68,
+   "t": 6.7
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "6d6488fd4d0b0da28d56256e02020f032665751ea0d9c9d9df3224eafa6ba5f0",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "ecdeb66d5b129d5458c6b19c4be3d26a7c5070ee4c23b656106f321b49004d95",
+   "seq": 69,
+   "t": 6.8
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "b1ca7d15fc39d548181e59d467433316631ab289d3d7cc91af3d9e860f79d67c",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "6d6488fd4d0b0da28d56256e02020f032665751ea0d9c9d9df3224eafa6ba5f0",
+   "seq": 70,
+   "t": 6.9
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "e8d3eb72126eb44689ae9f8753d326c6876a1f43b3cabfbb46bd4634c1a15a58",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "b1ca7d15fc39d548181e59d467433316631ab289d3d7cc91af3d9e860f79d67c",
+   "seq": 71,
+   "t": 7.0
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "c375991cc20493f54709e61a0cb05379a0d2acc68a0df2c15e43ee2529825010",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "e8d3eb72126eb44689ae9f8753d326c6876a1f43b3cabfbb46bd4634c1a15a58",
+   "seq": 72,
+   "t": 7.1
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "c9db0254f96f9e114cac600ebece681926c8baf30f254f5f07fe893d9cb0fa58",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "c375991cc20493f54709e61a0cb05379a0d2acc68a0df2c15e43ee2529825010",
+   "seq": 73,
+   "t": 7.2
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "a33d70a798374ec05689a09fc46145b7d74baedfbf99a6af6e1f304fc119b1dd",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "c9db0254f96f9e114cac600ebece681926c8baf30f254f5f07fe893d9cb0fa58",
+   "seq": 74,
+   "t": 7.3
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "10d2a8b0992254e17c1f738842ef5da8451ee3fb94d1abfab69af514fb73a50c",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "a33d70a798374ec05689a09fc46145b7d74baedfbf99a6af6e1f304fc119b1dd",
+   "seq": 75,
+   "t": 7.4
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "18ac72175093b2872c099b3ce6c65572184b4a0c156d15a8c54eea1595f99c8c",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "10d2a8b0992254e17c1f738842ef5da8451ee3fb94d1abfab69af514fb73a50c",
+   "seq": 76,
+   "t": 7.5
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "967b6aabad578298e1d394d04c260c4134c60a6ced5e304d30a38a939ffe6865",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "18ac72175093b2872c099b3ce6c65572184b4a0c156d15a8c54eea1595f99c8c",
+   "seq": 77,
+   "t": 7.6
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "be2d65d2e41e70f256e76f954c2152c2b1d31cdf5116e15d2fec7fa18c3fe60a",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "967b6aabad578298e1d394d04c260c4134c60a6ced5e304d30a38a939ffe6865",
+   "seq": 78,
+   "t": 7.7
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "8db3c07bca89226d1ebb6b37bbf824e7026db63f0d01821aee04cdd44a28dc7f",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "be2d65d2e41e70f256e76f954c2152c2b1d31cdf5116e15d2fec7fa18c3fe60a",
+   "seq": 79,
+   "t": 7.8
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "e1c8af437e82c46388a558c48215d5c996ed30dd79aa8a1e08864cc1259e5f48",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "8db3c07bca89226d1ebb6b37bbf824e7026db63f0d01821aee04cdd44a28dc7f",
+   "seq": 80,
+   "t": 7.9
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "a86cca686952e191f2825d68ff6b9477bba8459e3df93fac4a8595d4d8494bf3",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "e1c8af437e82c46388a558c48215d5c996ed30dd79aa8a1e08864cc1259e5f48",
+   "seq": 81,
+   "t": 8.0
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "4a41293db9179ea89be253b8d35a55da93889f426443f0bfb25a179096dc4923",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "a86cca686952e191f2825d68ff6b9477bba8459e3df93fac4a8595d4d8494bf3",
+   "seq": 82,
+   "t": 8.1
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "821da63b324372acf2ba2bfe5cf27e9297a6f39670943c4406b8e461c0fb104b",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "4a41293db9179ea89be253b8d35a55da93889f426443f0bfb25a179096dc4923",
+   "seq": 83,
+   "t": 8.2
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "1166e448839dc02302be20c156fddeb6e1a6880246277c4c09e6f69299dda0cd",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "821da63b324372acf2ba2bfe5cf27e9297a6f39670943c4406b8e461c0fb104b",
+   "seq": 84,
+   "t": 8.3
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "de4c10479e0a5693436e1598390464702c7fe3f16360ffa33cfed518d627886a",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "1166e448839dc02302be20c156fddeb6e1a6880246277c4c09e6f69299dda0cd",
+   "seq": 85,
+   "t": 8.4
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "ba52fa824f2b3b2580db0a3ddbd2674460c8bcbfc011353cd7e1c5d1683ed663",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "de4c10479e0a5693436e1598390464702c7fe3f16360ffa33cfed518d627886a",
+   "seq": 86,
+   "t": 8.5
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "bf4322c8b8b5c2f45d631d368fba80f3f69bd998d51d4c9bc0dcb697ff20426f",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "ba52fa824f2b3b2580db0a3ddbd2674460c8bcbfc011353cd7e1c5d1683ed663",
+   "seq": 87,
+   "t": 8.6
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "3f0a65f6664de76d9bd8cc41984ab782593f3a20f6c61f976f88d66f77cbf10e",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "bf4322c8b8b5c2f45d631d368fba80f3f69bd998d51d4c9bc0dcb697ff20426f",
+   "seq": 88,
+   "t": 8.7
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "f55384498600cc3d08c88b129cfea4d2d779483a3aa6dd01aecbe20f37e9dba8",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "3f0a65f6664de76d9bd8cc41984ab782593f3a20f6c61f976f88d66f77cbf10e",
+   "seq": 89,
+   "t": 8.8
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "42fdbbbbfe8a473c36ffe8707868b9fafac3d667c5803d79a0e8357c8150db98",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "f55384498600cc3d08c88b129cfea4d2d779483a3aa6dd01aecbe20f37e9dba8",
+   "seq": 90,
+   "t": 8.9
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "712ad9aa08a90fc8741310e31ec5224302b333fce311a5c70a839e54a70b6189",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "42fdbbbbfe8a473c36ffe8707868b9fafac3d667c5803d79a0e8357c8150db98",
+   "seq": 91,
+   "t": 9.0
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "1786539140581fbb79c580d5d1fc50b7b18b1cea252881daf8a4db3b8dc18b2e",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "712ad9aa08a90fc8741310e31ec5224302b333fce311a5c70a839e54a70b6189",
+   "seq": 92,
+   "t": 9.1
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "425d1350ec306674516fe1032ca6688dc6f454845ea3b07c40d718e85fb68f7a",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "1786539140581fbb79c580d5d1fc50b7b18b1cea252881daf8a4db3b8dc18b2e",
+   "seq": 93,
+   "t": 9.2
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "b8e7033f1f6f33317213807df7b0270abd44d52c77e0df25587d3af7e685224e",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "425d1350ec306674516fe1032ca6688dc6f454845ea3b07c40d718e85fb68f7a",
+   "seq": 94,
+   "t": 9.3
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "628e3f15e3b501f7aecd1003bb6f137440615598d236038c2eafe4d4d966cec3",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "b8e7033f1f6f33317213807df7b0270abd44d52c77e0df25587d3af7e685224e",
+   "seq": 95,
+   "t": 9.4
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "31cb9a1ce0fc1b28db9be00adefd1249e4816be861f3af4abd60aa270be6ba92",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "628e3f15e3b501f7aecd1003bb6f137440615598d236038c2eafe4d4d966cec3",
+   "seq": 96,
+   "t": 9.5
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "41f8df6c26e1d7e6d6ef8635955f443ca30d8a5b90b66f921783552d8918fc92",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "31cb9a1ce0fc1b28db9be00adefd1249e4816be861f3af4abd60aa270be6ba92",
+   "seq": 97,
+   "t": 9.6
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "1ea91a358fee55aa0b7676003d454d89012b22432dfd47973d44686cea0af97c",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "41f8df6c26e1d7e6d6ef8635955f443ca30d8a5b90b66f921783552d8918fc92",
+   "seq": 98,
+   "t": 9.7
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "dcd5fd95f7b6f995f733e966064d87e7fe4859f3ec858da86b02e8ddb5b820de",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "1ea91a358fee55aa0b7676003d454d89012b22432dfd47973d44686cea0af97c",
+   "seq": 99,
+   "t": 9.8
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "68010178914959a9dea74ed2d237a5ec5574a7c838e25fc3e419d135e8116cd9",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "dcd5fd95f7b6f995f733e966064d87e7fe4859f3ec858da86b02e8ddb5b820de",
+   "seq": 100,
+   "t": 9.9
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "f824ce06a8cf1a926c29b0b7668275e965322fb5092a5208ba50e0c5f4cf4212",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "68010178914959a9dea74ed2d237a5ec5574a7c838e25fc3e419d135e8116cd9",
+   "seq": 101,
+   "t": 10.0
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "755b6918889775df3365f92c2ec6088d6a6a83bad077012dd0972b9eee7c3220",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "f824ce06a8cf1a926c29b0b7668275e965322fb5092a5208ba50e0c5f4cf4212",
+   "seq": 102,
+   "t": 10.1
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "cc8f0ebdce12fef2d0504975639854e6efed717c00cba9cce7d55e371f691fc6",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "755b6918889775df3365f92c2ec6088d6a6a83bad077012dd0972b9eee7c3220",
+   "seq": 103,
+   "t": 10.2
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "0cbc0c267e3c53212638abe0723111786f65303282cfe3e5065aca7ff181dcba",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "cc8f0ebdce12fef2d0504975639854e6efed717c00cba9cce7d55e371f691fc6",
+   "seq": 104,
+   "t": 10.3
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "4cd825f5277df37b56e3b30fae55800c585c77aecef9788efb90b5b5970c3457",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "0cbc0c267e3c53212638abe0723111786f65303282cfe3e5065aca7ff181dcba",
+   "seq": 105,
+   "t": 10.4
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "605a1bfc113dc030c9350e0419c9eced2aa1aacebd5b89d4a8a038a75e7f2828",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "4cd825f5277df37b56e3b30fae55800c585c77aecef9788efb90b5b5970c3457",
+   "seq": 106,
+   "t": 10.5
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "dce186790ae879684690619ff47a7b46dd6fd66b36c3f130f382e568135183df",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "605a1bfc113dc030c9350e0419c9eced2aa1aacebd5b89d4a8a038a75e7f2828",
+   "seq": 107,
+   "t": 10.6
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "1c528c61a4eecebe0c9531c5253455e9ac9420a45ef9314a01a3c6b36a97b8a1",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "dce186790ae879684690619ff47a7b46dd6fd66b36c3f130f382e568135183df",
+   "seq": 108,
+   "t": 10.7
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "80541c4f0687debabcb5f9c2cda1779708fcd0ec4e029f4f50c46696d4fc7169",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "1c528c61a4eecebe0c9531c5253455e9ac9420a45ef9314a01a3c6b36a97b8a1",
+   "seq": 109,
+   "t": 10.8
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "e6871a71ab2013067996d5b0cc5752f16001d4bb09022699f800fa910fa32fb1",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "80541c4f0687debabcb5f9c2cda1779708fcd0ec4e029f4f50c46696d4fc7169",
+   "seq": 110,
+   "t": 10.9
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "f46dbab3981e22c4067c24703c5d2bf9e4f6a954cc211bcadf4beda4957d1540",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "e6871a71ab2013067996d5b0cc5752f16001d4bb09022699f800fa910fa32fb1",
+   "seq": 111,
+   "t": 11.0
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "4785e4e6fc73719df4ea6a8cb159633105200d437798a7c5bdde369f4634c4ee",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "f46dbab3981e22c4067c24703c5d2bf9e4f6a954cc211bcadf4beda4957d1540",
+   "seq": 112,
+   "t": 11.1
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "d2333882384a30c8a2be0fb12a186af3631eb4621a07f4f9f7ae95a64a5f9390",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "4785e4e6fc73719df4ea6a8cb159633105200d437798a7c5bdde369f4634c4ee",
+   "seq": 113,
+   "t": 11.2
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "60e89ea1f05e8ef2f8940d467b7c2241cb2c383593e8583d3bc63ed1b3c13383",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "d2333882384a30c8a2be0fb12a186af3631eb4621a07f4f9f7ae95a64a5f9390",
+   "seq": 114,
+   "t": 11.3
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "5963d5d6e5cbc69e79168f26c3efdf122810a2ac2e44047f44db8e9626b29d3d",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "60e89ea1f05e8ef2f8940d467b7c2241cb2c383593e8583d3bc63ed1b3c13383",
+   "seq": 115,
+   "t": 11.4
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "9cfd9b20c4c17a07591e5ca8e51c43adc7060073dbb98117e148915a43398a6a",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "5963d5d6e5cbc69e79168f26c3efdf122810a2ac2e44047f44db8e9626b29d3d",
+   "seq": 116,
+   "t": 11.5
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "6bd892ef2e405b0a5b3928ff469bec4176bf58ccc150c7b30bc2df6661765368",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "9cfd9b20c4c17a07591e5ca8e51c43adc7060073dbb98117e148915a43398a6a",
+   "seq": 117,
+   "t": 11.6
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "0e0f0e396b1716027a0e5b50a137d67f95c4af2391581f83e6303992c1d396a8",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "6bd892ef2e405b0a5b3928ff469bec4176bf58ccc150c7b30bc2df6661765368",
+   "seq": 118,
+   "t": 11.7
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "0b8197dcece6fcf2d729bd06ef82ff82823ea1b2797657c09558e3349d64a69e",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "0e0f0e396b1716027a0e5b50a137d67f95c4af2391581f83e6303992c1d396a8",
+   "seq": 119,
+   "t": 11.8
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 60.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "11fc393f5649e2e0fa933d79afacc8289cca1312e9d79de24bf8682548741e7a",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "0b8197dcece6fcf2d729bd06ef82ff82823ea1b2797657c09558e3349d64a69e",
+   "seq": 120,
+   "t": 11.9
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 40.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "1346d7e7d3b35d0b169c7d7853dc0d22201a637d11bdb4021d4b965a20cbb7f9",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "11fc393f5649e2e0fa933d79afacc8289cca1312e9d79de24bf8682548741e7a",
+   "seq": 121,
+   "t": 12.0
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 38.6,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "32c6f3212814d7db16194288b6e714a70ccb1a4d28c0937d2ca78de1468430c8",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "1346d7e7d3b35d0b169c7d7853dc0d22201a637d11bdb4021d4b965a20cbb7f9",
+   "seq": 122,
+   "t": 12.1
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 37.2,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "671c758f8f85f05da7d7e1896aad34d4ef90f8e2562cca550e17cb95f8ff2831",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "32c6f3212814d7db16194288b6e714a70ccb1a4d28c0937d2ca78de1468430c8",
+   "seq": 123,
+   "t": 12.2
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 35.8,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "02854de6052a060eb48d4ffc3b19203b1bf8207c1e6f49a2f263338741c383ae",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "671c758f8f85f05da7d7e1896aad34d4ef90f8e2562cca550e17cb95f8ff2831",
+   "seq": 124,
+   "t": 12.3
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 34.4,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "4f9a5d6f0f2b301e8724d9945c31de85ead93422c83b120b29b5fd9d706bed3a",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "02854de6052a060eb48d4ffc3b19203b1bf8207c1e6f49a2f263338741c383ae",
+   "seq": 125,
+   "t": 12.4
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 33.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "0ca5010e8cb7e7cd66e21dd202597df20a8066d6a9840d5e6ae1a42f9090c5b9",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "4f9a5d6f0f2b301e8724d9945c31de85ead93422c83b120b29b5fd9d706bed3a",
+   "seq": 126,
+   "t": 12.5
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 31.6,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "a7a045d87439813c6a6bbfa31d8236d023d9d2ebc0f8a5e2d068f970d3c28e8c",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "0ca5010e8cb7e7cd66e21dd202597df20a8066d6a9840d5e6ae1a42f9090c5b9",
+   "seq": 127,
+   "t": 12.6
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 30.2,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "3c8d24cec37b083dbd8ff7a713bb5c9bcd121947612ef7fdcdb9c832fb869454",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "a7a045d87439813c6a6bbfa31d8236d023d9d2ebc0f8a5e2d068f970d3c28e8c",
+   "seq": 128,
+   "t": 12.7
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 28.8,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "6692897835fccc840f8e1313053a4ab62a581c3fd1b1d195db4419a6110907ae",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "3c8d24cec37b083dbd8ff7a713bb5c9bcd121947612ef7fdcdb9c832fb869454",
+   "seq": 129,
+   "t": 12.8
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 27.4,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "4df7fca9cd229585d311dba3265ab4ca556233a80fa5442e41ecdd60210f92b3",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "6692897835fccc840f8e1313053a4ab62a581c3fd1b1d195db4419a6110907ae",
+   "seq": 130,
+   "t": 12.9
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 26.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "439e9cc1dd02404d1388a5a0ab5841c00d4435b3179a328423fb9e31ef6e970c",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "4df7fca9cd229585d311dba3265ab4ca556233a80fa5442e41ecdd60210f92b3",
+   "seq": 131,
+   "t": 13.0
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 24.6,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "1725a5c3fab0ab8eefcf399cfd8e2c4ebc96d303b27f7a35ce0233efafe57945",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "439e9cc1dd02404d1388a5a0ab5841c00d4435b3179a328423fb9e31ef6e970c",
+   "seq": 132,
+   "t": 13.1
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 23.2,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "0d0dd69a10ab0753ee6a55d458d179390a55b72fbb84630d1859f7ea92cb7993",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "1725a5c3fab0ab8eefcf399cfd8e2c4ebc96d303b27f7a35ce0233efafe57945",
+   "seq": 133,
+   "t": 13.2
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 21.8,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "c52886eb615703c4915239862826d927154d5eee618f089c742da35476e93b70",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "0d0dd69a10ab0753ee6a55d458d179390a55b72fbb84630d1859f7ea92cb7993",
+   "seq": 134,
+   "t": 13.3
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 20.4,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "60793d2104dc33f2c8c0bdf4d7e7f9affb3648ddaf82a9c945291dca94ecb83b",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "c52886eb615703c4915239862826d927154d5eee618f089c742da35476e93b70",
+   "seq": 135,
+   "t": 13.4
+  },
+  {
+   "body": {
+    "obstacle": true,
+    "obstacle_distance_m": 19.0,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "b3b97f0b71e5a51ae3c2c048ea0db6d4a216244c6936d170ab3368a9f76b42c7",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "60793d2104dc33f2c8c0bdf4d7e7f9affb3648ddaf82a9c945291dca94ecb83b",
+   "seq": 136,
+   "t": 13.5
+  },
+  {
+   "body": {
+    "obstacle": true,
+    "obstacle_distance_m": 17.6,
+    "source": "fusion",
+    "speed_mps": 22.0
+   },
+   "hash": "dfc389378442b514a6c820e6a4ee30148f707c76f304d70a16dd8d34406ea856",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "b3b97f0b71e5a51ae3c2c048ea0db6d4a216244c6936d170ab3368a9f76b42c7",
+   "seq": 137,
+   "t": 13.6
+  },
+  {
+   "body": {
+    "alert": true,
+    "ecu_time": 13.6,
+    "evidence": [
+     "dfc389378442b514a6c820e6a4ee30148f707c76f304d70a16dd8d34406ea856"
+    ],
+    "model": "AEB",
+    "software_id": "ADAS-SW 4.1.0",
+    "ttc_s": 0.8,
+    "uncertainty": 0.1
+   },
+   "hash": "a12d9262bf1b17c60dc61d3d16a69a4bb6df627ed1638447f5eca16e064c82fb",
+   "kind": "inference",
+   "node": "vehicle",
+   "prev": "dfc389378442b514a6c820e6a4ee30148f707c76f304d70a16dd8d34406ea856",
+   "seq": 138,
+   "t": 13.6
+  },
+  {
+   "body": {
+    "action": "emergency_brake",
+    "agree": true,
+    "inferences": [
+     "a12d9262bf1b17c60dc61d3d16a69a4bb6df627ed1638447f5eca16e064c82fb"
+    ],
+    "max_uncertainty": 0.1
+   },
+   "hash": "b5c0b68cdc8a3eb6da1e933dd9ff5259f1381a6e7b9f181c19a3556f71b3a37b",
+   "kind": "recommendation",
+   "node": "vehicle",
+   "prev": "a12d9262bf1b17c60dc61d3d16a69a4bb6df627ed1638447f5eca16e064c82fb",
+   "seq": 139,
+   "t": 13.6
+  },
+  {
+   "body": {
+    "action": "emergency_brake",
+    "authorizes": "b5c0b68cdc8a3eb6da1e933dd9ff5259f1381a6e7b9f181c19a3556f71b3a37b",
+    "by": "safety-controller",
+    "sig_alg": [
+     "ed25519",
+     "ml-dsa-65"
+    ],
+    "signatures": {
+     "ed25519": "e259920a6a944b2a67a79d723378039c5f11fb809ef9319a36c020b1acf15044f9366a87ac6199bf6970ff8a7e335f800bb177d953b52392b2528cd4d1f3960e",
+     "ml-dsa-65": "a425a6258304fbfeaa095d4cebaddf43cd82df4f9aa5060a4d723fd1e96768c274101a8dcd46a7805d89a4bf7cc848bf9393f332e32d9aa2e79a498469e7f49c2d2c24221450b5e13e3c542f46c1a594cb21e96b7765caf30875d2ad6671adf4f05f12bff74b8e014dfd90736be2a5189d748de93388fadfcce87078803d7ddeb6cfa832c218ae7b641fdc82a87713aadfa3f15fd82417b723b7b8e6da589e065d84af1eaffa0647c125f43eff17a286b0c1f9a8a7b085652dea02692b298e9bba3affbb9797bfb053ad70a1011f7ba3b5cc612d80bb9cd9d96127118a55820bb64e44566712846ea9fb9be1c4095cf40d74bfd7d11b8a8855387a037bdc1dbc2449d00a7e01897b8d1bdff81cba8e3d19a034496d24f23a4eb593ac7a7aedb80830bd42e48dc6c523b06c71b8e334daa483ddc57e786a35fb0c076b3e6c19f701c556b685a44833431611ec9810a1718749b544abc7ce3106a73710795091361c29712ff8aefa50b840f6b86c0f0f811ba74f003ab09b324801cb9041670b82e7f5b4ece14eb6b040f7a439c14faf100d4f450025551503343f19de680477f5be7bad88c2f17e0c65ef8000b753488f57d632fdc4d1698f23742c21c215ce14122bd60d701e7d4e92a2f7d2cc468c7939f267caf407884f000d8d08df185f12203e0cda0e55f82366e61ad0d21338b603dfa51e40b518508ddbd2af626072006d6bc9699a265f796acfbd9d88c82e7c70fcafba7268bee7be1a014abc02d9052751245b9ae0eb11db73a4469a980b02a7350f4bac4eb12d888d5902ee3aa01e59b5dfba1ed070eeb445b69d11cad5c7181864c8aeebc675df90a40d7e20b37936d6eae9c42be01ce3e6d9bf437e9cc0301b02c980d189fb27de8db8a5764190b44321c98852b3c5d13aa90601d7bcf45f52f3cfb44d85567542b9dd3c9b86f1baa04bcb118ada3da2925b604b9dc3045af0863878c86c6f8c4da1aae8b0d208b0103090fd179db41881bcb473cc075316c12dd8f0328b8903ea48462289cb784a9fbb7f73abb476d463e5f3f5943eacc5214efac59fbddcb78e1a96d528ff794000ee88a997968b5677c2abfdcaf49926cb27417fe7c14e510ac27208a22d39ca61249f6816a3337db9dafb39f0eba73fc81d65b33f2a6354d3e375c86cf994d36db32965dd40c1a4cbdc0653e1165f81bed661c2e89738672b9d26f4afe830eb425d15bbfa2beb4c369c3134c0f90c72a528ca69afa1a40432666cc4306b8f0503b9b7f5be811dbc4025465fc44559120be4e97db20fb523708047b9b88a6d546a2068fe1a33060ce052ee6d523a6c328d4609f427012e8b35e8902ff4ba9193bf56b23b72f36685ebca4a29112c89f1618fdbee439a8ff038d1d7bbf02197ac9b5f7b7965ce34ee13b2869063f75439305da9ddc9b4e832ea2cbc8b05ad71fb1d06532b4c9cc53ece89dfb2eddf9b79340a31c1150eb88ba14184bb3ee13d91716f8997e4982dbb9a0257d3d92f382820f50d6fc0aa4ef4f4567d1891a4193885d2389721d3f8a9d1a939340b97da72e1aef4d95ed29907bc51fa5d7b8c0f3f84ef61b3a6c154bc5434b08cd5a21fba08b7a9a09a6cea4cce24a24a82c95cf2963e3d7f32577f328627d5cfab68d712b9116ea006e88ce9a4f8e44ebd382af61a1207217253646b85d0b36bd4e8afca1c7f96de05bc4f37d2d9a6998d14cf64b6b0dd60118af1fb74fe4d8781d1ce33224524ea3146717f9ce8d72d21614c9306f9056c0394e32a146edc05d4d05f1304848c2abeff4960b4affeb80ef47814d959646f509a38b309f3e1b947c4e0d5115e728a33359b7b1d725ff5ef492bea962e5edb7265769d36204e23a9886da8074fa3314815beb83324a45db45b40e01fe9a30c15c399d1c1d2d324a6d4751cc7876f13b134059979559109debd02a72681a7cbfb0e65347d4d33698c1af3706fa05b7885805f7d467c9553ac6b4aee7bc89ff5f987e911c0eedbe622e3d394cda1afca2b4bd7070a7856a690c172f88bb9476360a7e7620382a3176bdae6dbddcfb2f63123de577d2387c31cb6c28ca3396ac19d8b0e3cc906468613e6cbdd4b7ef15a6066279ac74efd6722ca624e6262e9a9316683603037e33dadbf294cd35eee16b7a5587b0223687b1db3ea078c998fed0b2622ad3afdc09e5f4b846bbb0372fc01b7bf94c7992fdd5c2b5926ef138cb1d51d3a0cbef7e10ff27b893def5ab9eb23c1603cca92a00cbd29490cb3c95df7e2a3a47d0b076574e7f3033cb0a4f967fb490249c1534fa54948b26256d17ad8105349ba895a75435286e205b8e8affaf4e6c953938eeb913cf859dfefe5338cacdc8786fed44045315d956befeb76a25c34ff74041b805ee26e8ad5ff854ad9e6acadf3cad187819d3f0b56a239cbf5d434e074773f6f8c001cde0fdd45c9d4e6a8a7dbac25a329b297d704c4663d2952bf24b8524f2076274c0bb4273700c7db2e596312bc723e475b3bb6de9cad3160ed80c116fd64e46d509d28d61aa6ff4290488c1138f245b329bd1e639164a16b29721970f63d7036947f8dd8e03632a8718b5bcf99063d34cdeb1b00b7c47db412007b840648e3db3ddaa3b63e2004f4464d7dcd80b2f0d5f3f0292d4f22ac283c29b26b4f00dd7588cc99c55ce8a206cf7a617bd834501404e0604edc56164407dc111af5fa83aab2b9957086ac955f1a11133bd114aa291f101e6b5587fadae5972b68cbe06250c15b8d8b2e527fbec228795a5d39390f7f533651b95bf997ef4834b1465639b060339926521f6bfbbef8613ff5d197660604cce2b39d068a5fd7abc84342e1e34698674afff828bc622849d179e89468d041dd6b5daa9af5f2a657b82abb74b14b8fdbca612b7def9da167fa9ad64797f2d34757c12587b86cd80b94a2c956ce047f01233b3c08a78d65ba8c257b556982dd1e13ec05986724d1527c0c0f32f75f30cc1bf0d9f27b125a0ecbb940aea41596c033dfbabd214920626eeb215f340029ea6234ae66cf1775ed52af7205ff0bb4f1f2c50274824703d54fef971ade1883e9875cce31f723d6e8a32bf2e7afb6d42c8888ed17477c581b33479711a6dba96337e2bcebd4dea2a9fb65645033f59b95964a886db09f14135fb536fab1da63930ffcaa84369521b4aaeec68bd79935499210b803ef1fb7c4d8061c9d9ee23f88c800b4c742915b26f57abe3fb07940e12d5d5628415afc99271b8f15fe5a4bf62454afcfd94ce8283a6308d60765f7b4b2fd6977e9aebd88d7dfb21e0c953cb92f6103c29f702331bd8a62c0e76cf633d72fd1b81c38489da9c949263f3fd480d8312d5aa9f6df34b5a417da1290baf811a332eece19d60bc019120a5b796ec54e9b8712cb4f3ddd2bd92d9cd43649837e6813762e8e2ee0eb70e8e670b4fcde4357b5694ea14bbfb9284978eedc33fad63c7b2acad97ac8d89dbe69845b2c61e6494620c9cb3ad127ecb275128b81b5b027734c5e9d6e5767f5c9826c2a5dfedf82f2a01a80d6366b45a2586077be6bbe8cb8954b82f88268dc63eb048dbfa98f5638de96cb1e4f93c5ec1c6644f62bf4c1dfbbac796d882428c32237f7eb8d104a1e3eb95d57a27b90888d4d73294242e8b6e1b55d3629fecc5d641a6cfb5f36b1ec8eebd91a7afe56b79686f162c4aded0b1857f0539a3464dca1758eceafd89bff6dbb726dbb56e1ecec67e39b917ecc32f81e47849a6aacd96096f1b2ad30fac323290c405fab419c45cb676743b100bf573260388bdd875db076616026c2bd4aea5f72222a59b62f880f8681968de160204613de8facd011eefd8067997fca7fe0600d46f4eba73aeed08051f8b2b3cf39d1dca0d09455e94dfea92810414844e7b9da862a0c6990edc16d0ab879340466a6be830ffb3b4612471488f2afe96923ce678b797d9e4d3f00ce1d1fd98d30848d77be5fb3c23f019c3d60aa40f53cb0187913ce005966c02a9c156006cd5d0a71d1b27f3e6fc510cd273d58d35f19218a6376e8951af00ce0732112b3fd95159d35bb6d7fa56b33458e5b0db9e208f12ccd04ccc59ff7d8e116d66cb230b9b8e7021e6a6a5002a937f3bfece1d9a929d5db66d37357a865209920f47ffc867c5cfd6444de57c1d1c06c40726420df3f59ffb0a5fa9bcbf2ff4b82494a16383d7b7e9bb8574839e6833943438a31fa80c83438ed26f3f3726dee330f2e5ff77b9c8f46a739c2a3c3360fec5b555dbd1226222d4c3569b04e474e7481f401b56670d78b767f174f90696ee5cdb353b6a12f88e0ea0908af0b671385458f9be1c2d07898c8c13ae7c1c65c20094b561692ec7040a31d9a339e7986020c189712551b3fcbe994d6905eceff540580d95eb07bda66fe91baeecd6c298ad3025a0e01d0f231cdbe2b5efd4ab5b1d7b7581c99f59369655ffce1d517ee6ffaa101ebfc17ed6a16a77467ebc00548dd4a8ea468d5e9d64b608eaea2ad582e3a23133b2d1164891b913dd0083effd98df22cadcb0c35a76563569ca6dca99db25343137f17dabd91e181f34df20bc9cef2cfa86a71dcc062cd26cdb0d4d58e02717e09546479b4d0d2142250a4b3020c178088f570981a37437a8d93add2000000000000000000000000000000000000000000000000030a0f15171f"
+    }
+   },
+   "hash": "44ec42966919a679341eff311f7b399dea2ebfa9d1e67a7e8c6872228f12cb6b",
+   "kind": "authorization",
+   "node": "vehicle",
+   "prev": "b5c0b68cdc8a3eb6da1e933dd9ff5259f1381a6e7b9f181c19a3556f71b3a37b",
+   "seq": 140,
+   "t": 13.6
+  },
+  {
+   "body": {
+    "obstacle": true,
+    "obstacle_distance_m": 16.2,
+    "source": "fusion",
+    "speed_mps": 21.1
+   },
+   "hash": "32101c189ef220938f9bcc47e4427f58d190489aa302e375e39a70f2f497b9f3",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "44ec42966919a679341eff311f7b399dea2ebfa9d1e67a7e8c6872228f12cb6b",
+   "seq": 141,
+   "t": 13.7
+  },
+  {
+   "body": {
+    "brake_pedal": 0.8,
+    "source": "driver",
+    "steering_deg": -4
+   },
+   "hash": "a4f488798ead945db3308d9b94ad2a11295ecd377332344da3f492da5aaae39f",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "32101c189ef220938f9bcc47e4427f58d190489aa302e375e39a70f2f497b9f3",
+   "seq": 142,
+   "t": 13.7
+  },
+  {
+   "body": {
+    "obstacle": true,
+    "obstacle_distance_m": 14.8,
+    "source": "fusion",
+    "speed_mps": 20.2
+   },
+   "hash": "7baa8b519925adec0db713a09b562877ebf572b8a0a8c985464a7ffdd63a549b",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "a4f488798ead945db3308d9b94ad2a11295ecd377332344da3f492da5aaae39f",
+   "seq": 143,
+   "t": 13.8
+  },
+  {
+   "body": {
+    "obstacle": true,
+    "obstacle_distance_m": 13.4,
+    "source": "fusion",
+    "speed_mps": 19.3
+   },
+   "hash": "0896dc4292a71a3e13ad9d48c5b2ae4b2e341dd9d5568c460e1197a9edc7443f",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "7baa8b519925adec0db713a09b562877ebf572b8a0a8c985464a7ffdd63a549b",
+   "seq": 144,
+   "t": 13.9
+  },
+  {
+   "body": {
+    "obstacle": true,
+    "obstacle_distance_m": 12.0,
+    "source": "fusion",
+    "speed_mps": 18.4
+   },
+   "hash": "79fc5e746e3843a38182eb296dbff43b9e2a468e88e9288e50095661d22073a9",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "0896dc4292a71a3e13ad9d48c5b2ae4b2e341dd9d5568c460e1197a9edc7443f",
+   "seq": 145,
+   "t": 14.0
+  },
+  {
+   "body": {
+    "incident": "contact",
+    "speed_mps": 17.5
+   },
+   "hash": "4b4e83e6cedff252c9166e1f6bb1b737896a9f149267c6e2c952e69d3460b5db",
+   "kind": "state",
+   "node": "vehicle",
+   "prev": "79fc5e746e3843a38182eb296dbff43b9e2a468e88e9288e50095661d22073a9",
+   "seq": 146,
+   "t": 14.0
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 10.6,
+    "source": "fusion",
+    "speed_mps": 17.5
+   },
+   "hash": "2a16be1496c568036c382d96fed124fb3088df38227695d33022c5f224cf475b",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "4b4e83e6cedff252c9166e1f6bb1b737896a9f149267c6e2c952e69d3460b5db",
+   "seq": 147,
+   "t": 14.1
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 9.2,
+    "source": "fusion",
+    "speed_mps": 16.6
+   },
+   "hash": "287c7185d49899fd66432e2259b804a7f907bda9a27bd49a892cd2e94b763686",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "2a16be1496c568036c382d96fed124fb3088df38227695d33022c5f224cf475b",
+   "seq": 148,
+   "t": 14.2
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 7.8,
+    "source": "fusion",
+    "speed_mps": 15.7
+   },
+   "hash": "6d26e8ff6ba40999bb8a2da52d29380aafbb8460bec156f09da303a840cd65c4",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "287c7185d49899fd66432e2259b804a7f907bda9a27bd49a892cd2e94b763686",
+   "seq": 149,
+   "t": 14.3
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 6.4,
+    "source": "fusion",
+    "speed_mps": 14.8
+   },
+   "hash": "5bd9ce184fee7fbc766428d2ba064f3652fc8dacd93d2836cc43b94ba2c9ff36",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "6d26e8ff6ba40999bb8a2da52d29380aafbb8460bec156f09da303a840cd65c4",
+   "seq": 150,
+   "t": 14.4
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 5.0,
+    "source": "fusion",
+    "speed_mps": 13.9
+   },
+   "hash": "f887e7eea74b904ae5940fa57b16f04d32438ef2df524c3e5024d1845814b74a",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "5bd9ce184fee7fbc766428d2ba064f3652fc8dacd93d2836cc43b94ba2c9ff36",
+   "seq": 151,
+   "t": 14.5
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 3.6,
+    "source": "fusion",
+    "speed_mps": 13.0
+   },
+   "hash": "3d42fb8a0dd166c3f92fddb353c15e1ca8c3d57a4df9e0e9da67c998941da9dd",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "f887e7eea74b904ae5940fa57b16f04d32438ef2df524c3e5024d1845814b74a",
+   "seq": 152,
+   "t": 14.6
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 2.2,
+    "source": "fusion",
+    "speed_mps": 12.1
+   },
+   "hash": "0e496303a8ffb217f0fb67d99b7f7d993ddf4f6ea273279389be216d26c6f772",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "3d42fb8a0dd166c3f92fddb353c15e1ca8c3d57a4df9e0e9da67c998941da9dd",
+   "seq": 153,
+   "t": 14.7
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 0.8,
+    "source": "fusion",
+    "speed_mps": 11.2
+   },
+   "hash": "a45027029c58955d20bbdec6de0b940f17d5d58a087d51b60456213f9255d64a",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "0e496303a8ffb217f0fb67d99b7f7d993ddf4f6ea273279389be216d26c6f772",
+   "seq": 154,
+   "t": 14.8
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 0.5,
+    "source": "fusion",
+    "speed_mps": 10.3
+   },
+   "hash": "37c0424489aa69b0aaf13dcf7c5c15a86f1fd942f573b2c90236ecd2c588a658",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "a45027029c58955d20bbdec6de0b940f17d5d58a087d51b60456213f9255d64a",
+   "seq": 155,
+   "t": 14.9
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 0.5,
+    "source": "fusion",
+    "speed_mps": 9.4
+   },
+   "hash": "ef388f7d050c3d78ab36eb2278713a462eaf1fdcafa3e8ad42c5447249caa9c3",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "37c0424489aa69b0aaf13dcf7c5c15a86f1fd942f573b2c90236ecd2c588a658",
+   "seq": 156,
+   "t": 15.0
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 0.5,
+    "source": "fusion",
+    "speed_mps": 8.5
+   },
+   "hash": "70509242aef02850c532271ff44ff8a2e37441706ac8c82cdd2f724acfc52e36",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "ef388f7d050c3d78ab36eb2278713a462eaf1fdcafa3e8ad42c5447249caa9c3",
+   "seq": 157,
+   "t": 15.1
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 0.5,
+    "source": "fusion",
+    "speed_mps": 7.6
+   },
+   "hash": "5c9b74c01c1e46e0d3f56e5cfaf4b7e860a68c11244778edd20237604420b692",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "70509242aef02850c532271ff44ff8a2e37441706ac8c82cdd2f724acfc52e36",
+   "seq": 158,
+   "t": 15.2
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 0.5,
+    "source": "fusion",
+    "speed_mps": 6.7
+   },
+   "hash": "fba220c51f6a09570b43ce14b5ce38b8f65d14b847e9131a0d51dc9f8a5cd052",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "5c9b74c01c1e46e0d3f56e5cfaf4b7e860a68c11244778edd20237604420b692",
+   "seq": 159,
+   "t": 15.3
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 0.5,
+    "source": "fusion",
+    "speed_mps": 5.8
+   },
+   "hash": "c53bba74694563e1822d3f6237c5534a2f939efc318a30ac271dc76da57d9419",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "fba220c51f6a09570b43ce14b5ce38b8f65d14b847e9131a0d51dc9f8a5cd052",
+   "seq": 160,
+   "t": 15.4
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 0.5,
+    "source": "fusion",
+    "speed_mps": 4.9
+   },
+   "hash": "0f6492a3f610e1aa793a22f4ff82ddc46dfc13914381d6494988038d05e2da8e",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "c53bba74694563e1822d3f6237c5534a2f939efc318a30ac271dc76da57d9419",
+   "seq": 161,
+   "t": 15.5
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 0.5,
+    "source": "fusion",
+    "speed_mps": 4.0
+   },
+   "hash": "7bbb26a4301199b85c550bf6f4d29352ab8d0108f2d42e539ee29623c7f179f3",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "0f6492a3f610e1aa793a22f4ff82ddc46dfc13914381d6494988038d05e2da8e",
+   "seq": 162,
+   "t": 15.6
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 0.5,
+    "source": "fusion",
+    "speed_mps": 3.1
+   },
+   "hash": "1cb4edc2c367c7ecdb684da47c93425c42f6c6c1e776a53dbb9653b1a2e4f6d8",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "7bbb26a4301199b85c550bf6f4d29352ab8d0108f2d42e539ee29623c7f179f3",
+   "seq": 163,
+   "t": 15.7
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 0.5,
+    "source": "fusion",
+    "speed_mps": 2.2
+   },
+   "hash": "dc12bf3121dbd0c97c2157be75712b15e64099766b8c88304750fc8fe4461de5",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "1cb4edc2c367c7ecdb684da47c93425c42f6c6c1e776a53dbb9653b1a2e4f6d8",
+   "seq": 164,
+   "t": 15.8
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 0.5,
+    "source": "fusion",
+    "speed_mps": 1.3
+   },
+   "hash": "519aa5cc2dc1d1e140a2c5564c9fbb7c0ca8d2e43d26f3d231d92ffa4284389e",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "dc12bf3121dbd0c97c2157be75712b15e64099766b8c88304750fc8fe4461de5",
+   "seq": 165,
+   "t": 15.9
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 0.5,
+    "source": "fusion",
+    "speed_mps": 0.4
+   },
+   "hash": "f19afc0909d0413bdf0104f887d908750f49df5f8580c845141f47da2f81b3d7",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "519aa5cc2dc1d1e140a2c5564c9fbb7c0ca8d2e43d26f3d231d92ffa4284389e",
+   "seq": 166,
+   "t": 16.0
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 0.5,
+    "source": "fusion",
+    "speed_mps": 0.0
+   },
+   "hash": "46f7c3b48f07be6baeb9f826423e63f3bf5ffc325971bfa3c693e328b4c9bbf1",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "f19afc0909d0413bdf0104f887d908750f49df5f8580c845141f47da2f81b3d7",
+   "seq": 167,
+   "t": 16.1
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 0.5,
+    "source": "fusion",
+    "speed_mps": 0.0
+   },
+   "hash": "fd3f94b5348f8d90c653699c65d23174563539b1d2b1502f763fdb3fd7651eae",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "46f7c3b48f07be6baeb9f826423e63f3bf5ffc325971bfa3c693e328b4c9bbf1",
+   "seq": 168,
+   "t": 16.2
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 0.5,
+    "source": "fusion",
+    "speed_mps": 0.0
+   },
+   "hash": "1232e6560c5bc4c1c07ec36c519dc29f199c73613039dbf5241a319077a8fb89",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "fd3f94b5348f8d90c653699c65d23174563539b1d2b1502f763fdb3fd7651eae",
+   "seq": 169,
+   "t": 16.3
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 0.5,
+    "source": "fusion",
+    "speed_mps": 0.0
+   },
+   "hash": "d167a1427e9a444bbfffd0b6689345dfe0004a65c833887a9a7e002bc1d59d72",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "1232e6560c5bc4c1c07ec36c519dc29f199c73613039dbf5241a319077a8fb89",
+   "seq": 170,
+   "t": 16.4
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 0.5,
+    "source": "fusion",
+    "speed_mps": 0.0
+   },
+   "hash": "e2943d3d06817ba675be8558bf1aa3d9fa834ca97b7d44b4e9000652f7e7cca9",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "d167a1427e9a444bbfffd0b6689345dfe0004a65c833887a9a7e002bc1d59d72",
+   "seq": 171,
+   "t": 16.5
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 0.5,
+    "source": "fusion",
+    "speed_mps": 0.0
+   },
+   "hash": "586f0c83328540026ca41e209f19b874be9ed05c4f43e7e6647eba0b3cfc5d52",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "e2943d3d06817ba675be8558bf1aa3d9fa834ca97b7d44b4e9000652f7e7cca9",
+   "seq": 172,
+   "t": 16.6
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 0.5,
+    "source": "fusion",
+    "speed_mps": 0.0
+   },
+   "hash": "fbff35bf7c1d80536b26d8ab4d1106eb116a6753f160fc3a50628e7d9c8f744f",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "586f0c83328540026ca41e209f19b874be9ed05c4f43e7e6647eba0b3cfc5d52",
+   "seq": 173,
+   "t": 16.7
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 0.5,
+    "source": "fusion",
+    "speed_mps": 0.0
+   },
+   "hash": "a43c8d06cfa031d96ee8f59f7a2516939504bdaf0114f045f352bf93ba0afaa6",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "fbff35bf7c1d80536b26d8ab4d1106eb116a6753f160fc3a50628e7d9c8f744f",
+   "seq": 174,
+   "t": 16.8
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 0.5,
+    "source": "fusion",
+    "speed_mps": 0.0
+   },
+   "hash": "9eb163a4e68c3f94949b5817128a4210ea0fe0f53c139be01ec6a8d074bc1265",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "a43c8d06cfa031d96ee8f59f7a2516939504bdaf0114f045f352bf93ba0afaa6",
+   "seq": 175,
+   "t": 16.9
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 0.5,
+    "source": "fusion",
+    "speed_mps": 0.0
+   },
+   "hash": "d58abc7508d4e90c01654e04b97ce852e39bc386d5116c9bce9d2aee5ad00b19",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "9eb163a4e68c3f94949b5817128a4210ea0fe0f53c139be01ec6a8d074bc1265",
+   "seq": 176,
+   "t": 17.0
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 0.5,
+    "source": "fusion",
+    "speed_mps": 0.0
+   },
+   "hash": "45d71a60426a3221567bdbf4c9f4f2c00fab514be6ba157e5d5415ca4017eb06",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "d58abc7508d4e90c01654e04b97ce852e39bc386d5116c9bce9d2aee5ad00b19",
+   "seq": 177,
+   "t": 17.1
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 0.5,
+    "source": "fusion",
+    "speed_mps": 0.0
+   },
+   "hash": "86b4f57d18f6a23c88d85a3f9670718c8237834d99fdd22a511a4dc06f1fb34f",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "45d71a60426a3221567bdbf4c9f4f2c00fab514be6ba157e5d5415ca4017eb06",
+   "seq": 178,
+   "t": 17.2
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 0.5,
+    "source": "fusion",
+    "speed_mps": 0.0
+   },
+   "hash": "826972f6c18fde80605da73d1627ada65c0571c0082c3bfd4b80d72dfb672d01",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "86b4f57d18f6a23c88d85a3f9670718c8237834d99fdd22a511a4dc06f1fb34f",
+   "seq": 179,
+   "t": 17.3
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 0.5,
+    "source": "fusion",
+    "speed_mps": 0.0
+   },
+   "hash": "636987fb8662645b75d8eeb03a35761b81673de578093575ea77acb2ddf1f8f1",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "826972f6c18fde80605da73d1627ada65c0571c0082c3bfd4b80d72dfb672d01",
+   "seq": 180,
+   "t": 17.4
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 0.5,
+    "source": "fusion",
+    "speed_mps": 0.0
+   },
+   "hash": "b0e61703b7dd3f87ae7c8050aa98d1647c35591f0406448b4d9cbee17bd1d9e4",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "636987fb8662645b75d8eeb03a35761b81673de578093575ea77acb2ddf1f8f1",
+   "seq": 181,
+   "t": 17.5
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 0.5,
+    "source": "fusion",
+    "speed_mps": 0.0
+   },
+   "hash": "d9bd634e6ebbec0e9d85472bce8aa740316df41cf60d0831580f3f9de0d39d86",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "b0e61703b7dd3f87ae7c8050aa98d1647c35591f0406448b4d9cbee17bd1d9e4",
+   "seq": 182,
+   "t": 17.6
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 0.5,
+    "source": "fusion",
+    "speed_mps": 0.0
+   },
+   "hash": "5b92883dcc66c0ab58806f2c2416bb953e5c9e1b721b6d38a90193e0c3ded4a7",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "d9bd634e6ebbec0e9d85472bce8aa740316df41cf60d0831580f3f9de0d39d86",
+   "seq": 183,
+   "t": 17.7
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 0.5,
+    "source": "fusion",
+    "speed_mps": 0.0
+   },
+   "hash": "4b59adb718fcbb7e42966d23c88609fb25a14a04ad9816226816f3d82031d4c4",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "5b92883dcc66c0ab58806f2c2416bb953e5c9e1b721b6d38a90193e0c3ded4a7",
+   "seq": 184,
+   "t": 17.8
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 0.5,
+    "source": "fusion",
+    "speed_mps": 0.0
+   },
+   "hash": "ab9a735b99b5fd4f3234380409d51557aa5cc980e7d7a806f1fee06e7540f6ea",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "4b59adb718fcbb7e42966d23c88609fb25a14a04ad9816226816f3d82031d4c4",
+   "seq": 185,
+   "t": 17.9
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 0.5,
+    "source": "fusion",
+    "speed_mps": 0.0
+   },
+   "hash": "f33a1880b7d1517670bdff28567e4c47f46321f64b1df7b79722c046e9c69c73",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "ab9a735b99b5fd4f3234380409d51557aa5cc980e7d7a806f1fee06e7540f6ea",
+   "seq": 186,
+   "t": 18.0
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 0.5,
+    "source": "fusion",
+    "speed_mps": 0.0
+   },
+   "hash": "f3dcae161fa0167acc51e60d75fb62b1a218605a629fa0d8d5d69b8142e99880",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "f33a1880b7d1517670bdff28567e4c47f46321f64b1df7b79722c046e9c69c73",
+   "seq": 187,
+   "t": 18.1
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 0.5,
+    "source": "fusion",
+    "speed_mps": 0.0
+   },
+   "hash": "ff14a1c51e7db78a991e074c98320ded1318515127d05103fdb37580a6cd97a5",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "f3dcae161fa0167acc51e60d75fb62b1a218605a629fa0d8d5d69b8142e99880",
+   "seq": 188,
+   "t": 18.2
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 0.5,
+    "source": "fusion",
+    "speed_mps": 0.0
+   },
+   "hash": "2eebc93054718ed15da759db747cacf892d316e7d1dfdc96df81bc6eab1f6cff",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "ff14a1c51e7db78a991e074c98320ded1318515127d05103fdb37580a6cd97a5",
+   "seq": 189,
+   "t": 18.3
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 0.5,
+    "source": "fusion",
+    "speed_mps": 0.0
+   },
+   "hash": "59e50c468be3b8de739bf32b4463bb79cd97f0ad3f70137c3dcea53b1b545725",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "2eebc93054718ed15da759db747cacf892d316e7d1dfdc96df81bc6eab1f6cff",
+   "seq": 190,
+   "t": 18.4
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 0.5,
+    "source": "fusion",
+    "speed_mps": 0.0
+   },
+   "hash": "31b3cebc5200e13acbb8767070f29430d8543c56cf04a5c91426e1746be8a616",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "59e50c468be3b8de739bf32b4463bb79cd97f0ad3f70137c3dcea53b1b545725",
+   "seq": 191,
+   "t": 18.5
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 0.5,
+    "source": "fusion",
+    "speed_mps": 0.0
+   },
+   "hash": "9d57abe68d16e45fd13c2b41d20002cd95e54cc430d1e1ec8adf9828033d1da0",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "31b3cebc5200e13acbb8767070f29430d8543c56cf04a5c91426e1746be8a616",
+   "seq": 192,
+   "t": 18.6
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 0.5,
+    "source": "fusion",
+    "speed_mps": 0.0
+   },
+   "hash": "0b49da08479b89df56cdcc2f785f28b1c584d20609cf6c82887db36474c65ea5",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "9d57abe68d16e45fd13c2b41d20002cd95e54cc430d1e1ec8adf9828033d1da0",
+   "seq": 193,
+   "t": 18.7
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 0.5,
+    "source": "fusion",
+    "speed_mps": 0.0
+   },
+   "hash": "dc18656c5b4d15732b3a40ef8b0e4ba46759b90c4c4d8a0b5286c5bcacd08834",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "0b49da08479b89df56cdcc2f785f28b1c584d20609cf6c82887db36474c65ea5",
+   "seq": 194,
+   "t": 18.8
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 0.5,
+    "source": "fusion",
+    "speed_mps": 0.0
+   },
+   "hash": "feda60000aa2d7fbd311a1b73e81a87cacff7da07b352c264423e4523db21219",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "dc18656c5b4d15732b3a40ef8b0e4ba46759b90c4c4d8a0b5286c5bcacd08834",
+   "seq": 195,
+   "t": 18.9
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 0.5,
+    "source": "fusion",
+    "speed_mps": 0.0
+   },
+   "hash": "e5e0e33dcd275248d1fa58ce98634ebfb0ca5ccf22857e1ce46bbaed6e98499e",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "feda60000aa2d7fbd311a1b73e81a87cacff7da07b352c264423e4523db21219",
+   "seq": 196,
+   "t": 19.0
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 0.5,
+    "source": "fusion",
+    "speed_mps": 0.0
+   },
+   "hash": "a963485c2458c3a35d3ecef57a56ff302bcfdae3ba05f9b995469a42ff2b767a",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "e5e0e33dcd275248d1fa58ce98634ebfb0ca5ccf22857e1ce46bbaed6e98499e",
+   "seq": 197,
+   "t": 19.1
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 0.5,
+    "source": "fusion",
+    "speed_mps": 0.0
+   },
+   "hash": "b7d1358ba16fe6e6512fca9e94b4743cd0043f1dd1c4a12d08c7f9075db5a201",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "a963485c2458c3a35d3ecef57a56ff302bcfdae3ba05f9b995469a42ff2b767a",
+   "seq": 198,
+   "t": 19.2
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 0.5,
+    "source": "fusion",
+    "speed_mps": 0.0
+   },
+   "hash": "9fb5630b6deacaf37a8006fe09ca6e5fc7a148f401d27c969b7f809e3a133762",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "b7d1358ba16fe6e6512fca9e94b4743cd0043f1dd1c4a12d08c7f9075db5a201",
+   "seq": 199,
+   "t": 19.3
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 0.5,
+    "source": "fusion",
+    "speed_mps": 0.0
+   },
+   "hash": "fff47fec1c4a4c5860274d252d303ca4db6449104b9cf5498bc3e0f1bd7aa8bb",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "9fb5630b6deacaf37a8006fe09ca6e5fc7a148f401d27c969b7f809e3a133762",
+   "seq": 200,
+   "t": 19.4
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 0.5,
+    "source": "fusion",
+    "speed_mps": 0.0
+   },
+   "hash": "13d16619709a99f4523c186228367f0dcb6175d369efe8e0380cd1a5c276a27a",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "fff47fec1c4a4c5860274d252d303ca4db6449104b9cf5498bc3e0f1bd7aa8bb",
+   "seq": 201,
+   "t": 19.5
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 0.5,
+    "source": "fusion",
+    "speed_mps": 0.0
+   },
+   "hash": "f4cde80bae10232d928fb1ee4418938a59815916922f16a82c969859072b873c",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "13d16619709a99f4523c186228367f0dcb6175d369efe8e0380cd1a5c276a27a",
+   "seq": 202,
+   "t": 19.6
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 0.5,
+    "source": "fusion",
+    "speed_mps": 0.0
+   },
+   "hash": "ad13ae45231ebe81f4c1e523918ac86db915c2caa312256627dfb6e44365dfb7",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "f4cde80bae10232d928fb1ee4418938a59815916922f16a82c969859072b873c",
+   "seq": 203,
+   "t": 19.7
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 0.5,
+    "source": "fusion",
+    "speed_mps": 0.0
+   },
+   "hash": "d42feb0043a8115cd1a5e8cd1be70746be5a9ca11a82a49ab38f5d2bccf1e576",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "ad13ae45231ebe81f4c1e523918ac86db915c2caa312256627dfb6e44365dfb7",
+   "seq": 204,
+   "t": 19.8
+  },
+  {
+   "body": {
+    "obstacle": false,
+    "obstacle_distance_m": 0.5,
+    "source": "fusion",
+    "speed_mps": 0.0
+   },
+   "hash": "c75d245473470f8f105f9f7bb5ee4a04e6461d0647552560c5fbb1599e8433c0",
+   "kind": "observation",
+   "node": "vehicle",
+   "prev": "d42feb0043a8115cd1a5e8cd1be70746be5a9ca11a82a49ab38f5d2bccf1e576",
+   "seq": 205,
+   "t": 19.9
+  }
+ ]
+}

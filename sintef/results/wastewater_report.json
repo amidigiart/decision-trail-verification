@@ -1,0 +1,216 @@
+{
+ "attacks_on_B": {
+  "delete_the_explanation_shown": {
+   "detected": 20,
+   "trials": 20
+  },
+  "insider_automatic_authorization_outside_policy": {
+   "detected": 20,
+   "trials": 20
+  },
+  "relabel_human_decision_as_automatic": {
+   "detected": 20,
+   "trials": 20
+  },
+  "remove_the_policy_record": {
+   "detected": 20,
+   "trials": 20
+  }
+ },
+ "baseline_assumptions": [
+  "a SCADA historian keeps sensor values, alarms and setpoint changes",
+  "one model prediction is logged per step, without uncertainty and without model version",
+  "the operator is named in free text; no signature",
+  "dismissed recommendations and the explanation shown to the operator are not logged",
+  "no write-once storage; an engine that sets a setpoint directly is not stopped by the historian"
+ ],
+ "elements": [
+  "input",
+  "model_outputs",
+  "uncertainty",
+  "explanation_shown",
+  "who_decided",
+  "resulting_state"
+ ],
+ "limit_mg_per_l": 8.0,
+ "max_auto_uncertainty": 1.0,
+ "not_a_model_of": "Veas or any real plant; process and numbers are invented",
+ "scenario": "wastewater denitrification, AI-supported carbon dosing under an oversight policy",
+ "scenarios": {
+  "degraded_sensor": {
+   "A": {
+    "explanation_shown": 14,
+    "input": 27,
+    "model_outputs": 0,
+    "resulting_state": 27,
+    "uncertainty": 0,
+    "who_decided": 26
+   },
+   "B": {
+    "explanation_shown": 27,
+    "input": 27,
+    "model_outputs": 27,
+    "resulting_state": 27,
+    "uncertainty": 27,
+    "who_decided": 27
+   },
+   "B_verifier_ok_runs": 10,
+   "automatic_action_under_high_uncertainty": {
+    "A": 0,
+    "B": 0
+   },
+   "automatic_decisions": 14,
+   "decisions": 27,
+   "human_decisions": 13,
+   "what": "nitrate sensor noise x4 during the storm"
+  },
+  "model_disagreement": {
+   "A": {
+    "explanation_shown": 10,
+    "input": 50,
+    "model_outputs": 0,
+    "resulting_state": 50,
+    "uncertainty": 0,
+    "who_decided": 20
+   },
+   "B": {
+    "explanation_shown": 50,
+    "input": 50,
+    "model_outputs": 50,
+    "resulting_state": 50,
+    "uncertainty": 50,
+    "who_decided": 50
+   },
+   "B_verifier_ok_runs": 10,
+   "automatic_action_under_high_uncertainty": {
+    "A": 0,
+    "B": 0
+   },
+   "automatic_decisions": 10,
+   "decisions": 50,
+   "human_decisions": 40,
+   "what": "the data-driven model reacts late"
+  },
+  "model_update": {
+   "A": {
+    "explanation_shown": 12,
+    "input": 24,
+    "model_outputs": 0,
+    "resulting_state": 24,
+    "uncertainty": 0,
+    "who_decided": 24
+   },
+   "B": {
+    "explanation_shown": 24,
+    "input": 24,
+    "model_outputs": 24,
+    "resulting_state": 24,
+    "uncertainty": 24,
+    "who_decided": 24
+   },
+   "B_verifier_ok_runs": 10,
+   "automatic_action_under_high_uncertainty": {
+    "A": 0,
+    "B": 0
+   },
+   "automatic_decisions": 12,
+   "decisions": 24,
+   "human_decisions": 12,
+   "what": "hybrid model retrained mid-run (new version)"
+  },
+  "normal": {
+   "A": {
+    "explanation_shown": 10,
+    "input": 20,
+    "model_outputs": 0,
+    "resulting_state": 20,
+    "uncertainty": 0,
+    "who_decided": 20
+   },
+   "B": {
+    "explanation_shown": 20,
+    "input": 20,
+    "model_outputs": 20,
+    "resulting_state": 20,
+    "uncertainty": 20,
+    "who_decided": 20
+   },
+   "B_verifier_ok_runs": 10,
+   "automatic_action_under_high_uncertainty": {
+    "A": 0,
+    "B": 0
+   },
+   "automatic_decisions": 10,
+   "decisions": 20,
+   "human_decisions": 10,
+   "what": "storm inflow raises effluent nitrate; models agree, low uncertainty"
+  },
+  "novel_load": {
+   "A": {
+    "explanation_shown": 19,
+    "input": 83,
+    "model_outputs": 0,
+    "resulting_state": 83,
+    "uncertainty": 0,
+    "who_decided": 80
+   },
+   "B": {
+    "explanation_shown": 83,
+    "input": 83,
+    "model_outputs": 83,
+    "resulting_state": 83,
+    "uncertainty": 83,
+    "who_decided": 83
+   },
+   "B_verifier_ok_runs": 10,
+   "automatic_action_under_high_uncertainty": {
+    "A": 0,
+    "B": 0
+   },
+   "automatic_decisions": 19,
+   "decisions": 83,
+   "human_decisions": 64,
+   "what": "industrial load outside the training range"
+  },
+  "rogue_policy_engine": {
+   "A": {
+    "explanation_shown": 22,
+    "input": 106,
+    "model_outputs": 0,
+    "resulting_state": 106,
+    "uncertainty": 0,
+    "who_decided": 106
+   },
+   "B": {
+    "explanation_shown": 106,
+    "input": 106,
+    "model_outputs": 106,
+    "resulting_state": 106,
+    "uncertainty": 106,
+    "who_decided": 106
+   },
+   "B_verifier_ok_runs": 10,
+   "automatic_action_under_high_uncertainty": {
+    "A": 10,
+    "B": 0
+   },
+   "automatic_decisions": 22,
+   "decisions": 106,
+   "human_decisions": 84,
+   "what": "the policy engine acts automatically under high uncertainty"
+  }
+ },
+ "seeds": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9
+ ],
+ "steps_per_run": 240
+}

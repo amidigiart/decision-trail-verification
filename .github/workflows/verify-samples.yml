@@ -30,7 +30,7 @@ jobs:
           set -u
           fail=0
           check() {  # check <dir> <expected exit> <trail> <witness> <keys>
-            ( cd "$1" && python verify.py "$3" "$4" "$5" > /dev/null ); got=$?
+            got=0; ( cd "$1" && python verify.py "$3" "$4" "$5" > /dev/null ) || got=$?
             if [ "$got" -eq "$2" ]; then echo "ok   $1/$3 (exit $got)"; else echo "FAIL $1/$3 (exit $got, expected $2)"; fail=1; fi
           }
           check . 0 samples/normal_trail.json samples/normal_witness.json samples/authority_public_key.txt

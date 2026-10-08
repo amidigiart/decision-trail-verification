@@ -13,6 +13,7 @@ jobs:
       fail-fast: false
       matrix:
         os: [ubuntu-latest, windows-latest, macos-latest]
+        pqcrypto: ["pqcrypto==0.4.0", "pqcrypto"]  # the version the pack was built with, and the latest
     runs-on: ${{ matrix.os }}
     defaults:
       run:
@@ -22,7 +23,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: python -m pip install --disable-pip-version-check cryptography pqcrypto
+      - run: python -m pip install --disable-pip-version-check cryptography "${{ matrix.pqcrypto }}"
       - name: documented commands
         env:
           PYTHONIOENCODING: utf-8

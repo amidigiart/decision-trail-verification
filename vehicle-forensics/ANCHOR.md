@@ -46,3 +46,21 @@ It proves that these files existed in this exact form no later than that block. 
 results are correct.
 
 This file records the root, so it is not listed in `SHA256SUMS.txt`.
+
+
+## Version note (8 October 2026): verifier updated for pqcrypto 1.0
+
+`pqcrypto` 1.0, released after this folder was anchored, changed how ML-DSA verification reports success: it
+returns nothing and raises on a bad signature, where earlier versions returned `True` or `False`. With a fresh
+`pip install pqcrypto`, the anchored `verify.py` therefore rejected valid hybrid signatures. The signatures and
+the data are unchanged; only two lines of `verify.py` that read the library's answer were changed, so it works
+with both behaviours.
+
+| | `verify.py` SHA-256 |
+|---|---|
+| anchored version (git commit `6a008841d94360113b7db9927d63bfbf65ddc2cd`) | `f0f0ff713b291a1bfed7737d898ddd0dcab9a20cbbbda934f0fd563815061bb0` |
+| current version | `8ee51b61d39155e239ce37a8ab223937dcfc4298e760a4a1ca9fe69d231a407c` |
+
+`SHA256SUMS.txt` now lists the current `verify.py`. The anchored files, including the anchored `verify.py`,
+remain retrievable at commit `6a008841d94360113b7db9927d63bfbf65ddc2cd`, and their root still matches the anchor above. The new version will be
+timestamped in the next batch.

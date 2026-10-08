@@ -80,7 +80,8 @@ def _sig_error(body: dict, keys: dict, algs: list[str]) -> str | None:
                 Ed25519PublicKey.from_public_bytes(bytes.fromhex(key)).verify(bytes.fromhex(sig), msg)
             elif alg == "ml-dsa-65":
                 from pqcrypto.sign import ml_dsa_65
-                if not ml_dsa_65.verify(bytes.fromhex(key), msg, bytes.fromhex(sig)):
+                # pqcrypto < 1.0 returns True/False; pqcrypto >= 1.0 returns None and raises on a bad signature
+                if ml_dsa_65.verify(bytes.fromhex(key), msg, bytes.fromhex(sig)) is False:
                     return "ml-dsa-65 signature does not verify"
             else:
                 return f"unknown signature algorithm {alg}"

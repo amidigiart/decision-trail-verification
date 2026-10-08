@@ -1,0 +1,661 @@
+{
+ "attack_on_unwitnessed_tail": {
+  "detected": 0,
+  "trials": 200,
+  "unwitnessed_records_reported_by_verifier": [
+   10
+  ]
+ },
+ "attacks_on_A": "not run: the baseline as assumed has no integrity mechanism, so none of these edits is detectable by construction (a write-once store would change this for deletion and edits)",
+ "attacks_on_B": {
+  "change_model_hash": {
+   "detected": 200,
+   "trials": 200
+  },
+  "delete_record": {
+   "detected": 200,
+   "trials": 200
+  },
+  "downgrade_profile": {
+   "detected": 200,
+   "trials": 200
+  },
+  "forge_authorization": {
+   "detected": 200,
+   "trials": 200
+  },
+  "full_rewrite_with_new_checkpoints": {
+   "detected": 200,
+   "trials": 200
+  },
+  "modify_observation_value": {
+   "detected": 200,
+   "trials": 200
+  },
+  "reorder_records": {
+   "detected": 200,
+   "trials": 200
+  },
+  "replay_authorization": {
+   "detected": 200,
+   "trials": 200
+  },
+  "truncate_end": {
+   "detected": 200,
+   "trials": 200
+  }
+ },
+ "baseline_assumptions": [
+  "telemetry kept in a time-series store keyed by the sensor timestamp (no arrival time)",
+  "JSON log lines for alerts, actions and state changes; only the detector that alerts is logged",
+  "detectors are named in logs without a version or hash",
+  "the authorizing operator is recorded by name in free text, without a signature",
+  "a partitioned edge node keeps at most 16 log lines and 16 telemetry points",
+  "no write-once storage and no integrity protection on logs (a WORM store would change tamper results)"
+ ],
+ "checkpoint_every": 32,
+ "demonstrator": "verifiable decision trail, VTT pilot A",
+ "profile": "v2-hybrid",
+ "profiles": {
+  "v1-classic": {
+   "merkle": "sha256/leaf00-node01/promote-odd",
+   "record_hash": "sha256",
+   "sig": [
+    "ed25519"
+   ]
+  },
+  "v2-hybrid": {
+   "merkle": "sha256/leaf00-node01/promote-odd",
+   "record_hash": "sha256",
+   "sig": [
+    "ed25519",
+    "ml-dsa-65"
+   ]
+  }
+ },
+ "quantum_forgery": {
+  "v1-classic": {
+   "append_backdated": {
+    "detected": 200,
+    "trials": 200
+   },
+   "append_now": {
+    "detected": 0,
+    "trials": 200
+   },
+   "insert_into_witnessed_past": {
+    "detected": 200,
+    "trials": 200
+   }
+  },
+  "v2-hybrid": {
+   "append_backdated": {
+    "detected": 200,
+    "trials": 200
+   },
+   "append_now": {
+    "detected": 200,
+    "trials": 200
+   },
+   "insert_into_witnessed_past": {
+    "detected": 200,
+    "trials": 200
+   }
+  }
+ },
+ "quantum_forgery_model": "after a cryptographically relevant quantum computer the attacker holds the operator's Ed25519 key (Shor), not the ML-DSA-65 key; a forged authorization and action are inserted in the witnessed past, appended with a past time, or appended now",
+ "scenarios": {
+  "conflicting": {
+   "A_reconstructed": {
+    "authorization": 28,
+    "decision": 28,
+    "evidence": 28,
+    "input": 28,
+    "model_output": 28,
+    "resulting_state": 28
+   },
+   "A_verifiable": {
+    "authorization": 0,
+    "decision": 0,
+    "evidence": 0,
+    "input": 0,
+    "model_output": 0,
+    "resulting_state": 0
+   },
+   "B_reconstructed": {
+    "authorization": 28,
+    "decision": 28,
+    "evidence": 28,
+    "input": 28,
+    "model_output": 28,
+    "resulting_state": 28
+   },
+   "B_verifiable": {
+    "authorization": 28,
+    "decision": 28,
+    "evidence": 28,
+    "input": 28,
+    "model_output": 28,
+    "resulting_state": 28
+   },
+   "B_verifier_ok_runs": 10,
+   "decisions": 28,
+   "disagreements": {
+    "A": 9,
+    "B": 9,
+    "true": 9
+   },
+   "expected_to_fail": null,
+   "partition": null,
+   "unauthorized_actions_executed": {
+    "A": 10,
+    "B": 0
+   },
+   "what": "latency_b reports normal values during the incident"
+  },
+  "corrupted_metadata": {
+   "A_reconstructed": {
+    "authorization": 26,
+    "decision": 26,
+    "evidence": 16,
+    "input": 16,
+    "model_output": 26,
+    "resulting_state": 26
+   },
+   "A_verifiable": {
+    "authorization": 0,
+    "decision": 0,
+    "evidence": 0,
+    "input": 0,
+    "model_output": 0,
+    "resulting_state": 0
+   },
+   "B_reconstructed": {
+    "authorization": 26,
+    "decision": 26,
+    "evidence": 26,
+    "input": 26,
+    "model_output": 26,
+    "resulting_state": 26
+   },
+   "B_verifiable": {
+    "authorization": 26,
+    "decision": 26,
+    "evidence": 26,
+    "input": 26,
+    "model_output": 26,
+    "resulting_state": 26
+   },
+   "B_verifier_ok_runs": 10,
+   "decisions": 26,
+   "disagreements": {
+    "A": 8,
+    "B": 8,
+    "true": 8
+   },
+   "expected_to_fail": null,
+   "partition": null,
+   "unauthorized_actions_executed": {
+    "A": 10,
+    "B": 0
+   },
+   "what": "observations arrive without sensor id"
+  },
+  "delayed_data": {
+   "A_reconstructed": {
+    "authorization": 28,
+    "decision": 28,
+    "evidence": 7,
+    "input": 7,
+    "model_output": 17,
+    "resulting_state": 28
+   },
+   "A_verifiable": {
+    "authorization": 0,
+    "decision": 0,
+    "evidence": 0,
+    "input": 0,
+    "model_output": 0,
+    "resulting_state": 0
+   },
+   "B_reconstructed": {
+    "authorization": 28,
+    "decision": 28,
+    "evidence": 28,
+    "input": 28,
+    "model_output": 28,
+    "resulting_state": 28
+   },
+   "B_verifiable": {
+    "authorization": 28,
+    "decision": 28,
+    "evidence": 28,
+    "input": 28,
+    "model_output": 28,
+    "resulting_state": 28
+   },
+   "B_verifier_ok_runs": 10,
+   "decisions": 28,
+   "disagreements": {
+    "A": 71,
+    "B": 71,
+    "true": 71
+   },
+   "expected_to_fail": null,
+   "partition": null,
+   "unauthorized_actions_executed": {
+    "A": 10,
+    "B": 0
+   },
+   "what": "latency_a values arrive 6 steps late"
+  },
+  "edge_node_lost": {
+   "A_reconstructed": {
+    "authorization": 31,
+    "decision": 31,
+    "evidence": 31,
+    "input": 31,
+    "model_output": 31,
+    "resulting_state": 31
+   },
+   "A_verifiable": {
+    "authorization": 0,
+    "decision": 0,
+    "evidence": 0,
+    "input": 0,
+    "model_output": 0,
+    "resulting_state": 0
+   },
+   "B_reconstructed": {
+    "authorization": 31,
+    "decision": 31,
+    "evidence": 31,
+    "input": 31,
+    "model_output": 31,
+    "resulting_state": 31
+   },
+   "B_verifiable": {
+    "authorization": 31,
+    "decision": 31,
+    "evidence": 31,
+    "input": 31,
+    "model_output": 31,
+    "resulting_state": 31
+   },
+   "B_verifier_ok_runs": 10,
+   "decisions": 31,
+   "disagreements": {
+    "A": 11,
+    "B": 11,
+    "true": 11
+   },
+   "expected_to_fail": "a node destroyed during a partition takes its unwitnessed local records with it",
+   "partition": {
+    "edge_entries_A": 460,
+    "edge_records_B": 520,
+    "recovered_A": 0,
+    "recovered_B": 0
+   },
+   "unauthorized_actions_executed": {
+    "A": 10,
+    "B": 0
+   },
+   "what": "edge node destroyed during the partition"
+  },
+  "model_disagreement": {
+   "A_reconstructed": {
+    "authorization": 62,
+    "decision": 62,
+    "evidence": 62,
+    "input": 62,
+    "model_output": 62,
+    "resulting_state": 62
+   },
+   "A_verifiable": {
+    "authorization": 0,
+    "decision": 0,
+    "evidence": 0,
+    "input": 0,
+    "model_output": 0,
+    "resulting_state": 0
+   },
+   "B_reconstructed": {
+    "authorization": 62,
+    "decision": 62,
+    "evidence": 62,
+    "input": 62,
+    "model_output": 62,
+    "resulting_state": 62
+   },
+   "B_verifiable": {
+    "authorization": 62,
+    "decision": 62,
+    "evidence": 62,
+    "input": 62,
+    "model_output": 62,
+    "resulting_state": 62
+   },
+   "B_verifier_ok_runs": 10,
+   "decisions": 62,
+   "disagreements": {
+    "A": 263,
+    "B": 263,
+    "true": 263
+   },
+   "expected_to_fail": null,
+   "partition": null,
+   "unauthorized_actions_executed": {
+    "A": 10,
+    "B": 0
+   },
+   "what": "weaker incident on which the detectors disagree"
+  },
+  "normal": {
+   "A_reconstructed": {
+    "authorization": 24,
+    "decision": 24,
+    "evidence": 24,
+    "input": 24,
+    "model_output": 24,
+    "resulting_state": 24
+   },
+   "A_verifiable": {
+    "authorization": 0,
+    "decision": 0,
+    "evidence": 0,
+    "input": 0,
+    "model_output": 0,
+    "resulting_state": 0
+   },
+   "B_reconstructed": {
+    "authorization": 24,
+    "decision": 24,
+    "evidence": 24,
+    "input": 24,
+    "model_output": 24,
+    "resulting_state": 24
+   },
+   "B_verifiable": {
+    "authorization": 24,
+    "decision": 24,
+    "evidence": 24,
+    "input": 24,
+    "model_output": 24,
+    "resulting_state": 24
+   },
+   "B_verifier_ok_runs": 10,
+   "decisions": 24,
+   "disagreements": {
+    "A": 5,
+    "B": 5,
+    "true": 5
+   },
+   "expected_to_fail": null,
+   "partition": null,
+   "unauthorized_actions_executed": {
+    "A": 10,
+    "B": 0
+   },
+   "what": "incident under normal conditions"
+  },
+  "partition": {
+   "A_reconstructed": {
+    "authorization": 32,
+    "decision": 32,
+    "evidence": 32,
+    "input": 32,
+    "model_output": 32,
+    "resulting_state": 32
+   },
+   "A_verifiable": {
+    "authorization": 0,
+    "decision": 0,
+    "evidence": 0,
+    "input": 0,
+    "model_output": 0,
+    "resulting_state": 0
+   },
+   "B_reconstructed": {
+    "authorization": 32,
+    "decision": 32,
+    "evidence": 32,
+    "input": 32,
+    "model_output": 32,
+    "resulting_state": 32
+   },
+   "B_verifiable": {
+    "authorization": 32,
+    "decision": 32,
+    "evidence": 32,
+    "input": 32,
+    "model_output": 32,
+    "resulting_state": 32
+   },
+   "B_verifier_ok_runs": 10,
+   "decisions": 32,
+   "disagreements": {
+    "A": 17,
+    "B": 17,
+    "true": 17
+   },
+   "expected_to_fail": null,
+   "partition": {
+    "edge_entries_A": 462,
+    "edge_records_B": 522,
+    "recovered_A": 320,
+    "recovered_B": 522
+   },
+   "unauthorized_actions_executed": {
+    "A": 10,
+    "B": 0
+   },
+   "what": "edge node cut off from the centre"
+  },
+  "source_loss": {
+   "A_reconstructed": {
+    "authorization": 25,
+    "decision": 25,
+    "evidence": 25,
+    "input": 25,
+    "model_output": 25,
+    "resulting_state": 25
+   },
+   "A_verifiable": {
+    "authorization": 0,
+    "decision": 0,
+    "evidence": 0,
+    "input": 0,
+    "model_output": 0,
+    "resulting_state": 0
+   },
+   "B_reconstructed": {
+    "authorization": 25,
+    "decision": 25,
+    "evidence": 25,
+    "input": 25,
+    "model_output": 25,
+    "resulting_state": 25
+   },
+   "B_verifiable": {
+    "authorization": 25,
+    "decision": 25,
+    "evidence": 25,
+    "input": 25,
+    "model_output": 25,
+    "resulting_state": 25
+   },
+   "B_verifier_ok_runs": 10,
+   "decisions": 25,
+   "disagreements": {
+    "A": 5,
+    "B": 5,
+    "true": 5
+   },
+   "expected_to_fail": null,
+   "partition": null,
+   "unauthorized_actions_executed": {
+    "A": 10,
+    "B": 0
+   },
+   "what": "packet-loss source silent during the incident"
+  },
+  "spoofed_sensors": {
+   "A_reconstructed": {
+    "authorization": 12,
+    "decision": 12,
+    "evidence": 12,
+    "input": 12,
+    "model_output": 12,
+    "resulting_state": 12
+   },
+   "A_verifiable": {
+    "authorization": 0,
+    "decision": 0,
+    "evidence": 0,
+    "input": 0,
+    "model_output": 0,
+    "resulting_state": 0
+   },
+   "B_reconstructed": {
+    "authorization": 12,
+    "decision": 12,
+    "evidence": 12,
+    "input": 12,
+    "model_output": 12,
+    "resulting_state": 12
+   },
+   "B_verifiable": {
+    "authorization": 12,
+    "decision": 12,
+    "evidence": 12,
+    "input": 12,
+    "model_output": 12,
+    "resulting_state": 12
+   },
+   "B_verifier_ok_runs": 10,
+   "decisions": 12,
+   "disagreements": {
+    "A": 14,
+    "B": 14,
+    "true": 14
+   },
+   "expected_to_fail": "every source lies: both configurations faithfully record a wrong picture; a timestamp proves a record existed, not that it was true",
+   "partition": null,
+   "unauthorized_actions_executed": {
+    "A": 10,
+    "B": 0
+   },
+   "what": "every source lies (reports normal) during the incident"
+  },
+  "state_change": {
+   "A_reconstructed": {
+    "authorization": 34,
+    "decision": 34,
+    "evidence": 15,
+    "input": 34,
+    "model_output": 15,
+    "resulting_state": 34
+   },
+   "A_verifiable": {
+    "authorization": 0,
+    "decision": 0,
+    "evidence": 0,
+    "input": 0,
+    "model_output": 0,
+    "resulting_state": 0
+   },
+   "B_reconstructed": {
+    "authorization": 34,
+    "decision": 34,
+    "evidence": 34,
+    "input": 34,
+    "model_output": 34,
+    "resulting_state": 34
+   },
+   "B_verifiable": {
+    "authorization": 34,
+    "decision": 34,
+    "evidence": 34,
+    "input": 34,
+    "model_output": 34,
+    "resulting_state": 34
+   },
+   "B_verifier_ok_runs": 10,
+   "decisions": 34,
+   "disagreements": {
+    "A": 5,
+    "B": 19,
+    "true": 19
+   },
+   "expected_to_fail": null,
+   "partition": null,
+   "unauthorized_actions_executed": {
+    "A": 10,
+    "B": 0
+   },
+   "what": "detector M1 updated to a new version during the incident"
+  },
+  "stolen_key": {
+   "A_reconstructed": {
+    "authorization": 29,
+    "decision": 29,
+    "evidence": 29,
+    "input": 29,
+    "model_output": 29,
+    "resulting_state": 29
+   },
+   "A_verifiable": {
+    "authorization": 0,
+    "decision": 0,
+    "evidence": 0,
+    "input": 0,
+    "model_output": 0,
+    "resulting_state": 0
+   },
+   "B_reconstructed": {
+    "authorization": 29,
+    "decision": 29,
+    "evidence": 29,
+    "input": 29,
+    "model_output": 29,
+    "resulting_state": 29
+   },
+   "B_verifiable": {
+    "authorization": 29,
+    "decision": 29,
+    "evidence": 29,
+    "input": 29,
+    "model_output": 29,
+    "resulting_state": 29
+   },
+   "B_verifier_ok_runs": 10,
+   "decisions": 29,
+   "disagreements": {
+    "A": 10,
+    "B": 10,
+    "true": 10
+   },
+   "expected_to_fail": "a valid signature from a stolen key is indistinguishable from the operator's: the destructive action is executed and verifies; only key custody (hardware) helps",
+   "partition": null,
+   "unauthorized_actions_executed": {
+    "A": 20,
+    "B": 10
+   },
+   "what": "an attacker holds the operator key and authorizes a destructive action"
+  }
+ },
+ "seeds": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9
+ ],
+ "steps_per_run": 120,
+ "version": 2
+}

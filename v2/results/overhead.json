@@ -1,0 +1,44 @@
+{
+ "machine": "Windows AMD64 / Python 3.14.3",
+ "append_us_per_record": {
+  "median": 19.71,
+  "max_of_repeats": 23.75
+ },
+ "verify_us_per_record": {
+  "median": 19.53,
+  "max_of_repeats": 21.01
+ },
+ "storage_bytes_one_run": {
+  "A": 20717,
+  "B": 276997,
+  "ratio_B_over_A": 13.37,
+  "A_gzip": 17645,
+  "B_gzip": 51571,
+  "ratio_gzip": 2.92
+ },
+ "storage_note": "A counts log lines plus 48 bytes per time-series point (an assumption); B is the canonical JSON of every record, uncompressed",
+ "signatures": {
+  "ed25519": {
+   "signature_bytes": 64,
+   "sign_us_median": 48.5,
+   "verify_us_median": 133.6
+  },
+  "ml-dsa-65": {
+   "signature_bytes": 3309,
+   "sign_us_median": 739.3,
+   "verify_us_median": 219.1,
+   "public_key_bytes": 1952
+  }
+ },
+ "storage_one_run_per_profile": {
+  "v1-classic": {
+   "bytes": 257062,
+   "gzip": 39280
+  },
+  "v2-hybrid": {
+   "bytes": 276997,
+   "gzip": 51609
+  }
+ },
+ "energy": "not measured (no energy counter available on this machine); to be measured on VTT hardware"
+}

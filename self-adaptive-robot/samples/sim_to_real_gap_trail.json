@@ -1,0 +1,3034 @@
+{
+ "checkpoints": [
+  {
+   "count": 32,
+   "first_seq": 0,
+   "head": "b12a41010c83b9c4459901e8c197d0345776d2912abe0d36d8fa5d07462a46bf",
+   "last_seq": 31,
+   "node": "cell",
+   "root": "1b827e356fbada1eee3338402d642f829479926cdc095e61f0bb889836e605c8",
+   "t": 23
+  },
+  {
+   "count": 32,
+   "first_seq": 32,
+   "head": "af8e7b1622f8e5b753c2a4d513b22c8b32698327eaf8966c4a77e894565d1fa4",
+   "last_seq": 63,
+   "node": "cell",
+   "root": "30a97b0671f75bd461a3dbd3de71f4c55efaf48e37ea7d9c197e4f0df8acd396",
+   "t": 50
+  },
+  {
+   "count": 32,
+   "first_seq": 64,
+   "head": "2528e6467ac6f66fbf3c6602c9f7822b42909801ae6933f96e7b41e74810a777",
+   "last_seq": 95,
+   "node": "cell",
+   "root": "f99b79e620883624b32ed38f779d560f046fa93d7d7644110eb2c99781025089",
+   "t": 80
+  },
+  {
+   "count": 32,
+   "first_seq": 96,
+   "head": "f9a6f716697731f0de72b19b785ee6b59101179de444d30107f1fe068edcda42",
+   "last_seq": 127,
+   "node": "cell",
+   "root": "845467ce530363aa87f8ec680696090623a5dc32b7c56c46d0ae704dd0d5989d",
+   "t": 112
+  },
+  {
+   "count": 32,
+   "first_seq": 128,
+   "head": "e0646c8b056e6097eceefb58a83ea56c3b98c24945727c92acbff0fef4764324",
+   "last_seq": 159,
+   "node": "cell",
+   "root": "9ae5cd02938d99f1bdad151e6f7ba51e9fa2312d1ca2bd5d571400ef34caceb9",
+   "t": 137
+  },
+  {
+   "count": 32,
+   "first_seq": 160,
+   "head": "a8f0326caedfa0563ae947a2bfc9f4c2c26a60eec243d1302b5cf39cb235ee05",
+   "last_seq": 191,
+   "node": "cell",
+   "root": "f70eb055e86575b03bdb73581f4309140b13a7e592116c61048244819b433e2d",
+   "t": 169
+  },
+  {
+   "count": 30,
+   "first_seq": 192,
+   "head": "465f518f3cacc45493394e062857de82435d8f4091f673bd331adbb8b5cf1679",
+   "last_seq": 221,
+   "node": "cell",
+   "root": "ed815eb01183f7de0a11ba50078e14548281d98f6196054be17cb051d0244222",
+   "t": 200
+  }
+ ],
+ "node": "cell",
+ "profile": {
+  "merkle": "sha256/leaf00-node01/promote-odd",
+  "record_hash": "sha256",
+  "sig": [
+   "ed25519",
+   "ml-dsa-65"
+  ]
+ },
+ "profile_name": "v2-hybrid",
+ "records": [
+  {
+   "body": {
+    "auto_policy": {
+     "max_uncertainty": 1.0,
+     "signer": "adaptation-manager"
+    },
+    "limit_newton": 150.0,
+    "speed_scale": 1.0
+   },
+   "hash": "728060c808716a4e5f43997b5eebe3f84c48d13d97e2d1a6699ae1ace957135c",
+   "kind": "state",
+   "node": "cell",
+   "prev": "0000000000000000000000000000000000000000000000000000000000000000",
+   "seq": 0,
+   "t": 0
+  },
+  {
+   "body": {
+    "human_distance_m": 2.06,
+    "payload_kg": 2.0,
+    "source": "cell"
+   },
+   "hash": "8f6167127e8663e99f97c08862eeb00480f6025a16fd5c9fa9dbc632a3e85af7",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "728060c808716a4e5f43997b5eebe3f84c48d13d97e2d1a6699ae1ace957135c",
+   "seq": 1,
+   "t": 0
+  },
+  {
+   "body": {
+    "alert": false,
+    "evidence": [
+     "8f6167127e8663e99f97c08862eeb00480f6025a16fd5c9fa9dbc632a3e85af7"
+    ],
+    "model": "digital-twin",
+    "model_hash": "bf7d49be904b2796ee65be1b67cca26ddf3dd79dcef4dfdedb9b8cb9d8e075b4",
+    "plan_speed": 1.0,
+    "prediction": 100.6,
+    "uncertainty": 0.3
+   },
+   "hash": "c384c17aa84ebcfcec5d4569feac5bba7c7cc1f9ec9f176434a8e2711b55790f",
+   "kind": "inference",
+   "node": "cell",
+   "prev": "8f6167127e8663e99f97c08862eeb00480f6025a16fd5c9fa9dbc632a3e85af7",
+   "seq": 2,
+   "t": 0
+  },
+  {
+   "body": {
+    "alert": false,
+    "evidence": [
+     "8f6167127e8663e99f97c08862eeb00480f6025a16fd5c9fa9dbc632a3e85af7"
+    ],
+    "model": "safety-monitor",
+    "model_hash": "1b021dbb98b4df5af458ede50622e1f0fffa0157fbc4ed92c75a3234d9a63b90",
+    "plan_speed": 1.0,
+    "prediction": 100.99,
+    "uncertainty": 0.409
+   },
+   "hash": "7c051bce4aab06e3f2e19c1cc8f4d8adac5748c26cc353c46c8a3057a5cab9f2",
+   "kind": "inference",
+   "node": "cell",
+   "prev": "c384c17aa84ebcfcec5d4569feac5bba7c7cc1f9ec9f176434a8e2711b55790f",
+   "seq": 3,
+   "t": 0
+  },
+  {
+   "body": {
+    "action": "set_speed_scale 1.0",
+    "agree": true,
+    "inferences": [
+     "c384c17aa84ebcfcec5d4569feac5bba7c7cc1f9ec9f176434a8e2711b55790f",
+     "7c051bce4aab06e3f2e19c1cc8f4d8adac5748c26cc353c46c8a3057a5cab9f2"
+    ],
+    "max_uncertainty": 0.409
+   },
+   "hash": "4ca83b386ad0d0b1e2b73e83e70f700260d947aa96b5e272b8d235ac44107d48",
+   "kind": "recommendation",
+   "node": "cell",
+   "prev": "7c051bce4aab06e3f2e19c1cc8f4d8adac5748c26cc353c46c8a3057a5cab9f2",
+   "seq": 4,
+   "t": 0
+  },
+  {
+   "body": {
+    "action": "set_speed_scale 1.0",
+    "authorizes": "4ca83b386ad0d0b1e2b73e83e70f700260d947aa96b5e272b8d235ac44107d48",
+    "by": "adaptation-manager",
+    "sig_alg": [
+     "ed25519",
+     "ml-dsa-65"
+    ],
+    "signatures": {
+     "ed25519": "72bbe8a67d29c76bd5cc67e49a05d62e89c74233a15b27b876d68d10dfb18a98306258cb22a89e9a1ae5ff5e12ce7ffaa6c9430c01b5b643d44a4ab2a4b16d08",
+     "ml-dsa-65": "37c85e309a1e0768a3d2fe02283403020e25a392b62eccc3078b7bde1ad95acc680c8b6646174cd01d5abba05774bfb0ab7eb4531c717a30588959770ebd0c497dc9b9cee98c717c9b5427db77e5a04daecda3c4fdb37dc794107c5357c4caeba840059617a2c2a2b9989e17de36f877cbee7bcca466aa04e1e493ecda737d70a5545bd80efed830c32dd006ad494dfa638b546aa16386f81f6a99e417afe622429e8cf9bc33074b4ec994046be3aedbde7ddc8b4ecb3dbc6cc5134ad5eb5fd21ab1c57a4f756899ae64430303c896034f3b82968d0d07deb3019692ff39b4c14b129eed38b0cb1bd795bcb4194d4a3e4dd48bd9f06b94ed21bafa9af4b0a5545a12412ff57ed84c6b45ebe10788589341eec36600016c039ddd83604cd4d37cdfe1de59a3109280d4c112595773a3ba2c0b3b507f83d8a7e4929b633f5ee3c214e6d6dfec5e1fe5f6d7fa5a27f094749258cdbdc091949d68b66bc1256a113e1d28625d7f5826f23372eeb4486539b0981297cb98202f481387adb478da4e4d22706ed3f490195fa5b633d7ca12335f92b4229017941e6d2cbe3da7a21b736976bcdc2dc7c4781e746e044f965712e3dfd9fe7e07cc3ced6d71c283e565e103bcbaf3395d1dfd7ec3842d7deb93eea19d6ce1ce901185b8535f3d88e20b167cf36ae3d7e96bddff113633735779148a8500838dfbfb888d034b1c874678c086b0f6c6dec53cb0e3c2b2df5ba1fabce81de1d70c74b3c92b90ec5f248b350a122a89029dd36cab0faecfa18456760b60f27504e3611b998a2c4b0d465dcbbbb609411613b0dff668c36d1ae4556b584e32a0ae5c44a0b1d99a4bc69f9dde7b25e4554c2552de7afcec55f7ad0762d033f3bcba527f95585459e1c4a39c6f407c9d746eeaf098e720b60b7bc2115c842a932125e09f558469db4e7a4f3526d31b9a9ff95ec4e89668066f77c123932aa76cf6d6b30adf79cbbf8162fac9ae3a32767d8f89e6ca883f5ad22c46e6ebe4c83a86fa3350568cd96410bef0a6b9517595989d8de43b9fec59c5317867be97dcd732438b1faede16a3184d3f82ff76a9758a612c804feffcd712cd37ff03f137f529cbcae09b9a704f8cceb475cf8edf47f62fef7be0f7edb0c71eb104e1f9374207ed5c3501122d3f5149ca22279ccac399efda282408478a1e2df8a9a27c33b24cb24ccabdde27d3d4ee7c85eedefe727907a46c369b3a611e939a0942860c1d5514d32411160835e3240bf130490f25fefc274ec34a1698c8c42444b9d8e8ca6ccf050247d0f2d03b55087fbd264b9700015d314cb5a77f00db28fe61d68b001cd869ac6e331e08e4c17a8fefc32a55ebe0256a7a86a2919a46cd851e02cb139ba8c35c99084b39ade6781cc2269966a19e413d989f4e7c6cd9e54748313dfba61e3f42ff24d98a203069623a53e318207310cc423369aa6c9d3622d3f90bdd8e3e26b97eb7ed227638ea58babe91032a20063c8cdb2edb0e1f6d8e3a6310032a063c03bf0905aaf3073bc5fce96547120cc1d76c15f56149c2cc42195a46e6ea080835c0d9bc0228797aab23172fc88d8bdb1f4e4efb441dc93ee8f23088872713d5b43ae2c53ffd1e7604225d49c2b50472f3a650d5cea53f32987741f8367c708e43635c120ce0040edd7032075c122517a8b1345fbf269f752b5269590865036da88d3f22d48460ade3d1455e04e8fb31e3903f6fa50dd87cc6e35009413f574bd6d2ab5c7eeab223215ee5f0f51f839b4b022ce63af6e330a9fc91a596cc8844d6316ca94713d2b6bae0e23eb22650c44776f0cc8b62f02497c02331679814f01d3ea6fe2efd412b9a24a3b625e444fb6c027c44ef1fc723c68d5e140e4566793c8a9ea516768a1d5c4302159f0168e9ce725efc37d4efae33b771ec0bd748eb3218112e0583648342b557ac7664650f9c4fc02e3ecca80eb0e754c205aad16a6dad069ee7ca33e32f8b73c16bcfaa741cf70fa030c5cd4f130e31fafa9dc4b92f6fa0237b5bd77bb19188126a4e136dd9b460c233f7e8a6b2a979cb73e26903210e06e2bc5ed510355b4b90646bacbbfaf86bc618ad4a6613dab95b128380f7e19a1704b799f12beb98e8fe480d793555d99913ddb09cfbe0b36a13cc761760acf61e312191917de58c93f5630cf2e368bfbb2c2642ccf7fa5c34aeee9d099f80b75cca4945166baa3d6ae41ba042744807b51e5d0a5b88626f650157efd8852f5da2d1e3feb9d1188b989bdaaddf5f20d21512c9c4fac8dae02e91a96bea79c0dca3cfbce45804ed517af70b5ee92888e970f10420f96c8bc7365c2c58cd28e5cd6698bcc757a4915036a3cbefd85e29920f178ca8cd2693825b188fcfd626c05329853838dabac9fdc14c99f1bd924f055ef3639dd3f739b259195ab078206c1c20121b8f01a167e22f9e01222f6c804a6bdeee55e71e46c3a1179ae019884feec57137c2300abacda1b4994024f2b95ce68caf493177d78d7e3388e8c3562b59f5a0664b35fcd0f8f8944f0d583b7b38116ea8f70b5084b2f3286e6275de9faffdc2cd874e8264d0802a7b62c2c0c23ad21bf3b5249a4f7bbe61dcc9272be7c4b0fcf96f8bf6f87c4f6b3ceb264ee3bdbcab9701ce0359a60d58dbab9b805c04eab63167a46175aabfab81ddf0da5af4ac82c73f8e2a628b7ff07d07ff63fab7161ba269abeab6fc3ed39c8917c2f51effeb43356b99889c5a5f6965f96ddb978874423a4c49fd908e4090d1e380b9e07e2116cf61fec015d46a9e31510e059acc1b438af3772cbcae56fa6dac28a1a4985f172be2c077ff8b99e5c051d38dcc49f63af9c91d69a34784e38a71be245f5efddaf7b0fa66ed37f1f1b37bb7892891ce57f2017c2b6b30cdc5dad5aeffe9b682edc33f75baae20a7f72a7c6d5b53878271e9ac4b7dd4dc1308b799e8bd8b93caadb102f4aba362f705fe65ef95fd79268e1dfa091b8194a029bef087359a4cd983253b777e47319633e797246c54815716b86bfb5d327cca89039666e2c184e60a55b964cd4285eb3d5f5e88065ac9cfd2d469850c972037a8b1fc08387e2f4b5b174ff95de111bbd0e96d4300e734b3782b9af648b31df6cc2aa9555b4697d3fea0863f5f519fd130a1605b2aa95180d2bf0f3bb33a960c66679e11009daad3d9cd3e66199dc8671178bf8d6137819185e862d32565617726294d34e9f979b857466f4ace4e4eb3718699d10b8bd25f935a29ec9ab713aa4beec6ce2779275d447c635134aebc56d1f5894179a2ae41e83b821a59c5f9975022f5223e25d65ae6fd4b1f108684676bdcc70624b2dede2284021f39faf76be289536d11ef37a491bf1cb5effb4033abedb8aeb823877df424034303d607c37df51de8d2cd03c712bc25ed6dacbdde8b6aed7b49b24f0d0216f58636a96b3da256fc9035ecddf42980a4c1157e0950ea62e059c3f818f1e4dbc7feffecf9f0a2f316e4641d15f1d859f61f30f6e71049704bf2402201e0ccce976979e4a23251e42a17381ea51f89fe2ff66608b8a4c747f9bf98e8cc9b34b7dda176a1529d54d704c6e243171a84187f37b35a48d48a37b939369038ac3a2d3d29bd7dcfc8cda2a683975943253a662dec55299788244d4fe59ba4e10473d0235a85d85c7b7374ee962fce9c52ef161f3d539715f15dc64300b42f36991aae6c7ad2afde541c13a8ae54c261d5dc3e0fa735c8de03436cd5247980516405b3fcc0468658dfcb2a3e16aa9d05878e09ce86660478820a6016500e415dc3658191d656eb78bb7cd570baf8ddaf4f42cbf31968d6fa07469f3591b5b758b3f0e5db144e83d9125d2ad420fd949a6bc75732759c134dc561e5d9df9edc8e825f32c7fb21814a1ad9bb18d26c46394d50faf2f294135b25c7c026129e8a7a2e5916f29c719c4f23baa261ab50a1ea2ac8cf8953c60ab0f8ec3eb1b2d890e8c3df9528281292c2008dd459587922c823dfea7f6bde09343a7bd841525acf9daf556dc4554028346a76742945dec289c0f1d0e6b8f7f6a4a3e1ff503a5dc67314fd43de6451f0a134f3424956951b435ea884312ce3e6c55374eca2403da4eb7bc357a41ca84f56fca11a4c3631588448253fbe42abad0b47382c1fdfb566d09a89311bf7bb64154345bebeecbb1664f8f6cb4cccc83ead2a662fffa1dc0e4dff9145f2e8e96ffdcf1a3eee51f877cfbe1d9ff959a2bd087adeb22a1f79a1676693a5fced2448bd930c6cf58c8f137e0e6bfdf6472d0ef1ef858211e72172689ecbb226ae4788681c0c667b9335bd0f8bb30a31e606e93bdcb198373eb83a0731b073e2ff3cb0ac61eafe1fb82a65d5c383aaede1d3eb5e6cbfc60f9ac1eead73cab6c23edda803eebd32867b952820cea5257d6bf233d3e154b22c13e929fd5d6b337fe2f51f0dc1d576a94318886c41bfb91738f4ba7536c5f9eab4457a32c8c18704015afd1aad19bb127a3d063a7173e8ade05b1325c0db61a43ecba96436fcb2e333baed0243084a39733594f87cfeb0ba1b8e8474b2b5d3a59cbcbeb9fc22ff95b2d3e7e461fdb23c51e0dc4f00794b6707f074ecb10a6579c8f802101c213031616f73d4d7ea17225671a4aab0e4092d587394b2fb1037575edcfc295f70aab9c9cee800000000000000000005111920262e"
+    }
+   },
+   "hash": "d592cbaa10b0616b043f32f0691a82e4b2e0b025270852ef5f184158b5ca5039",
+   "kind": "authorization",
+   "node": "cell",
+   "prev": "4ca83b386ad0d0b1e2b73e83e70f700260d947aa96b5e272b8d235ac44107d48",
+   "seq": 5,
+   "t": 0
+  },
+  {
+   "body": {
+    "action": "set_speed_scale 1.0",
+    "authorization": "d592cbaa10b0616b043f32f0691a82e4b2e0b025270852ef5f184158b5ca5039"
+   },
+   "hash": "69bdbc53d8392695c79f5f426fb2e54d4c3d0ecd28b4321e3f41296ab46ec240",
+   "kind": "action",
+   "node": "cell",
+   "prev": "d592cbaa10b0616b043f32f0691a82e4b2e0b025270852ef5f184158b5ca5039",
+   "seq": 6,
+   "t": 0
+  },
+  {
+   "body": {
+    "after": "69bdbc53d8392695c79f5f426fb2e54d4c3d0ecd28b4321e3f41296ab46ec240",
+    "speed_scale": 1.0
+   },
+   "hash": "a02601dd947c168004df057158a23e852b8109030318cd392e68f0ee1186dff9",
+   "kind": "state",
+   "node": "cell",
+   "prev": "69bdbc53d8392695c79f5f426fb2e54d4c3d0ecd28b4321e3f41296ab46ec240",
+   "seq": 7,
+   "t": 0
+  },
+  {
+   "body": {
+    "exceeds_limit": false,
+    "first_cycle_peak_n": 120.4,
+    "source": "force_check"
+   },
+   "hash": "9cc4fc6df459de6d20c99e65240f31e8b81bc775085106ed8c7870369a418e92",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "a02601dd947c168004df057158a23e852b8109030318cd392e68f0ee1186dff9",
+   "seq": 8,
+   "t": 0
+  },
+  {
+   "body": {
+    "human_distance_m": 1.93,
+    "payload_kg": 2.0,
+    "source": "cell"
+   },
+   "hash": "b2a212849777b767241b481c7022bb21579ec827a8f07720b5fd28ab3d660d49",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "9cc4fc6df459de6d20c99e65240f31e8b81bc775085106ed8c7870369a418e92",
+   "seq": 9,
+   "t": 1
+  },
+  {
+   "body": {
+    "human_distance_m": 1.79,
+    "payload_kg": 2.0,
+    "source": "cell"
+   },
+   "hash": "104cf896e7d40b61d24254e003d21f6262d0217b8802670e5829cc5a75c9b7b9",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "b2a212849777b767241b481c7022bb21579ec827a8f07720b5fd28ab3d660d49",
+   "seq": 10,
+   "t": 2
+  },
+  {
+   "body": {
+    "human_distance_m": 1.91,
+    "payload_kg": 2.0,
+    "source": "cell"
+   },
+   "hash": "500523e9a6431ea9fdd89f17371e02e7914f3d513504e0c97c24d95b35e02c3c",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "104cf896e7d40b61d24254e003d21f6262d0217b8802670e5829cc5a75c9b7b9",
+   "seq": 11,
+   "t": 3
+  },
+  {
+   "body": {
+    "human_distance_m": 1.94,
+    "payload_kg": 2.0,
+    "source": "cell"
+   },
+   "hash": "3909f5abd30328e4aaad2f8197e99f8786a2b027683f9227b28885de7f1c809d",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "500523e9a6431ea9fdd89f17371e02e7914f3d513504e0c97c24d95b35e02c3c",
+   "seq": 12,
+   "t": 4
+  },
+  {
+   "body": {
+    "human_distance_m": 2.01,
+    "payload_kg": 2.0,
+    "source": "cell"
+   },
+   "hash": "d476fec11ff53ad6edcfeeead15a43e752bc259199a9019a03a11eee85181f0a",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "3909f5abd30328e4aaad2f8197e99f8786a2b027683f9227b28885de7f1c809d",
+   "seq": 13,
+   "t": 5
+  },
+  {
+   "body": {
+    "human_distance_m": 1.94,
+    "payload_kg": 2.0,
+    "source": "cell"
+   },
+   "hash": "9fd6122d0b98d4483a8db59572aeb68e70b6dee9584ff43696af6bbf72f29767",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "d476fec11ff53ad6edcfeeead15a43e752bc259199a9019a03a11eee85181f0a",
+   "seq": 14,
+   "t": 6
+  },
+  {
+   "body": {
+    "human_distance_m": 1.79,
+    "payload_kg": 2.0,
+    "source": "cell"
+   },
+   "hash": "566a6baea264c434b469712621c5979978d51673c7b2607408e8bd2c01a7cf94",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "9fd6122d0b98d4483a8db59572aeb68e70b6dee9584ff43696af6bbf72f29767",
+   "seq": 15,
+   "t": 7
+  },
+  {
+   "body": {
+    "human_distance_m": 1.94,
+    "payload_kg": 2.0,
+    "source": "cell"
+   },
+   "hash": "f5e010c4e45c753d5f814883e2ba3191e18f271582bd1c49b0ab4c3f5c4c75c9",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "566a6baea264c434b469712621c5979978d51673c7b2607408e8bd2c01a7cf94",
+   "seq": 16,
+   "t": 8
+  },
+  {
+   "body": {
+    "human_distance_m": 1.83,
+    "payload_kg": 2.0,
+    "source": "cell"
+   },
+   "hash": "d070cd168fc0c7dfb998ff0e32e3424d12ccb4ecff9d259f9f09e5eb226536de",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "f5e010c4e45c753d5f814883e2ba3191e18f271582bd1c49b0ab4c3f5c4c75c9",
+   "seq": 17,
+   "t": 9
+  },
+  {
+   "body": {
+    "human_distance_m": 2.05,
+    "payload_kg": 2.0,
+    "source": "cell"
+   },
+   "hash": "7102b254e2d694aae23095c46285effecab65aaf8addd328f52d42155958cb6b",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "d070cd168fc0c7dfb998ff0e32e3424d12ccb4ecff9d259f9f09e5eb226536de",
+   "seq": 18,
+   "t": 10
+  },
+  {
+   "body": {
+    "human_distance_m": 2.24,
+    "payload_kg": 2.0,
+    "source": "cell"
+   },
+   "hash": "1709c369a6788909c79ba6f8be94cbd308e796d0b67d22f1092a0932e6753b57",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "7102b254e2d694aae23095c46285effecab65aaf8addd328f52d42155958cb6b",
+   "seq": 19,
+   "t": 11
+  },
+  {
+   "body": {
+    "human_distance_m": 1.91,
+    "payload_kg": 2.0,
+    "source": "cell"
+   },
+   "hash": "7f17e6d42247e226d2e789dad831502dbb6baca5f707fa4c35ee395f36460a79",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "1709c369a6788909c79ba6f8be94cbd308e796d0b67d22f1092a0932e6753b57",
+   "seq": 20,
+   "t": 12
+  },
+  {
+   "body": {
+    "human_distance_m": 1.97,
+    "payload_kg": 2.0,
+    "source": "cell"
+   },
+   "hash": "f4cf07fdb550e73ee91d0cbdc6a5c11b64902166dbb8ecd93cea0e85e788fd32",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "7f17e6d42247e226d2e789dad831502dbb6baca5f707fa4c35ee395f36460a79",
+   "seq": 21,
+   "t": 13
+  },
+  {
+   "body": {
+    "human_distance_m": 2.0,
+    "payload_kg": 2.0,
+    "source": "cell"
+   },
+   "hash": "58282a234239fa24d0d34aef6f4a5035a762170779ec198d37a10dacc86329c5",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "f4cf07fdb550e73ee91d0cbdc6a5c11b64902166dbb8ecd93cea0e85e788fd32",
+   "seq": 22,
+   "t": 14
+  },
+  {
+   "body": {
+    "human_distance_m": 1.94,
+    "payload_kg": 2.0,
+    "source": "cell"
+   },
+   "hash": "68f7131a09105028044b11ab9a69bed308d2fe115e3d07c714b5da935bb73921",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "58282a234239fa24d0d34aef6f4a5035a762170779ec198d37a10dacc86329c5",
+   "seq": 23,
+   "t": 15
+  },
+  {
+   "body": {
+    "human_distance_m": 1.85,
+    "payload_kg": 2.0,
+    "source": "cell"
+   },
+   "hash": "7aa993d4f24b519b67dd7cc29cf6ae511494b242f565a3f8cfb60144f0d80bb1",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "68f7131a09105028044b11ab9a69bed308d2fe115e3d07c714b5da935bb73921",
+   "seq": 24,
+   "t": 16
+  },
+  {
+   "body": {
+    "human_distance_m": 2.09,
+    "payload_kg": 2.0,
+    "source": "cell"
+   },
+   "hash": "44ca9517e38385f737f5d098d02d5ac525a2b0f755fe9e84e3f9164efb835f22",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "7aa993d4f24b519b67dd7cc29cf6ae511494b242f565a3f8cfb60144f0d80bb1",
+   "seq": 25,
+   "t": 17
+  },
+  {
+   "body": {
+    "human_distance_m": 2.15,
+    "payload_kg": 2.0,
+    "source": "cell"
+   },
+   "hash": "8c4539e8e727470f3bb4e0f3e72ca5f991aa24fa77263fb1a72b7e4c40bff181",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "44ca9517e38385f737f5d098d02d5ac525a2b0f755fe9e84e3f9164efb835f22",
+   "seq": 26,
+   "t": 18
+  },
+  {
+   "body": {
+    "human_distance_m": 2.06,
+    "payload_kg": 2.0,
+    "source": "cell"
+   },
+   "hash": "3d0d6130ae0f19fae343dcd10d5299c9c05577de01879b506cb22f2b6e5ce556",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "8c4539e8e727470f3bb4e0f3e72ca5f991aa24fa77263fb1a72b7e4c40bff181",
+   "seq": 27,
+   "t": 19
+  },
+  {
+   "body": {
+    "human_distance_m": 2.21,
+    "payload_kg": 2.0,
+    "source": "cell"
+   },
+   "hash": "bb9571bc056ea3f24624109f4e26562cdbebd3be397dad3d95b6234b3ce9905e",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "3d0d6130ae0f19fae343dcd10d5299c9c05577de01879b506cb22f2b6e5ce556",
+   "seq": 28,
+   "t": 20
+  },
+  {
+   "body": {
+    "human_distance_m": 2.11,
+    "payload_kg": 2.0,
+    "source": "cell"
+   },
+   "hash": "c8465df8fa77e3e45aa377fd669ca8e8ad527ce028b8bd00441089f063311852",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "bb9571bc056ea3f24624109f4e26562cdbebd3be397dad3d95b6234b3ce9905e",
+   "seq": 29,
+   "t": 21
+  },
+  {
+   "body": {
+    "human_distance_m": 1.94,
+    "payload_kg": 2.0,
+    "source": "cell"
+   },
+   "hash": "ce435dae261af6adf89a4a8f5f79f0ab49223e3eea84735273e7587725a2708b",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "c8465df8fa77e3e45aa377fd669ca8e8ad527ce028b8bd00441089f063311852",
+   "seq": 30,
+   "t": 22
+  },
+  {
+   "body": {
+    "human_distance_m": 2.0,
+    "payload_kg": 2.0,
+    "source": "cell"
+   },
+   "hash": "b12a41010c83b9c4459901e8c197d0345776d2912abe0d36d8fa5d07462a46bf",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "ce435dae261af6adf89a4a8f5f79f0ab49223e3eea84735273e7587725a2708b",
+   "seq": 31,
+   "t": 23
+  },
+  {
+   "body": {
+    "human_distance_m": 2.11,
+    "payload_kg": 2.0,
+    "source": "cell"
+   },
+   "hash": "aee8333874e191e6c8b1374616788ba361608c892b10a2ea68ca7483dfc3de01",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "b12a41010c83b9c4459901e8c197d0345776d2912abe0d36d8fa5d07462a46bf",
+   "seq": 32,
+   "t": 24
+  },
+  {
+   "body": {
+    "human_distance_m": 1.87,
+    "payload_kg": 2.0,
+    "source": "cell"
+   },
+   "hash": "030860762fdda0f744ac9ee160654e53df632984c2a8f220edf4dcda7835f2be",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "aee8333874e191e6c8b1374616788ba361608c892b10a2ea68ca7483dfc3de01",
+   "seq": 33,
+   "t": 25
+  },
+  {
+   "body": {
+    "human_distance_m": 1.97,
+    "payload_kg": 2.0,
+    "source": "cell"
+   },
+   "hash": "08a98c969016009287f0aa9b1d7f931d941f1d47886a223d8c3fe919d84e121d",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "030860762fdda0f744ac9ee160654e53df632984c2a8f220edf4dcda7835f2be",
+   "seq": 34,
+   "t": 26
+  },
+  {
+   "body": {
+    "human_distance_m": 1.99,
+    "payload_kg": 2.0,
+    "source": "cell"
+   },
+   "hash": "393e76e617e4e0a7b112b8f89165b3c3bc97564a80f8e1d7fe1fbe98c4f2df0a",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "08a98c969016009287f0aa9b1d7f931d941f1d47886a223d8c3fe919d84e121d",
+   "seq": 35,
+   "t": 27
+  },
+  {
+   "body": {
+    "human_distance_m": 2.03,
+    "payload_kg": 2.0,
+    "source": "cell"
+   },
+   "hash": "23eb6f1ee03e2e3a4fe25a0d51f50a7471744262bf54723687e2db18ef0f1200",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "393e76e617e4e0a7b112b8f89165b3c3bc97564a80f8e1d7fe1fbe98c4f2df0a",
+   "seq": 36,
+   "t": 28
+  },
+  {
+   "body": {
+    "human_distance_m": 1.85,
+    "payload_kg": 2.0,
+    "source": "cell"
+   },
+   "hash": "3997f6c93ce2d6e7f4b74867f9494a33ea67bd96fa4829626bf424bdad50c566",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "23eb6f1ee03e2e3a4fe25a0d51f50a7471744262bf54723687e2db18ef0f1200",
+   "seq": 37,
+   "t": 29
+  },
+  {
+   "body": {
+    "human_distance_m": 2.14,
+    "payload_kg": 2.0,
+    "source": "cell"
+   },
+   "hash": "3c9014f1db096da0c2eaa8ea3a3beadada7a07a83c32b047f6ea39c1970fd10d",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "3997f6c93ce2d6e7f4b74867f9494a33ea67bd96fa4829626bf424bdad50c566",
+   "seq": 38,
+   "t": 30
+  },
+  {
+   "body": {
+    "human_distance_m": 2.06,
+    "payload_kg": 2.0,
+    "source": "cell"
+   },
+   "hash": "312e34c46955f85a4e0068be0a0438710dbe5fbd894ddaf6a60eec988f7dc913",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "3c9014f1db096da0c2eaa8ea3a3beadada7a07a83c32b047f6ea39c1970fd10d",
+   "seq": 39,
+   "t": 31
+  },
+  {
+   "body": {
+    "human_distance_m": 2.02,
+    "payload_kg": 2.0,
+    "source": "cell"
+   },
+   "hash": "a05eb2623ec22572538fef94a9c8eb80ca932298babe275e4d87732c985fe93e",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "312e34c46955f85a4e0068be0a0438710dbe5fbd894ddaf6a60eec988f7dc913",
+   "seq": 40,
+   "t": 32
+  },
+  {
+   "body": {
+    "human_distance_m": 1.97,
+    "payload_kg": 2.0,
+    "source": "cell"
+   },
+   "hash": "347adb991f2d3796c78277417e1bd12e3cc7cd9828ef9aee55bfa868039fdaf0",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "a05eb2623ec22572538fef94a9c8eb80ca932298babe275e4d87732c985fe93e",
+   "seq": 41,
+   "t": 33
+  },
+  {
+   "body": {
+    "human_distance_m": 2.14,
+    "payload_kg": 2.0,
+    "source": "cell"
+   },
+   "hash": "f5d6ebf935e998d592067ae8b1a8bb957196a9fc04831d953e148f0eabe77b53",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "347adb991f2d3796c78277417e1bd12e3cc7cd9828ef9aee55bfa868039fdaf0",
+   "seq": 42,
+   "t": 34
+  },
+  {
+   "body": {
+    "human_distance_m": 2.05,
+    "payload_kg": 2.0,
+    "source": "cell"
+   },
+   "hash": "47c329a7e2f2b9dfdb7b68f85411ad8ad15945b0a23cf2caf10237d8fe07922a",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "f5d6ebf935e998d592067ae8b1a8bb957196a9fc04831d953e148f0eabe77b53",
+   "seq": 43,
+   "t": 35
+  },
+  {
+   "body": {
+    "human_distance_m": 1.78,
+    "payload_kg": 2.0,
+    "source": "cell"
+   },
+   "hash": "04ff8fe7dc5cf0f32b0ef2c534ffc57583198a6d5cb21445e2fb4bacecbb7c12",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "47c329a7e2f2b9dfdb7b68f85411ad8ad15945b0a23cf2caf10237d8fe07922a",
+   "seq": 44,
+   "t": 36
+  },
+  {
+   "body": {
+    "human_distance_m": 2.07,
+    "payload_kg": 2.0,
+    "source": "cell"
+   },
+   "hash": "782a3683d220e4d43487239ea21f680f99d6ed3ff793266d8d818d580d007ad7",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "04ff8fe7dc5cf0f32b0ef2c534ffc57583198a6d5cb21445e2fb4bacecbb7c12",
+   "seq": 45,
+   "t": 37
+  },
+  {
+   "body": {
+    "human_distance_m": 2.07,
+    "payload_kg": 2.0,
+    "source": "cell"
+   },
+   "hash": "98d002f3fb7c4783be9517068c26f298a17a00bbb77632baccdfbebd177453b2",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "782a3683d220e4d43487239ea21f680f99d6ed3ff793266d8d818d580d007ad7",
+   "seq": 46,
+   "t": 38
+  },
+  {
+   "body": {
+    "human_distance_m": 1.96,
+    "payload_kg": 2.0,
+    "source": "cell"
+   },
+   "hash": "e0bec81a2ca3b43e9de1eaafd81531882191a9c2f8d15fa3ebcc922195aa089f",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "98d002f3fb7c4783be9517068c26f298a17a00bbb77632baccdfbebd177453b2",
+   "seq": 47,
+   "t": 39
+  },
+  {
+   "body": {
+    "human_distance_m": 2.02,
+    "payload_kg": 2.0,
+    "source": "cell"
+   },
+   "hash": "bea31136fa327289b22e2cf3f8e3da81100dacf29908eb0bf1ed66bdd65c098f",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "e0bec81a2ca3b43e9de1eaafd81531882191a9c2f8d15fa3ebcc922195aa089f",
+   "seq": 48,
+   "t": 40
+  },
+  {
+   "body": {
+    "human_distance_m": 2.06,
+    "payload_kg": 2.0,
+    "source": "cell"
+   },
+   "hash": "b8163e953a0990520f646e44694f3ceb7af8345ffd546350c9919c78718aea4f",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "bea31136fa327289b22e2cf3f8e3da81100dacf29908eb0bf1ed66bdd65c098f",
+   "seq": 49,
+   "t": 41
+  },
+  {
+   "body": {
+    "human_distance_m": 2.18,
+    "payload_kg": 2.0,
+    "source": "cell"
+   },
+   "hash": "0cd22fb1ee04991fafc2e50312675a9dc35471644586de52b6855c2a2c611e2a",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "b8163e953a0990520f646e44694f3ceb7af8345ffd546350c9919c78718aea4f",
+   "seq": 50,
+   "t": 42
+  },
+  {
+   "body": {
+    "human_distance_m": 2.07,
+    "payload_kg": 2.0,
+    "source": "cell"
+   },
+   "hash": "32449df0c40ea956fd3e2d136b59aa119eed94051c39d4efa636ee4b67bddce8",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "0cd22fb1ee04991fafc2e50312675a9dc35471644586de52b6855c2a2c611e2a",
+   "seq": 51,
+   "t": 43
+  },
+  {
+   "body": {
+    "human_distance_m": 1.91,
+    "payload_kg": 2.0,
+    "source": "cell"
+   },
+   "hash": "9a36549ddab75b95030548059d413e4f704f7e19d4053d4f5faa864c3f27da0d",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "32449df0c40ea956fd3e2d136b59aa119eed94051c39d4efa636ee4b67bddce8",
+   "seq": 52,
+   "t": 44
+  },
+  {
+   "body": {
+    "human_distance_m": 2.04,
+    "payload_kg": 2.0,
+    "source": "cell"
+   },
+   "hash": "5119781538e5679a927ce0e1072c538c7290152ec72d4c73865766f364124a63",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "9a36549ddab75b95030548059d413e4f704f7e19d4053d4f5faa864c3f27da0d",
+   "seq": 53,
+   "t": 45
+  },
+  {
+   "body": {
+    "human_distance_m": 2.07,
+    "payload_kg": 2.0,
+    "source": "cell"
+   },
+   "hash": "1db122e80fbbed5d656a4224c61e68df53e825cfc09bcda7ea90394c6dfd0e9d",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "5119781538e5679a927ce0e1072c538c7290152ec72d4c73865766f364124a63",
+   "seq": 54,
+   "t": 46
+  },
+  {
+   "body": {
+    "human_distance_m": 2.11,
+    "payload_kg": 2.0,
+    "source": "cell"
+   },
+   "hash": "bcd2390d620e0ff78caaaeb74d5a58b4afe6a627f8d35c25d6033b41c0e9e1d9",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "1db122e80fbbed5d656a4224c61e68df53e825cfc09bcda7ea90394c6dfd0e9d",
+   "seq": 55,
+   "t": 47
+  },
+  {
+   "body": {
+    "human_distance_m": 1.92,
+    "payload_kg": 2.0,
+    "source": "cell"
+   },
+   "hash": "af7f350c1577ec2848f7e86c4e892384e9b9f18af29ba3937404109c5d340759",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "bcd2390d620e0ff78caaaeb74d5a58b4afe6a627f8d35c25d6033b41c0e9e1d9",
+   "seq": 56,
+   "t": 48
+  },
+  {
+   "body": {
+    "human_distance_m": 1.89,
+    "payload_kg": 2.0,
+    "source": "cell"
+   },
+   "hash": "c7b1b9ad1229d48708c7d504b99ab8b340f01e6ed1919316c6a6ee43578f9479",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "af7f350c1577ec2848f7e86c4e892384e9b9f18af29ba3937404109c5d340759",
+   "seq": 57,
+   "t": 49
+  },
+  {
+   "body": {
+    "human_distance_m": 2.05,
+    "payload_kg": 3.5,
+    "source": "cell"
+   },
+   "hash": "10a1fe8fb396df9e9cce5b966ef191ed50cd8bfc4e737fb42dd5a1fd7cd8f474",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "c7b1b9ad1229d48708c7d504b99ab8b340f01e6ed1919316c6a6ee43578f9479",
+   "seq": 58,
+   "t": 50
+  },
+  {
+   "body": {
+    "alert": false,
+    "evidence": [
+     "10a1fe8fb396df9e9cce5b966ef191ed50cd8bfc4e737fb42dd5a1fd7cd8f474"
+    ],
+    "model": "digital-twin",
+    "model_hash": "bf7d49be904b2796ee65be1b67cca26ddf3dd79dcef4dfdedb9b8cb9d8e075b4",
+    "plan_speed": 0.8,
+    "prediction": 123.66,
+    "uncertainty": 0.3
+   },
+   "hash": "e53861ccb921c9fb6d15ba50472f2b98cdaa683fac371b8439cf695ff7cc44f3",
+   "kind": "inference",
+   "node": "cell",
+   "prev": "10a1fe8fb396df9e9cce5b966ef191ed50cd8bfc4e737fb42dd5a1fd7cd8f474",
+   "seq": 59,
+   "t": 50
+  },
+  {
+   "body": {
+    "alert": false,
+    "evidence": [
+     "10a1fe8fb396df9e9cce5b966ef191ed50cd8bfc4e737fb42dd5a1fd7cd8f474"
+    ],
+    "model": "safety-monitor",
+    "model_hash": "1b021dbb98b4df5af458ede50622e1f0fffa0157fbc4ed92c75a3234d9a63b90",
+    "plan_speed": 0.8,
+    "prediction": 122.94,
+    "uncertainty": 0.479
+   },
+   "hash": "d2c3352bc63d704280ba1d6b75c0eb193ab5eb945b9f7cc029f7e9b7e637469b",
+   "kind": "inference",
+   "node": "cell",
+   "prev": "e53861ccb921c9fb6d15ba50472f2b98cdaa683fac371b8439cf695ff7cc44f3",
+   "seq": 60,
+   "t": 50
+  },
+  {
+   "body": {
+    "action": "set_speed_scale 0.8",
+    "agree": true,
+    "inferences": [
+     "e53861ccb921c9fb6d15ba50472f2b98cdaa683fac371b8439cf695ff7cc44f3",
+     "d2c3352bc63d704280ba1d6b75c0eb193ab5eb945b9f7cc029f7e9b7e637469b"
+    ],
+    "max_uncertainty": 0.479
+   },
+   "hash": "f5ace46717d2d5732655d13561dd9aed7d4f6ff6e192e0179726642d96f22443",
+   "kind": "recommendation",
+   "node": "cell",
+   "prev": "d2c3352bc63d704280ba1d6b75c0eb193ab5eb945b9f7cc029f7e9b7e637469b",
+   "seq": 61,
+   "t": 50
+  },
+  {
+   "body": {
+    "action": "set_speed_scale 0.8",
+    "authorizes": "f5ace46717d2d5732655d13561dd9aed7d4f6ff6e192e0179726642d96f22443",
+    "by": "adaptation-manager",
+    "sig_alg": [
+     "ed25519",
+     "ml-dsa-65"
+    ],
+    "signatures": {
+     "ed25519": "fb2b1fe3e7eed184e49e94f6ea895fe3680eec3c796cfbfb95f2edee8bf0a2dd3d61af6647d252494038dc6e64b7e8a227d539f84243b90ec0c82db859b47903",
+     "ml-dsa-65": "8d599ba0f0f18ac45f8995377eae74375bb1bb6e3d93c9e7b01dead89537e91e00de9889748b0d642470bfc95ecd0eb446329d84b9c1cee691e78be64d45345d6fb9177bf9de7f1fa81571e44122f9e80db13d636ebabd2f95102bbaab27b68a915f5493e8bbe26f5eaecafb9ce894d2e88448b003b7392fb00a6be23e23d87e6e32a1debbe1ae05a207958eb7c74d4bf008ed3fe741fbdee006476a225ba518c76379002e6a09921dafe2aff4faaa6346d11fe350adb4d4220d4cf35df0637301a0c8b45b5b8dd28119b0fb0aa693e744d70e40d9b25adb31a60170104de27629cf72b675636ddb0a990a9c6cd072c99dcf93dc5342a110600cd1c25492779291ad85359125fd700ab66f97ccfce2f5b0da3fb1a8af6a4d8320cc872044e651ea4c63d5d168c86fa10d68485338467b22e2e118624ce1efbc778fd1f31fbc3e874c3bf9723902a37be2dd15c751c9b3b468a9df59764b9f208e6b41f294bb5669bd47ebbab1f465188d2e84fc416bf94d3e073b0b9df21ce9369ba545c94a7e6f302eee19d4a9a6a47818ba520cc2f76106106cd4845b4f9cf23e899397f4a6093ca8a383715e13efbaac1913ce52b568e857024838f433984b31493d76e6dd7dc52c42a9d23f6e17d921f0a2ea91dbbdeeea46eee64b94edbac41be7777b04a9836f82344ad683c76e3e580d47638bc8c97f896fb034b361b1f5ea32b0bdd6080c68acf1ae780c64906875a919de6674f57578fb4f1f503ffd4e4bf470845b2a02504d445de5524b2af7dae88e8e8252678e854cf9709f46c8d0ddf72cc0cf554820f627fc65e8bf4684a15b97f9a7b9e8ff31587f7b6f1964d9d9e92838df7d7c946de4d242bc0aaf4814726b195e16912440e3f04929c598b338f45e911133cc6d2fdf5c9fb746fa8601030627fa17855f18d60378a04abce7c0cfc877bf0ca867581babf8c98623aeabc42838ce262ecc9ff92714a1e77e29bc1066c8c063579fd2c98cb94924b0ae639b71a22c190cdd516b3c35c1fc7a964deab14f709e6a540f7db6131b8b34e96437a6636eb219e30a92c0dfcd87bf56a8fe8f29bf99c3773ba8e70a25e4dd638eec77b605f2e7265ea1a5bfa18229258165369a480870fba13a4b44315e6b049c57c5f01b5d1979829a813a01714cb0768a06ba40a724ce6d372ebd1e1e6fac28f99b22edd32ef5a1679895bcff0109027dc1bef40f4139e59b9fddc3d3dace70a13e4c9a089cddcf09683f907ef50627f5e6e9abf56ed67d6f33b5c13bc63ab148c2a4ef6c3d4ec35c87eabd49146ebdd624498f80f4d18beb02b525e5ac3d1773e1b95bddb46c9bf03249fa8df3011b07621e7ad6eb80a6d0666a25724b8d433c18f5df578f1c8843376683c10f60450b8b6e99fd8c80e42a153aebf75aac04112a41c0deae9e660bdbd00539bd248dbb7327f072d734e50c70b3ed7e30aca51a9670544b6668de5a08bdb6823fcb10c92d1a1c4cd7ebb6cd0a45763cd96a6c0af929ca7f09705845b0c1c5fb3bea6b27290a1164de2538bc3c46b5b25f14e8fe568e21963c4ff65c95edc78d9c90ef94898d14bf7304cc847e43c5701af6254a2bc281d45c29a2e23a6135f9f914f7e97967c22548447c288965146be9b1aa1cadaef27baaf17834a0ff24510d9b1ef8945ad24d7b3c72a4e2dddb6c756ea610c92cc309df5885e3e6893e11049803fea24cf97d6d422e28322b96b1812d38365023d50a84e63519913f46ece71def0a1561a3f2c443ba0f249a581921025c770aba83100c4cffc8b739b876c799df8ed9a47f14c33192d3a2e8354807676b0bb060a1cef7dd5aaff6dc565988f36ba965a0fe2265d8a00ae6029088f49187d8f6c8bc5565c95ea6b138fceda9e453a0a553ef8ac0902db954e9344be67ee5c39be40e10b9c4d270382b1233f67e1238d6111cde6bb22b1c2b413c0454342437b9f426d8cebd6632b239b33ad0670e35da56144d24def339fb4e4c0dff37a62a5efe6bce58c9c559e05f2348c3031e0716d54d23ec3e681d030d0329d9c9d2976243587034fc9f9b2e6f3b72729153f1cd196ae68aa32ffc45c700a7bffef8ad82586d2965be6f1c7db7bc074929b24cd21a57e35d3a1ae1be2f1ea81857c124fd349676cc71ff0a733d6dc64ca9037c7cdb7c75f85079cddcccbdf6a6c390fdbf660f28a66649b2fac0558d61b0c3e3ff08d80b89ae57005ddfa42233e27964a43f2ba3af247b0bdfaa620e7836f75925df5efc2a5c0f35ac186f770d7e292cf248e32c2f26d30b6ebdba3090990df70fc328c6717a1c80c01ae4787edd8824ba10a86a1f800f3694d6044920530da88845b76d4cbe4e9d68bacbf3571cc692a3a1336dc1a0461e4481be726c80e8026d80df91002e393a2ef3614a92748bd6ec10690fe1ce146ba4f84c1282d718e7d0bf1fc09193f4e878ae34ce8a88003a1783ecd05fea1fa3384c1afa83fb51ec745a1197691effbe5fc0590f01bb64381f4528cd99f73651f4c20864123b37af0f9c71464963471187b64554e8b626c4a3aaad47b392fe9c8851d13b3fcfa0dd0022450f2f50854c7bb71f0fdfe1014ce9cbc284d21bc7bde33c5488c257f4ad0491dbb149c33ba52a88bbb2c1ec62956b948624c992582018722b6c151a1348800c025ffc23a9b53689a7388ab8d2e99372d1e0d284ba3905e5e1702ed2f94de0a16c9d7f798cfaebf169d37f8b4af7d6ed97d72b65a1fe8687331b3b7a68a627522d3aa2b96a1d83735ad3c7b93bb688936f7f85264367d7bca59b098b7fe67ab35bfe176d135732cd03610f013e13508c8191830d0d8f27ba80d00b25b65cd1a17945191bd4842cd1174f410530b092866307c0417334722073c42a99d4388b3f2d45cf9c419fdcd239fe63a69ae7a59b739cecf29d05ffbffd721f718738d9b5fa4a1afc725f045d3515eff9d2133f189c0b6a66b493f5ca908ebfaed7b3296f38e0ef13148530d2e161e60b2bddaf041d7cd8d7b8b8924e153e999dfeaa35c47dbad6a785c5dae65533f4f4a6731e492a217c4390e98648aff8821940709e75ac2c4de8c2ec45f6668645fd76c16fe06e02cb382e8698e9777edb6d7ac462bfbf6f237adef8738921005e99994cda01af2d3f8aadadfc253448ff0417f880872a3441657376c4aeae1871da05eea40a2f4ff1b0aed28dc09f6ad4331fd77654db46fca39e6b58c31c9a4249ab8612a4082fa3c1da1a2302f3a64efaec20b1aa5424a5a147fa66f9839cc96587368758ab9f942f85d34b11c93761a5b5dc33223f64096b288a71feae59bd30b218aac0bcec22507fe4813fb85dbeb6d9efe12747d4b69a56af4c4020759d561c3b00c3063c73ebbed1e5e09538ef12d178dfffc44940b85b9cc1acbe94b8f2f92b620c46917d20622a61cf3c65013041d745bd735adcaf9151e1618c30d7d0ab453be6b4242cf62e53cd9fafa8fe64b85dcdda6c59d96164b701af8549e1515320419d29f962d2c82072c5d023892c0542c4e62940eedc388430496ac8d207b870a729dc29238b2237a36fb39c56aca2558bf737b3197808266c34e566a53560127a49967a97a421e4a24bfe91f0aa57d59551e84012f0836958c21f445992cdbef91463bda8e8d6dd070bf7763b6ed337686c61598c6d3bf7b6178dd63b9bd8b620c1bf607d6efed4b2c97ec42e4aabe357e82feb909c09bc5aee932194b8e47235de673bf354b3726760c3dbad74bfa6f71f2c14df351ecb045b9a5936b9db6b3454f168a6c89522b09ad29520b10eefeeb236efa8e12e705b5492fab400701519a8effb16f2c25430a7eb017e9c8bf4a142eeb9e4f425e81cc4439839bcdae737da5e931ab881ee46a7f29d214dad2e52bf2deba0f604af22f4f4efacb374c583fbd6b5432c0c663180183fa562aff4d94fb158ddc19951c47bac8adae756d2f8cc5f8ecdcad58c61c0e419798be9ba2ed11103cb1d2394afa0d0feadfef708cac6c2c57af889bb73f2d0b717e2b29d78c7d4aa7701f2d73efe60f7f37bddd657ab10bbfb342bfbfb9b2137da751eb687353de965c2702e39f0ec2fd307d2324bab85b6407ae661117fa7d79a9871b23ce630a329698ae4030f574b1857235e2b9c0fdf246854a579bfb8aec64278b41f5c77631abb82e4f2e6f02fda0ec224bd58856e757929614d9086e9dbd50e0d2ed2777a16adf0308eec8d0efced3c968481251008a6e15bb38328f5213ebc80e6b56587ae165cace768234fdf6f92de990576bbbc9e0b4edcee35fbd670944ecee6fb082f3c91c20ab46e68c14de0e9e2820e265fd59a79393b299625b767640828742738db6647cc6b81c04286717a30762f1e61155ba6e7d57ada3bbcec627f6f15e9e2b5a376f14352c4bd8b440b125b484122c10740adf61b8c85958cedb3ba499522ae775155c11cc190ea4512212e730a74f07649f73f947148451cdfa86f66e75570692b1aae81561653b54a8b0da71a1d1ea11198a1549bf8a7a2b52eda4ccc5542f03343aba89c92c38e799869e22d2cf05fd01ae4ee453c6e4349c327677500e1ff25a95a74026df798ed8c5a302526b4ea0517229bcedbdee7080f59808c8e93c6465762676873747aa6aadbe65f666d8d93a5e00c255d6db8c4f9000000000000000000040c1420272e"
+    }
+   },
+   "hash": "fadbadf40560123998f1ef187d28d0e5357781a5c73462c04a914c010b2cbf94",
+   "kind": "authorization",
+   "node": "cell",
+   "prev": "f5ace46717d2d5732655d13561dd9aed7d4f6ff6e192e0179726642d96f22443",
+   "seq": 62,
+   "t": 50
+  },
+  {
+   "body": {
+    "action": "set_speed_scale 0.8",
+    "authorization": "fadbadf40560123998f1ef187d28d0e5357781a5c73462c04a914c010b2cbf94"
+   },
+   "hash": "af8e7b1622f8e5b753c2a4d513b22c8b32698327eaf8966c4a77e894565d1fa4",
+   "kind": "action",
+   "node": "cell",
+   "prev": "fadbadf40560123998f1ef187d28d0e5357781a5c73462c04a914c010b2cbf94",
+   "seq": 63,
+   "t": 50
+  },
+  {
+   "body": {
+    "after": "af8e7b1622f8e5b753c2a4d513b22c8b32698327eaf8966c4a77e894565d1fa4",
+    "speed_scale": 0.8
+   },
+   "hash": "180f4ee63058d519103a1f5a7053c309a03c9b15fddfb2ebe8f7ca77ee97cad9",
+   "kind": "state",
+   "node": "cell",
+   "prev": "af8e7b1622f8e5b753c2a4d513b22c8b32698327eaf8966c4a77e894565d1fa4",
+   "seq": 64,
+   "t": 50
+  },
+  {
+   "body": {
+    "exceeds_limit": true,
+    "first_cycle_peak_n": 153.88,
+    "source": "force_check"
+   },
+   "hash": "80fd9049e992e535a32dfec51c4b5ad15843b271db504c62f34358a82ef817c9",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "180f4ee63058d519103a1f5a7053c309a03c9b15fddfb2ebe8f7ca77ee97cad9",
+   "seq": 65,
+   "t": 50
+  },
+  {
+   "body": {
+    "human_distance_m": 1.91,
+    "payload_kg": 3.5,
+    "source": "cell"
+   },
+   "hash": "af0df3cbe6b049eb80d53b48403223895d07bc2925d1e963c4f3506c5e17da6a",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "80fd9049e992e535a32dfec51c4b5ad15843b271db504c62f34358a82ef817c9",
+   "seq": 66,
+   "t": 51
+  },
+  {
+   "body": {
+    "human_distance_m": 2.01,
+    "payload_kg": 3.5,
+    "source": "cell"
+   },
+   "hash": "4399aaa3a4d444d92587c4e37848a2355379ddbaeab0737eadd1dc102c048c4a",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "af0df3cbe6b049eb80d53b48403223895d07bc2925d1e963c4f3506c5e17da6a",
+   "seq": 67,
+   "t": 52
+  },
+  {
+   "body": {
+    "human_distance_m": 1.82,
+    "payload_kg": 3.5,
+    "source": "cell"
+   },
+   "hash": "3707df3e075d1aa2b6c94e778229d0c76fb28d884f75d2e7f409f7d2f3f9bd65",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "4399aaa3a4d444d92587c4e37848a2355379ddbaeab0737eadd1dc102c048c4a",
+   "seq": 68,
+   "t": 53
+  },
+  {
+   "body": {
+    "human_distance_m": 2.04,
+    "payload_kg": 3.5,
+    "source": "cell"
+   },
+   "hash": "ab1afc3e681b8bbffb01ea85d0d66b6d3d9130ce573ba1b697fb83f74213ae69",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "3707df3e075d1aa2b6c94e778229d0c76fb28d884f75d2e7f409f7d2f3f9bd65",
+   "seq": 69,
+   "t": 54
+  },
+  {
+   "body": {
+    "human_distance_m": 2.07,
+    "payload_kg": 3.5,
+    "source": "cell"
+   },
+   "hash": "39ec27dd10834604b569c6e41fc107b9de08ad167e7a83923acad85d59236a82",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "ab1afc3e681b8bbffb01ea85d0d66b6d3d9130ce573ba1b697fb83f74213ae69",
+   "seq": 70,
+   "t": 55
+  },
+  {
+   "body": {
+    "human_distance_m": 1.93,
+    "payload_kg": 3.5,
+    "source": "cell"
+   },
+   "hash": "9c964e7ead4201f04ae2256cd039cf4bbb28d4a70d3abb879d618fcf636ea9ac",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "39ec27dd10834604b569c6e41fc107b9de08ad167e7a83923acad85d59236a82",
+   "seq": 71,
+   "t": 56
+  },
+  {
+   "body": {
+    "human_distance_m": 1.98,
+    "payload_kg": 3.5,
+    "source": "cell"
+   },
+   "hash": "9bcea77afd27cb171beb8f638dafc0fa6e384ac665bf672a7e6f7b9e72144490",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "9c964e7ead4201f04ae2256cd039cf4bbb28d4a70d3abb879d618fcf636ea9ac",
+   "seq": 72,
+   "t": 57
+  },
+  {
+   "body": {
+    "human_distance_m": 1.96,
+    "payload_kg": 3.5,
+    "source": "cell"
+   },
+   "hash": "153c585a8f7392ee45a5aa9dca0b9f61648e5e89d1f3e8e6589fdc68b7a0b85b",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "9bcea77afd27cb171beb8f638dafc0fa6e384ac665bf672a7e6f7b9e72144490",
+   "seq": 73,
+   "t": 58
+  },
+  {
+   "body": {
+    "human_distance_m": 2.03,
+    "payload_kg": 3.5,
+    "source": "cell"
+   },
+   "hash": "c15e1185cbdbf4f4ec44cb1b2a23558078d83a9fc18d3b573fc6d598072341f6",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "153c585a8f7392ee45a5aa9dca0b9f61648e5e89d1f3e8e6589fdc68b7a0b85b",
+   "seq": 74,
+   "t": 59
+  },
+  {
+   "body": {
+    "human_distance_m": 2.02,
+    "payload_kg": 3.5,
+    "source": "cell"
+   },
+   "hash": "0a4554658b1b01c4ba0fcc806054dc6690134a4a6912d73d00c5e77a23978f30",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "c15e1185cbdbf4f4ec44cb1b2a23558078d83a9fc18d3b573fc6d598072341f6",
+   "seq": 75,
+   "t": 60
+  },
+  {
+   "body": {
+    "human_distance_m": 2.0,
+    "payload_kg": 3.5,
+    "source": "cell"
+   },
+   "hash": "c7099e47931433238ea841b72d94606e13f8268104d8ed42ca3c2310ea14861f",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "0a4554658b1b01c4ba0fcc806054dc6690134a4a6912d73d00c5e77a23978f30",
+   "seq": 76,
+   "t": 61
+  },
+  {
+   "body": {
+    "human_distance_m": 2.04,
+    "payload_kg": 3.5,
+    "source": "cell"
+   },
+   "hash": "010f050a794555e9916cbe5adb43e9c69f31ca384e36c327e62ac0a828961742",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "c7099e47931433238ea841b72d94606e13f8268104d8ed42ca3c2310ea14861f",
+   "seq": 77,
+   "t": 62
+  },
+  {
+   "body": {
+    "human_distance_m": 1.91,
+    "payload_kg": 3.5,
+    "source": "cell"
+   },
+   "hash": "6ce937461d2da7fafc9419ca4372838e8ee5adb9c77f7dd4ab39ab61886ce1b5",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "010f050a794555e9916cbe5adb43e9c69f31ca384e36c327e62ac0a828961742",
+   "seq": 78,
+   "t": 63
+  },
+  {
+   "body": {
+    "human_distance_m": 2.1,
+    "payload_kg": 3.5,
+    "source": "cell"
+   },
+   "hash": "d7d4fe14ad815249fb2c7763f46bad194ee46f275a5243941b1b9a6986d3fca0",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "6ce937461d2da7fafc9419ca4372838e8ee5adb9c77f7dd4ab39ab61886ce1b5",
+   "seq": 79,
+   "t": 64
+  },
+  {
+   "body": {
+    "human_distance_m": 2.03,
+    "payload_kg": 3.5,
+    "source": "cell"
+   },
+   "hash": "a8607a5a91be1720fcc9abe335777d9c79f7b4658a3a075879ac3964b602d160",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "d7d4fe14ad815249fb2c7763f46bad194ee46f275a5243941b1b9a6986d3fca0",
+   "seq": 80,
+   "t": 65
+  },
+  {
+   "body": {
+    "human_distance_m": 1.97,
+    "payload_kg": 3.5,
+    "source": "cell"
+   },
+   "hash": "faf94e5e6b12369a9afedb1eb6799b7249f0d06e908e575a2744493dda442043",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "a8607a5a91be1720fcc9abe335777d9c79f7b4658a3a075879ac3964b602d160",
+   "seq": 81,
+   "t": 66
+  },
+  {
+   "body": {
+    "human_distance_m": 1.99,
+    "payload_kg": 3.5,
+    "source": "cell"
+   },
+   "hash": "8661b797d260fdfb87071cfe890f638e70d58cd1bf3e85b9376d851cc743a205",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "faf94e5e6b12369a9afedb1eb6799b7249f0d06e908e575a2744493dda442043",
+   "seq": 82,
+   "t": 67
+  },
+  {
+   "body": {
+    "human_distance_m": 1.98,
+    "payload_kg": 3.5,
+    "source": "cell"
+   },
+   "hash": "af9919a553e3114ad3a8f55146c4e51fb1e3ffa9b13cc76b1d3d408a3b4fe684",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "8661b797d260fdfb87071cfe890f638e70d58cd1bf3e85b9376d851cc743a205",
+   "seq": 83,
+   "t": 68
+  },
+  {
+   "body": {
+    "human_distance_m": 1.93,
+    "payload_kg": 3.5,
+    "source": "cell"
+   },
+   "hash": "a41bc48330dfa2ccbd7a05c49d8be4e45d576f30b86496b887a1acdc19d25992",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "af9919a553e3114ad3a8f55146c4e51fb1e3ffa9b13cc76b1d3d408a3b4fe684",
+   "seq": 84,
+   "t": 69
+  },
+  {
+   "body": {
+    "human_distance_m": 2.1,
+    "payload_kg": 3.5,
+    "source": "cell"
+   },
+   "hash": "5c86b73d63ed672c0a00112b763695479c72a8a8be1fedf844454b7dde037d50",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "a41bc48330dfa2ccbd7a05c49d8be4e45d576f30b86496b887a1acdc19d25992",
+   "seq": 85,
+   "t": 70
+  },
+  {
+   "body": {
+    "human_distance_m": 2.07,
+    "payload_kg": 3.5,
+    "source": "cell"
+   },
+   "hash": "d08d0ca2905dc0aeb9b497f40b5bf0013b613135728a45aff605efc6124c226d",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "5c86b73d63ed672c0a00112b763695479c72a8a8be1fedf844454b7dde037d50",
+   "seq": 86,
+   "t": 71
+  },
+  {
+   "body": {
+    "human_distance_m": 2.13,
+    "payload_kg": 3.5,
+    "source": "cell"
+   },
+   "hash": "6c22e0fecd7bdb16b94c2054749c70d030d69a22760c8ea7979763c6ff24a215",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "d08d0ca2905dc0aeb9b497f40b5bf0013b613135728a45aff605efc6124c226d",
+   "seq": 87,
+   "t": 72
+  },
+  {
+   "body": {
+    "human_distance_m": 2.17,
+    "payload_kg": 3.5,
+    "source": "cell"
+   },
+   "hash": "c595d1bdcbebb995284bf01494a9243271adf718cd64b845c1a3343733fb283d",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "6c22e0fecd7bdb16b94c2054749c70d030d69a22760c8ea7979763c6ff24a215",
+   "seq": 88,
+   "t": 73
+  },
+  {
+   "body": {
+    "human_distance_m": 2.04,
+    "payload_kg": 3.5,
+    "source": "cell"
+   },
+   "hash": "67d3183ab31c36a545e37d302d1c355fd730c482ddf86a60b89d985537f87be9",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "c595d1bdcbebb995284bf01494a9243271adf718cd64b845c1a3343733fb283d",
+   "seq": 89,
+   "t": 74
+  },
+  {
+   "body": {
+    "human_distance_m": 2.08,
+    "payload_kg": 3.5,
+    "source": "cell"
+   },
+   "hash": "3394caf6d88f2dc1c71f773619f9343e75f05ae8fff35c49229565ffb6ae0bdf",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "67d3183ab31c36a545e37d302d1c355fd730c482ddf86a60b89d985537f87be9",
+   "seq": 90,
+   "t": 75
+  },
+  {
+   "body": {
+    "human_distance_m": 2.08,
+    "payload_kg": 3.5,
+    "source": "cell"
+   },
+   "hash": "23477cb9000db3735b8e9c2f8b45837b6d68903681f46ec971f2c2e3102df09f",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "3394caf6d88f2dc1c71f773619f9343e75f05ae8fff35c49229565ffb6ae0bdf",
+   "seq": 91,
+   "t": 76
+  },
+  {
+   "body": {
+    "human_distance_m": 1.95,
+    "payload_kg": 3.5,
+    "source": "cell"
+   },
+   "hash": "335a63c5956c11e30c1b7da1bce058034ca73d61bbce2e857e70ddc80d1c51cf",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "23477cb9000db3735b8e9c2f8b45837b6d68903681f46ec971f2c2e3102df09f",
+   "seq": 92,
+   "t": 77
+  },
+  {
+   "body": {
+    "human_distance_m": 2.1,
+    "payload_kg": 3.5,
+    "source": "cell"
+   },
+   "hash": "982782f2650c86435cfe0e956a4474b60b47a757abe8b314b0709bfd28a80acc",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "335a63c5956c11e30c1b7da1bce058034ca73d61bbce2e857e70ddc80d1c51cf",
+   "seq": 93,
+   "t": 78
+  },
+  {
+   "body": {
+    "human_distance_m": 1.81,
+    "payload_kg": 3.5,
+    "source": "cell"
+   },
+   "hash": "5e1af04a390e8e20899fb2260d900b70726cf5fda7a650d9fe599f471567764a",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "982782f2650c86435cfe0e956a4474b60b47a757abe8b314b0709bfd28a80acc",
+   "seq": 94,
+   "t": 79
+  },
+  {
+   "body": {
+    "human_distance_m": 2.08,
+    "payload_kg": 3.5,
+    "source": "cell"
+   },
+   "hash": "2528e6467ac6f66fbf3c6602c9f7822b42909801ae6933f96e7b41e74810a777",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "5e1af04a390e8e20899fb2260d900b70726cf5fda7a650d9fe599f471567764a",
+   "seq": 95,
+   "t": 80
+  },
+  {
+   "body": {
+    "human_distance_m": 2.15,
+    "payload_kg": 3.5,
+    "source": "cell"
+   },
+   "hash": "13a23828d9da6cd1e419cd4a8139e90a40fc257e4fc92d85a0008313425f43cc",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "2528e6467ac6f66fbf3c6602c9f7822b42909801ae6933f96e7b41e74810a777",
+   "seq": 96,
+   "t": 81
+  },
+  {
+   "body": {
+    "human_distance_m": 2.08,
+    "payload_kg": 3.5,
+    "source": "cell"
+   },
+   "hash": "39d2e0ab44ceb9bfb1495b8d881f7d7b122fe948430eba9f664c7705b2b0c19a",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "13a23828d9da6cd1e419cd4a8139e90a40fc257e4fc92d85a0008313425f43cc",
+   "seq": 97,
+   "t": 82
+  },
+  {
+   "body": {
+    "human_distance_m": 1.91,
+    "payload_kg": 3.5,
+    "source": "cell"
+   },
+   "hash": "bf769422de716d2641d84ac4c0fdcd45a91190c4dbceb33b94deaeda8360abdf",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "39d2e0ab44ceb9bfb1495b8d881f7d7b122fe948430eba9f664c7705b2b0c19a",
+   "seq": 98,
+   "t": 83
+  },
+  {
+   "body": {
+    "human_distance_m": 1.99,
+    "payload_kg": 3.5,
+    "source": "cell"
+   },
+   "hash": "08199c97efe8fec692c85d4100a8a4a97e58ebc96f485ff826154294d278d1d5",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "bf769422de716d2641d84ac4c0fdcd45a91190c4dbceb33b94deaeda8360abdf",
+   "seq": 99,
+   "t": 84
+  },
+  {
+   "body": {
+    "human_distance_m": 1.99,
+    "payload_kg": 3.5,
+    "source": "cell"
+   },
+   "hash": "3b56a8c81d9c2b971c8728001ab2c4f084417f3b1557d633f1ea49765040f779",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "08199c97efe8fec692c85d4100a8a4a97e58ebc96f485ff826154294d278d1d5",
+   "seq": 100,
+   "t": 85
+  },
+  {
+   "body": {
+    "human_distance_m": 1.81,
+    "payload_kg": 3.5,
+    "source": "cell"
+   },
+   "hash": "56bf698a9274574a1bbdded8de1a7f0e794200d084162d47a6966a069c51b5f5",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "3b56a8c81d9c2b971c8728001ab2c4f084417f3b1557d633f1ea49765040f779",
+   "seq": 101,
+   "t": 86
+  },
+  {
+   "body": {
+    "human_distance_m": 2.06,
+    "payload_kg": 3.5,
+    "source": "cell"
+   },
+   "hash": "084b214a634ebfdafbaf9d11611056b16daf0260c5addec95ca7619c59ce4c5e",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "56bf698a9274574a1bbdded8de1a7f0e794200d084162d47a6966a069c51b5f5",
+   "seq": 102,
+   "t": 87
+  },
+  {
+   "body": {
+    "human_distance_m": 1.9,
+    "payload_kg": 3.5,
+    "source": "cell"
+   },
+   "hash": "93b35f0471304645a9227f7847ffd1b019c02ed1a05a7fe9540b6da749090add",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "084b214a634ebfdafbaf9d11611056b16daf0260c5addec95ca7619c59ce4c5e",
+   "seq": 103,
+   "t": 88
+  },
+  {
+   "body": {
+    "human_distance_m": 2.02,
+    "payload_kg": 3.5,
+    "source": "cell"
+   },
+   "hash": "e2b9ff2625fb058f0473d993d89d04233324ef62f8f3fa8ca3b90d8668fbd93d",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "93b35f0471304645a9227f7847ffd1b019c02ed1a05a7fe9540b6da749090add",
+   "seq": 104,
+   "t": 89
+  },
+  {
+   "body": {
+    "human_distance_m": 1.99,
+    "payload_kg": 3.5,
+    "source": "cell"
+   },
+   "hash": "7d26ed0c8b6dac40fe86a360e62fe8ba1016b524881b47c4a1c098c3bc98ca4d",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "e2b9ff2625fb058f0473d993d89d04233324ef62f8f3fa8ca3b90d8668fbd93d",
+   "seq": 105,
+   "t": 90
+  },
+  {
+   "body": {
+    "human_distance_m": 2.03,
+    "payload_kg": 3.5,
+    "source": "cell"
+   },
+   "hash": "ca1796c51116fdbabea585b2635955fea675c93244033f0714c1c949038fe945",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "7d26ed0c8b6dac40fe86a360e62fe8ba1016b524881b47c4a1c098c3bc98ca4d",
+   "seq": 106,
+   "t": 91
+  },
+  {
+   "body": {
+    "human_distance_m": 1.88,
+    "payload_kg": 3.5,
+    "source": "cell"
+   },
+   "hash": "d965cc00534bdd18b7fc63f3a628e8e7f744ba151743bca0c436ddf432793450",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "ca1796c51116fdbabea585b2635955fea675c93244033f0714c1c949038fe945",
+   "seq": 107,
+   "t": 92
+  },
+  {
+   "body": {
+    "human_distance_m": 2.1,
+    "payload_kg": 3.5,
+    "source": "cell"
+   },
+   "hash": "acbe9bf6204cba6ec0b521750e21b7539f7f1ecb4d88b00aa8a3cefb627be933",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "d965cc00534bdd18b7fc63f3a628e8e7f744ba151743bca0c436ddf432793450",
+   "seq": 108,
+   "t": 93
+  },
+  {
+   "body": {
+    "human_distance_m": 1.99,
+    "payload_kg": 3.5,
+    "source": "cell"
+   },
+   "hash": "6216482d2de7b96859f98b50ef42d5a00aabb2c6d39c172dbf3bcc5208fc7a83",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "acbe9bf6204cba6ec0b521750e21b7539f7f1ecb4d88b00aa8a3cefb627be933",
+   "seq": 109,
+   "t": 94
+  },
+  {
+   "body": {
+    "human_distance_m": 2.04,
+    "payload_kg": 3.5,
+    "source": "cell"
+   },
+   "hash": "5ffab22de049a142bc730dd17d1c4476183c552b13f63d0d09e03d61678ebe78",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "6216482d2de7b96859f98b50ef42d5a00aabb2c6d39c172dbf3bcc5208fc7a83",
+   "seq": 110,
+   "t": 95
+  },
+  {
+   "body": {
+    "human_distance_m": 1.98,
+    "payload_kg": 3.5,
+    "source": "cell"
+   },
+   "hash": "872c632506eb1936f7f85717b06f5c56c9708937d77d59249da28f3e2bc06246",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "5ffab22de049a142bc730dd17d1c4476183c552b13f63d0d09e03d61678ebe78",
+   "seq": 111,
+   "t": 96
+  },
+  {
+   "body": {
+    "human_distance_m": 1.92,
+    "payload_kg": 3.5,
+    "source": "cell"
+   },
+   "hash": "bea2d10938e3ad518e9b65a4fef5e762f9fc713a71911ac10a54f25bba9e5ca1",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "872c632506eb1936f7f85717b06f5c56c9708937d77d59249da28f3e2bc06246",
+   "seq": 112,
+   "t": 97
+  },
+  {
+   "body": {
+    "human_distance_m": 2.07,
+    "payload_kg": 3.5,
+    "source": "cell"
+   },
+   "hash": "03c1a6691658944e2a078bf2bbe9ffccd5058653466e2e4837e60551c3b9eae0",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "bea2d10938e3ad518e9b65a4fef5e762f9fc713a71911ac10a54f25bba9e5ca1",
+   "seq": 113,
+   "t": 98
+  },
+  {
+   "body": {
+    "human_distance_m": 2.05,
+    "payload_kg": 3.5,
+    "source": "cell"
+   },
+   "hash": "3495c3d770f20b1bf3e5df9f8fc432a8d771bc35184a18aaf02b5f15cee8c676",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "03c1a6691658944e2a078bf2bbe9ffccd5058653466e2e4837e60551c3b9eae0",
+   "seq": 114,
+   "t": 99
+  },
+  {
+   "body": {
+    "human_distance_m": 1.95,
+    "payload_kg": 3.5,
+    "source": "cell"
+   },
+   "hash": "b27412505633e4a07066e6032a42e441983fbb678864828419ea8e7e0106535a",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "3495c3d770f20b1bf3e5df9f8fc432a8d771bc35184a18aaf02b5f15cee8c676",
+   "seq": 115,
+   "t": 100
+  },
+  {
+   "body": {
+    "human_distance_m": 1.81,
+    "payload_kg": 3.5,
+    "source": "cell"
+   },
+   "hash": "837335fa55f1df4586ba05c0cd38e4fb4aef479ccefafbf04df2cc73eb2d2f65",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "b27412505633e4a07066e6032a42e441983fbb678864828419ea8e7e0106535a",
+   "seq": 116,
+   "t": 101
+  },
+  {
+   "body": {
+    "human_distance_m": 1.94,
+    "payload_kg": 3.5,
+    "source": "cell"
+   },
+   "hash": "cbef7e98b8d870c0fecb22bbd0d54b08a05110d8bb8fb061c8f0c0a42077a337",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "837335fa55f1df4586ba05c0cd38e4fb4aef479ccefafbf04df2cc73eb2d2f65",
+   "seq": 117,
+   "t": 102
+  },
+  {
+   "body": {
+    "human_distance_m": 1.99,
+    "payload_kg": 3.5,
+    "source": "cell"
+   },
+   "hash": "5c7b51c239e1382abde13c887338d70764df682421655c0a09be4df8e78950bd",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "cbef7e98b8d870c0fecb22bbd0d54b08a05110d8bb8fb061c8f0c0a42077a337",
+   "seq": 118,
+   "t": 103
+  },
+  {
+   "body": {
+    "human_distance_m": 2.09,
+    "payload_kg": 3.5,
+    "source": "cell"
+   },
+   "hash": "d656e9ee2415c77984f575b5606a297258b1432af5229c89012bf9b5cb989409",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "5c7b51c239e1382abde13c887338d70764df682421655c0a09be4df8e78950bd",
+   "seq": 119,
+   "t": 104
+  },
+  {
+   "body": {
+    "human_distance_m": 1.91,
+    "payload_kg": 3.5,
+    "source": "cell"
+   },
+   "hash": "b4bf40fc7ba865fcfc62184ed5f97ab8cbe480d208efa4624ea641505b176c54",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "d656e9ee2415c77984f575b5606a297258b1432af5229c89012bf9b5cb989409",
+   "seq": 120,
+   "t": 105
+  },
+  {
+   "body": {
+    "human_distance_m": 2.04,
+    "payload_kg": 3.5,
+    "source": "cell"
+   },
+   "hash": "ba4cabe61c5f7b2aac5dc1641a87c1cc4719514a1e961c3b984168ffc61735fb",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "b4bf40fc7ba865fcfc62184ed5f97ab8cbe480d208efa4624ea641505b176c54",
+   "seq": 121,
+   "t": 106
+  },
+  {
+   "body": {
+    "human_distance_m": 2.08,
+    "payload_kg": 3.5,
+    "source": "cell"
+   },
+   "hash": "314ef324d9c6c5dd98d450fe1cdeaf92d113252954b79b713baa228f3560871f",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "ba4cabe61c5f7b2aac5dc1641a87c1cc4719514a1e961c3b984168ffc61735fb",
+   "seq": 122,
+   "t": 107
+  },
+  {
+   "body": {
+    "human_distance_m": 2.11,
+    "payload_kg": 3.5,
+    "source": "cell"
+   },
+   "hash": "c6db40eb20117b6d78e787c2340fa8cacb3475b7eb138828c80be88913de1157",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "314ef324d9c6c5dd98d450fe1cdeaf92d113252954b79b713baa228f3560871f",
+   "seq": 123,
+   "t": 108
+  },
+  {
+   "body": {
+    "human_distance_m": 2.03,
+    "payload_kg": 3.5,
+    "source": "cell"
+   },
+   "hash": "969a857d6f0743bffef38738d3f3ca59a136ccca1c40fed5badfe06ce4323a17",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "c6db40eb20117b6d78e787c2340fa8cacb3475b7eb138828c80be88913de1157",
+   "seq": 124,
+   "t": 109
+  },
+  {
+   "body": {
+    "human_distance_m": 1.91,
+    "payload_kg": 3.5,
+    "source": "cell"
+   },
+   "hash": "54af73246964b1c4e482d2b76b41a6d8407a9f5ba2a62d5e4507d84b43e84c06",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "969a857d6f0743bffef38738d3f3ca59a136ccca1c40fed5badfe06ce4323a17",
+   "seq": 125,
+   "t": 110
+  },
+  {
+   "body": {
+    "human_distance_m": 2.06,
+    "payload_kg": 3.5,
+    "source": "cell"
+   },
+   "hash": "4d480101efda98e3bd7d42cdfefaa72dcf7356be94f205edea7b38edcef0cc16",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "54af73246964b1c4e482d2b76b41a6d8407a9f5ba2a62d5e4507d84b43e84c06",
+   "seq": 126,
+   "t": 111
+  },
+  {
+   "body": {
+    "human_distance_m": 1.96,
+    "payload_kg": 3.5,
+    "source": "cell"
+   },
+   "hash": "f9a6f716697731f0de72b19b785ee6b59101179de444d30107f1fe068edcda42",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "4d480101efda98e3bd7d42cdfefaa72dcf7356be94f205edea7b38edcef0cc16",
+   "seq": 127,
+   "t": 112
+  },
+  {
+   "body": {
+    "human_distance_m": 1.95,
+    "payload_kg": 3.5,
+    "source": "cell"
+   },
+   "hash": "3dcbf001aaa5e4ef3300f99580ceddf63ae9b876be20740eaa4d094b9c140248",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "f9a6f716697731f0de72b19b785ee6b59101179de444d30107f1fe068edcda42",
+   "seq": 128,
+   "t": 113
+  },
+  {
+   "body": {
+    "human_distance_m": 2.1,
+    "payload_kg": 3.5,
+    "source": "cell"
+   },
+   "hash": "4bc22e434e6c28332c2217c0b6b9fa695aa24e8a53fbe8d351e66f0614d99f70",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "3dcbf001aaa5e4ef3300f99580ceddf63ae9b876be20740eaa4d094b9c140248",
+   "seq": 129,
+   "t": 114
+  },
+  {
+   "body": {
+    "human_distance_m": 2.14,
+    "payload_kg": 3.5,
+    "source": "cell"
+   },
+   "hash": "b9f606409aea916d5d6358b1b2231eaad177936e2745a02d5869840402140a62",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "4bc22e434e6c28332c2217c0b6b9fa695aa24e8a53fbe8d351e66f0614d99f70",
+   "seq": 130,
+   "t": 115
+  },
+  {
+   "body": {
+    "human_distance_m": 1.89,
+    "payload_kg": 3.5,
+    "source": "cell"
+   },
+   "hash": "865d2e4fb34ab42411c93073271789d7bce8981bfc958cedd4375b322d5bd58a",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "b9f606409aea916d5d6358b1b2231eaad177936e2745a02d5869840402140a62",
+   "seq": 131,
+   "t": 116
+  },
+  {
+   "body": {
+    "human_distance_m": 1.88,
+    "payload_kg": 3.5,
+    "source": "cell"
+   },
+   "hash": "fd0a7f756f0ebf0402cdab45b5cd69777bd18bef43f4e8770ae84c6072ada787",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "865d2e4fb34ab42411c93073271789d7bce8981bfc958cedd4375b322d5bd58a",
+   "seq": 132,
+   "t": 117
+  },
+  {
+   "body": {
+    "human_distance_m": 2.04,
+    "payload_kg": 3.5,
+    "source": "cell"
+   },
+   "hash": "1ec377bba771c9d60aa9b550a0ba84f423170cf8962a4c56f5afdba95a9b0d38",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "fd0a7f756f0ebf0402cdab45b5cd69777bd18bef43f4e8770ae84c6072ada787",
+   "seq": 133,
+   "t": 118
+  },
+  {
+   "body": {
+    "human_distance_m": 1.9,
+    "payload_kg": 3.5,
+    "source": "cell"
+   },
+   "hash": "2408e98c8e2849ec40a6f0530ec4297cea039303c05c2c8cd3bbf6a5e7ca60aa",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "1ec377bba771c9d60aa9b550a0ba84f423170cf8962a4c56f5afdba95a9b0d38",
+   "seq": 134,
+   "t": 119
+  },
+  {
+   "body": {
+    "human_distance_m": 2.06,
+    "payload_kg": 2.5,
+    "source": "cell"
+   },
+   "hash": "b29073f14c0116d12f002eb6360c832a7d9aae04133b9c9d1a6126fc170029ac",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "2408e98c8e2849ec40a6f0530ec4297cea039303c05c2c8cd3bbf6a5e7ca60aa",
+   "seq": 135,
+   "t": 120
+  },
+  {
+   "body": {
+    "alert": false,
+    "evidence": [
+     "b29073f14c0116d12f002eb6360c832a7d9aae04133b9c9d1a6126fc170029ac"
+    ],
+    "model": "digital-twin",
+    "model_hash": "bf7d49be904b2796ee65be1b67cca26ddf3dd79dcef4dfdedb9b8cb9d8e075b4",
+    "plan_speed": 1.0,
+    "prediction": 116.68,
+    "uncertainty": 0.3
+   },
+   "hash": "c3e4de5c621a7555faf4adf10660bcfecdeab28f6ed2bb0a3f50f598a939ebff",
+   "kind": "inference",
+   "node": "cell",
+   "prev": "b29073f14c0116d12f002eb6360c832a7d9aae04133b9c9d1a6126fc170029ac",
+   "seq": 136,
+   "t": 120
+  },
+  {
+   "body": {
+    "alert": false,
+    "evidence": [
+     "b29073f14c0116d12f002eb6360c832a7d9aae04133b9c9d1a6126fc170029ac"
+    ],
+    "model": "safety-monitor",
+    "model_hash": "1b021dbb98b4df5af458ede50622e1f0fffa0157fbc4ed92c75a3234d9a63b90",
+    "plan_speed": 1.0,
+    "prediction": 112.04,
+    "uncertainty": 0.403
+   },
+   "hash": "72b47c7084c9d33112302b6239a5f65bf1b2f13fe4983c2dc5a3c15c03c70c80",
+   "kind": "inference",
+   "node": "cell",
+   "prev": "c3e4de5c621a7555faf4adf10660bcfecdeab28f6ed2bb0a3f50f598a939ebff",
+   "seq": 137,
+   "t": 120
+  },
+  {
+   "body": {
+    "action": "set_speed_scale 1.0",
+    "agree": true,
+    "inferences": [
+     "c3e4de5c621a7555faf4adf10660bcfecdeab28f6ed2bb0a3f50f598a939ebff",
+     "72b47c7084c9d33112302b6239a5f65bf1b2f13fe4983c2dc5a3c15c03c70c80"
+    ],
+    "max_uncertainty": 0.403
+   },
+   "hash": "2eb9fc877ef17d1c9c096d2f3572505b7511f258548c9e46563fbf2972fd2e38",
+   "kind": "recommendation",
+   "node": "cell",
+   "prev": "72b47c7084c9d33112302b6239a5f65bf1b2f13fe4983c2dc5a3c15c03c70c80",
+   "seq": 138,
+   "t": 120
+  },
+  {
+   "body": {
+    "action": "set_speed_scale 1.0",
+    "authorizes": "2eb9fc877ef17d1c9c096d2f3572505b7511f258548c9e46563fbf2972fd2e38",
+    "by": "adaptation-manager",
+    "sig_alg": [
+     "ed25519",
+     "ml-dsa-65"
+    ],
+    "signatures": {
+     "ed25519": "9c952693fe4de5191991f52da5e39c5c7f462b99aa51275e6d1a682189353b953b527c5daf610c2547cc2fa8895d613100a7df7f82f66c623c3bc0e2bc998f02",
+     "ml-dsa-65": "ef7f2429d01f555ec9e5d298f1d5eeb38eda3844e83b6671a1b57a0fe7a08d2e367e42a16e389372ad4a3a555df827f8e39bd71eeaf8ba8a90ea8aa80abf4f4a168da395bdd4b2dbc3b09a7aabc1b7bbd597e0a34354977ec7f740765316e630d74fa925139b609aa3c095fdb42560b3a87ccd490fafce99305630f9bd5c7c422024ca9b67b1acd1f66ba5ae15fb7428e3dd285852891ed4aa5372de1c2fbeb96f42a39d529074b890d375747ca1c50c7297ecb5d1cea4e46866710094a81e46f7618634fa6e5d9ce515d32dd48859d13b0f9bb1cb78ada146fa4060fe4af5182fe45111a8e4805aacf7eb87b7d8916287e7f6a0242b5e7e95c2f62f66ae2632955b7f70ed8175469b6a6386ed9c0f7d7404431c3922892d1c9864a70479bf586b4101746f86d92cb114d762baec2677add70474148ef298e1dac1e15fd09d1722d1693bd77ca5c49ec1205d65bc216df91450114af26d047d7c804c682e2fcca69e48623495497d9569ca99fb10b55c007bc2f296051e935b71122268c1e65cba34a0d1319bc6e3eb34621b3f1ddcc3e4d397054644e10ccf67de0b8d7c6214ac267efd2a23df9a5b54b950b86bf9bb733eecbdeb9ac352a64567bacbb1a5134f6df80998f2adab05158bc8982a520566d706ceb8e1ba92e7526849dd64b2c3432605ed0557f9034b35b038937e1bcdfadf94aa128995f60ccb0286e3794606d5a650c8b97ee224b892d7f786592483a4655d3e3a872d95d9181687d00fb4aa8be250678597c737dbb80f8fed107807d7d59038b9aecfbf0d6de901f68138991f2e5de5895a0e93b9c2f049a5488e7baae147c804bad71051d03ccf83110433a0fa2415a5807228a0c65f161f3bb67c201f5cc559d1ada5a3fc356bda10a1df859ee32e62f35275e2343832b8243363afe482847bb46c5e33496eb69cb1f440cacd1c2fb75c7228f0a7ea4de7cabfc1765532212a8d2c39ba33a54475176b234fe6230361848655f2eb7df0b027d64f5c20650d698eff521ae2fb42e796f2a72ee2bc375b9a9381e045e6416340cba009a48775d46110dc7f46eb351c320350f26e0b667b9c043f9d4c60b6ec69ab5c98a42e25d307c2b5b566bc7a45de2e7690c8ac3b8b534401a82181d7ba10372bee7422de4a02b4d6ab20d5240061371baf757f36776f5666031a6ca7d7ee2f183d4e951746ce0fd7e00d1bd06741b8560d30f175cc401e4ad3087597da8f72c621e3c1ceede95e51aeecdcce9e47a61e100d69af9ea5a12c11e40524d3ac590df4f3522cbd3a2fbed4516ab34ec6edc12ae96754db77d6e9f99f23facb0b36ff53ade04fc3019b898e717df8ed8b2c424c12ff8363b66566a52d3b72fc0c5efefc9932040b29ea32e89348309eb0e5e9b81b436a13611085b54451bd5c63d4d5aadb6d75202e0fcd72ce9fcde254656f350b634b4a3bf98651be486b6c162486a7cf7600d88e98e18e89c70b17dc363a87886edb7f7a727b7738945c8714252c417283c6d3a7cb9375678964be6ba0ba918de7a2ba16f3cc2898ebb3d31f9fb6bad85c53eada5a3fd93b27d6b5d3d866f8744799118ddb6fd99559200c6daec5e3e668d88d48bcfe7f9eca27069fd729a182ea94b55d5d205b7326ebfcb201465fd55c9183278a85b74dc8bb2491b3dae39e991ca19292ac6830805ffed561803960c45687e9de521d733c9a506b2856af645a2c32f68784b3a79b54f0225460fe8a8e27fccb59ee3c21157e9bf6c7ddfa429d5fa3f65562d191221eb4407795fc8ed8ca34593c97913235dbed7573b2af54c227c7bf95794f5327265fc4be72b4aaf2ad9a74e790b1a42c11481877e9c57c55544028f7a541ae59ee46257aa6484a5f2ea34b0ff7f343d0d690897ae014e47ec992190b54ee8f898d92a4f5db98bf65f42ab461b65725459ef03708cd376401b00aafee3bc754c9777ae966e976281f48821dfb35b5a3257c1526a9f8f3e6d9a4068d062d4b0519cff59601566075fb8f2e6321a4890096b2d58db2e8234a64426f7f891f35c3b825c74daf8ee9204862aa5c06394d7943002995eb4060cd3f097bb62984306ac52123aef98de6083b2adfb1e1072c5aa4eb27da8212f8ad4f94dfcb60b72271096fb4d7ff5851e84efc5e5e92b6c7faa18969bf25996f801c0846c29af775aafe6d8784d6831ce75a5b9c5e3f542faf3f1aaa781ac3fe940b68f422f87a6fc45e70ed17ad761bc7df342cbb5020695dcbe7867341894a4cfdd2cf87fd4647f5929726bfbb90f868c8f63451fbad2925cfecbd25012a2e3e4cb6ab17dec07ba4007ccd475ab55492be71719df7cd752ce862e72be0d2da0e528aa3793355dc70221f64678781cd1b9f64a53a83843fb7e37fa37c80f65584ddc85c8258566c3873ad7ae304fec6b7d3d8afe4d1e9959cbee777b3822539c6567bdd743a8a2ab26af4828c57fa26e7c79115d436fc01325c2dee99fd037e10c45d6a08c6a536b7fbc2b5440dafecb8dea250d0fe8536589abddbdd44c65d4645e0888a69619f7d4866d0e369b61011fd0ae3e413388957e6087127cf14bded6160b3b86b76879186b165c7b3ee5e55813f7d76f984f54ab8ff2c9746f63dfe6534aea6db84dfa8dd018738659ef94a0bc43cf5429be50538d0e9491a9971b05f987c016c667a6a80f4f13304947e333ef7ffc039c103f2ff8ac906ae1187e73ddc5f6a86f676e6b434c44673806cd1b9e5b63258b802dafe93a008cd7688ff6306840ef07e061e33f27a69c4f3b888cdcfb6e718130c4a54881651aa45a46b998b78ce7c8d9692e57e2d39335f9dc9b50acf0bb17d6bebfe421d53e8da00f76f13eabf845d37cbb026368ef68aab550e67cfab8b01b481763f054131403ef3510a2f910228db62a7439829d2c0600cb925770536e93476f9f1f44df240214b6acf0dbd3053802c7797e04aa21bd98ffbe60e5f39e104f125e92a5c8f03fb06532f69954b2cb5ecbd8494521eebd7a5028d37124fff145f85a7ff121391e03473bff04fc1e610822269dfb841dd5c460248561beca9420f39d47008933cc938b87f6ef2064bf6e9b8aaff6cf2599eb4a6a0f66f09341e13f182c28203a0e7b47f1dda7c049e9e2ad79968d036c17c834ed1ee257e301cb3b4ff05e3a7caea0a1811b3fe1f77225ee811b785fed29313ae59f895ef0a6c650fec3c6c97cd74394ce8c2fd3d0cc09b61c6c88d8883734066a4ec89d186c524bf6054055926bf8e385daca043d933e84ca3177d7a1e953ba7541ccd711c523fe28afc34425ff81123a8f47c2d47a2d8f6c643ea7ba59883f6368c7e0f9ee64e50004cdeed5556bb922ee01b4bef6d82fd49861833167a554153adf901ea3742a05646ca0c3e32ed73e7c2668fbfb1bde47afd522863f1298f34c7835dbba688e7d92901c7dc0e3c9755710cf1f0e303199d92cad1688cdd10a19612f4dd9dd17ac2e10bc196665db34f98f6deebc1d686dd8f85c5369dc9214fd728abe58c37d90f8092467ef2427f3c0bc1c7403474618e1f20271150107e7eef9cfdf9be677b918dc09eefe211699990b6c8e71ea4b15726ea1bd1c9b56dce79e2e64e97127d95670d2eb2d3b670660eb0d0e298862f153badae6a919c96f17d0e2fd27e6e398991e8db7578b1f53f6b689ffe27a85d1f9ac9b30b61b31927a200089b612cbf7e72554b6526bede3e16583595caadc61feb0e7ed655257964d9369bff19ea154f37a110e6b70e193cdd164d0bcba469a7dd6b275bb5180ec4c1efa560e9718f72fcd90703aa7ee197b59a48f71d8fc7bca156cb8a4571b44e28a3777c64a06acb5c21509fc7e7a164279578166f7859e235fe3aa63bacd14b15cd439f7e0a2f9335da0fe9dc7dffdcf8a448a090ada951fdb4705706fa3856b17ed5bad0a9951982639bfcd6834401f0e6a83ccbe4b21a9c896f292a8d96fe6e4683796439aa0a2666555cf303ce6f2af28972a0fa151a29f9ae8d360955ec09ae1c4e6b3027117c33d9239e987970250707787a607714038106be2a8dd40dc80f0c249f74a893cfffd35d1f521f12bf89ef0d071cde63d98a73225d86b15f491da548a970c823196fbe9958af68667bfb4c51d466c8aec10575f49701ab75a71bfab4c0661fe32deddfa46aa085032b4c3d7ad0986dabd2f346fbf30c505b2fc41b69dbc94fc557104accc1f6a405d4fe8401835866c50c618da41cfb5fb991641ad1e4ce18d9b59653c9a217cfc5fb7127f6c46a0a5f34857850369027c6de8ceb9606f4599f00a5d2131c5bc86512a147ce9a6d70bd201cc82dfbe1a9c7cacb6ed8e676b3139c8872b9bd22dbd4c3c9ac72a78e50b6bac4d4b7f86de311424823911d4950f78a5c684fa5a02dc39a88e913aa356e147b74999dc9e68d4200ae260fc6f4cff972a93bf2ccf726f06ec6eb8d3547d54cc1ef3f958a4c18dd84247bbc3bf0120382584c516204fe87c9af7d1ad8d617f62d7fa17a58e7eb50e48f0bc4b5033661f479b62268d204aa75604d3fda2cb5c6e9779f0de98a5c9fe599dbb1940cdb16101d0ffe4b47e9762550fb65852e2a8cf3e450e2002c3144495e83c9dd195563696e849fa0a7b8cddd2d62acb4b5bcc3d2d3f7117cacb6046a85cce149516c6fb2dee2000000000000000009151f23282f"
+    }
+   },
+   "hash": "b32bde7ffc096d2f2d2d28f7d78a11f11e5f5cae0fd4783d573c22e0434af0ae",
+   "kind": "authorization",
+   "node": "cell",
+   "prev": "2eb9fc877ef17d1c9c096d2f3572505b7511f258548c9e46563fbf2972fd2e38",
+   "seq": 139,
+   "t": 120
+  },
+  {
+   "body": {
+    "action": "set_speed_scale 1.0",
+    "authorization": "b32bde7ffc096d2f2d2d28f7d78a11f11e5f5cae0fd4783d573c22e0434af0ae"
+   },
+   "hash": "5682a3d1922fa9b954020b76edee849b1ffae8260e950c904b386a49b90a593a",
+   "kind": "action",
+   "node": "cell",
+   "prev": "b32bde7ffc096d2f2d2d28f7d78a11f11e5f5cae0fd4783d573c22e0434af0ae",
+   "seq": 140,
+   "t": 120
+  },
+  {
+   "body": {
+    "after": "5682a3d1922fa9b954020b76edee849b1ffae8260e950c904b386a49b90a593a",
+    "speed_scale": 1.0
+   },
+   "hash": "7042162ca6560b0d8c125b83edf5b34bc163d03b4183edcfa8c6f4ce2ba15fb1",
+   "kind": "state",
+   "node": "cell",
+   "prev": "5682a3d1922fa9b954020b76edee849b1ffae8260e950c904b386a49b90a593a",
+   "seq": 141,
+   "t": 120
+  },
+  {
+   "body": {
+    "exceeds_limit": false,
+    "first_cycle_peak_n": 141.76,
+    "source": "force_check"
+   },
+   "hash": "c4372931bc02f513780d97cfd5f30b50bfe63b44f14ba692dad085d9c012ea1a",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "7042162ca6560b0d8c125b83edf5b34bc163d03b4183edcfa8c6f4ce2ba15fb1",
+   "seq": 142,
+   "t": 120
+  },
+  {
+   "body": {
+    "human_distance_m": 2.16,
+    "payload_kg": 2.5,
+    "source": "cell"
+   },
+   "hash": "8d745c244922c7460d50d66bd972572e39a9be4b0f1ef92f5c365ceb606065cb",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "c4372931bc02f513780d97cfd5f30b50bfe63b44f14ba692dad085d9c012ea1a",
+   "seq": 143,
+   "t": 121
+  },
+  {
+   "body": {
+    "human_distance_m": 2.08,
+    "payload_kg": 2.5,
+    "source": "cell"
+   },
+   "hash": "62c93de185f29041a94d7690f94af4bad1d2e7a971de4be908999d6424225e0b",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "8d745c244922c7460d50d66bd972572e39a9be4b0f1ef92f5c365ceb606065cb",
+   "seq": 144,
+   "t": 122
+  },
+  {
+   "body": {
+    "human_distance_m": 2.0,
+    "payload_kg": 2.5,
+    "source": "cell"
+   },
+   "hash": "898b1555bcbc1aa019c94387d2fcdbf8ce6294e1108905af94033fbec89c0ad6",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "62c93de185f29041a94d7690f94af4bad1d2e7a971de4be908999d6424225e0b",
+   "seq": 145,
+   "t": 123
+  },
+  {
+   "body": {
+    "human_distance_m": 2.06,
+    "payload_kg": 2.5,
+    "source": "cell"
+   },
+   "hash": "f0911d33fba2ce0ae8555239179685f8855e6c8ac2846a6ff483488fa84e0b22",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "898b1555bcbc1aa019c94387d2fcdbf8ce6294e1108905af94033fbec89c0ad6",
+   "seq": 146,
+   "t": 124
+  },
+  {
+   "body": {
+    "human_distance_m": 2.01,
+    "payload_kg": 2.5,
+    "source": "cell"
+   },
+   "hash": "eb61b332aab8a7b9a239c7f6edbbfdb62e461aca667f93853e7dc24c2d77d5c4",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "f0911d33fba2ce0ae8555239179685f8855e6c8ac2846a6ff483488fa84e0b22",
+   "seq": 147,
+   "t": 125
+  },
+  {
+   "body": {
+    "human_distance_m": 1.95,
+    "payload_kg": 2.5,
+    "source": "cell"
+   },
+   "hash": "b9ae2b95d624827390a17fa47e6f8312167de14e9dd185a6687cf8e8e9492e60",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "eb61b332aab8a7b9a239c7f6edbbfdb62e461aca667f93853e7dc24c2d77d5c4",
+   "seq": 148,
+   "t": 126
+  },
+  {
+   "body": {
+    "human_distance_m": 2.07,
+    "payload_kg": 2.5,
+    "source": "cell"
+   },
+   "hash": "55625408f9d1c4bf2b5ad996025c3d87fdb61fa2e0f1d4be52eb63446715622d",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "b9ae2b95d624827390a17fa47e6f8312167de14e9dd185a6687cf8e8e9492e60",
+   "seq": 149,
+   "t": 127
+  },
+  {
+   "body": {
+    "human_distance_m": 1.9,
+    "payload_kg": 2.5,
+    "source": "cell"
+   },
+   "hash": "f25b15f2b006038b7b686589d5096d9da9afc992c5937964a77627b1f2ec1e70",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "55625408f9d1c4bf2b5ad996025c3d87fdb61fa2e0f1d4be52eb63446715622d",
+   "seq": 150,
+   "t": 128
+  },
+  {
+   "body": {
+    "human_distance_m": 1.97,
+    "payload_kg": 2.5,
+    "source": "cell"
+   },
+   "hash": "e3d130edf7c352d82e93af3727da9fb697b2962c530f63df9e6e95c3944b4d50",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "f25b15f2b006038b7b686589d5096d9da9afc992c5937964a77627b1f2ec1e70",
+   "seq": 151,
+   "t": 129
+  },
+  {
+   "body": {
+    "human_distance_m": 1.86,
+    "payload_kg": 2.5,
+    "source": "cell"
+   },
+   "hash": "dad5e86ce9278ea8bec86227e98d94c059d94d2bd8b155faf67c414a22a9c302",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "e3d130edf7c352d82e93af3727da9fb697b2962c530f63df9e6e95c3944b4d50",
+   "seq": 152,
+   "t": 130
+  },
+  {
+   "body": {
+    "human_distance_m": 1.77,
+    "payload_kg": 2.5,
+    "source": "cell"
+   },
+   "hash": "bbb41a4d19e1d4dba02cb98cdf55d9a727f032f806b26922eb8f6568669f38f8",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "dad5e86ce9278ea8bec86227e98d94c059d94d2bd8b155faf67c414a22a9c302",
+   "seq": 153,
+   "t": 131
+  },
+  {
+   "body": {
+    "human_distance_m": 1.93,
+    "payload_kg": 2.5,
+    "source": "cell"
+   },
+   "hash": "db395ae7c645b58b4b03354167ea746bafe318b847726977a1a298ad720b54f3",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "bbb41a4d19e1d4dba02cb98cdf55d9a727f032f806b26922eb8f6568669f38f8",
+   "seq": 154,
+   "t": 132
+  },
+  {
+   "body": {
+    "human_distance_m": 1.9,
+    "payload_kg": 2.5,
+    "source": "cell"
+   },
+   "hash": "d54ecca914c0acd4c3f1899fd3483b1e4d9095feb74afb76fa4377f5edcb377b",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "db395ae7c645b58b4b03354167ea746bafe318b847726977a1a298ad720b54f3",
+   "seq": 155,
+   "t": 133
+  },
+  {
+   "body": {
+    "human_distance_m": 1.9,
+    "payload_kg": 2.5,
+    "source": "cell"
+   },
+   "hash": "dac0ef30d70caabcde182849065ea189a0525bb593292bae974eac547461484c",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "d54ecca914c0acd4c3f1899fd3483b1e4d9095feb74afb76fa4377f5edcb377b",
+   "seq": 156,
+   "t": 134
+  },
+  {
+   "body": {
+    "human_distance_m": 2.01,
+    "payload_kg": 2.5,
+    "source": "cell"
+   },
+   "hash": "954f62ddfa99f5e30b68bd5a6c9d69d1a6fc92b6f1a3ba4a443f09518dee318f",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "dac0ef30d70caabcde182849065ea189a0525bb593292bae974eac547461484c",
+   "seq": 157,
+   "t": 135
+  },
+  {
+   "body": {
+    "human_distance_m": 1.99,
+    "payload_kg": 2.5,
+    "source": "cell"
+   },
+   "hash": "b375f197c04ea7f3edb777c46d7f52072a7a4f82b2637ad375319d007cc2f343",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "954f62ddfa99f5e30b68bd5a6c9d69d1a6fc92b6f1a3ba4a443f09518dee318f",
+   "seq": 158,
+   "t": 136
+  },
+  {
+   "body": {
+    "human_distance_m": 2.06,
+    "payload_kg": 2.5,
+    "source": "cell"
+   },
+   "hash": "e0646c8b056e6097eceefb58a83ea56c3b98c24945727c92acbff0fef4764324",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "b375f197c04ea7f3edb777c46d7f52072a7a4f82b2637ad375319d007cc2f343",
+   "seq": 159,
+   "t": 137
+  },
+  {
+   "body": {
+    "human_distance_m": 1.81,
+    "payload_kg": 2.5,
+    "source": "cell"
+   },
+   "hash": "8005c3626cc9d608544e1cf8c7fde6392cf6fbca952da7a2c6eab93eceda3f23",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "e0646c8b056e6097eceefb58a83ea56c3b98c24945727c92acbff0fef4764324",
+   "seq": 160,
+   "t": 138
+  },
+  {
+   "body": {
+    "human_distance_m": 2.04,
+    "payload_kg": 2.5,
+    "source": "cell"
+   },
+   "hash": "986a682729ae499072492027b1b1d20068e42a83ee3e86e3e5cb68b377c755fb",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "8005c3626cc9d608544e1cf8c7fde6392cf6fbca952da7a2c6eab93eceda3f23",
+   "seq": 161,
+   "t": 139
+  },
+  {
+   "body": {
+    "human_distance_m": 1.94,
+    "payload_kg": 2.5,
+    "source": "cell"
+   },
+   "hash": "7e7fd193ba053321fa3153cfcf1d2c79adc6a0885d08e9399c629d1815c8bbd7",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "986a682729ae499072492027b1b1d20068e42a83ee3e86e3e5cb68b377c755fb",
+   "seq": 162,
+   "t": 140
+  },
+  {
+   "body": {
+    "human_distance_m": 1.93,
+    "payload_kg": 2.5,
+    "source": "cell"
+   },
+   "hash": "33461f3b1ae2b3964f39ca3b3a85c0314c0d9e1d91508909e0fca934c4436da9",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "7e7fd193ba053321fa3153cfcf1d2c79adc6a0885d08e9399c629d1815c8bbd7",
+   "seq": 163,
+   "t": 141
+  },
+  {
+   "body": {
+    "human_distance_m": 1.96,
+    "payload_kg": 2.5,
+    "source": "cell"
+   },
+   "hash": "35bdb114025b81b60351e8d05d42ddf425df1dec79d9b64589947150847408c2",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "33461f3b1ae2b3964f39ca3b3a85c0314c0d9e1d91508909e0fca934c4436da9",
+   "seq": 164,
+   "t": 142
+  },
+  {
+   "body": {
+    "human_distance_m": 1.96,
+    "payload_kg": 2.5,
+    "source": "cell"
+   },
+   "hash": "455354a0a3455b651c203f3d696ec46912ba5ec7b4017d91f6b6ca95e45f2a0d",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "35bdb114025b81b60351e8d05d42ddf425df1dec79d9b64589947150847408c2",
+   "seq": 165,
+   "t": 143
+  },
+  {
+   "body": {
+    "human_distance_m": 1.94,
+    "payload_kg": 2.5,
+    "source": "cell"
+   },
+   "hash": "dc3e590f2cc19e56e8be1afc2976f8c46f4aeb1d013fa135a8e7157e1ebfa672",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "455354a0a3455b651c203f3d696ec46912ba5ec7b4017d91f6b6ca95e45f2a0d",
+   "seq": 166,
+   "t": 144
+  },
+  {
+   "body": {
+    "human_distance_m": 1.95,
+    "payload_kg": 2.5,
+    "source": "cell"
+   },
+   "hash": "71c673e3bbd379c9375707ffd8a47f9ee7fd4e05b3afd7ef3271008f708693c2",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "dc3e590f2cc19e56e8be1afc2976f8c46f4aeb1d013fa135a8e7157e1ebfa672",
+   "seq": 167,
+   "t": 145
+  },
+  {
+   "body": {
+    "human_distance_m": 2.06,
+    "payload_kg": 2.5,
+    "source": "cell"
+   },
+   "hash": "be55e2101af86ebb20996521afc16eed8f112a260602f848d211fdc8805a2dd6",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "71c673e3bbd379c9375707ffd8a47f9ee7fd4e05b3afd7ef3271008f708693c2",
+   "seq": 168,
+   "t": 146
+  },
+  {
+   "body": {
+    "human_distance_m": 2.07,
+    "payload_kg": 2.5,
+    "source": "cell"
+   },
+   "hash": "df4ffd427af79d91aa38da0cd8194d2cc011a36b40d1e236f474576af8fa19a0",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "be55e2101af86ebb20996521afc16eed8f112a260602f848d211fdc8805a2dd6",
+   "seq": 169,
+   "t": 147
+  },
+  {
+   "body": {
+    "human_distance_m": 1.88,
+    "payload_kg": 2.5,
+    "source": "cell"
+   },
+   "hash": "d13463bfb082864b92dccff19e42c3321dcd40713d1bb0d4ad3ce488caa913bc",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "df4ffd427af79d91aa38da0cd8194d2cc011a36b40d1e236f474576af8fa19a0",
+   "seq": 170,
+   "t": 148
+  },
+  {
+   "body": {
+    "human_distance_m": 1.88,
+    "payload_kg": 2.5,
+    "source": "cell"
+   },
+   "hash": "cca881ed5607df3a16cdc26c693e7db9210d72ec32d7c0f247e68f3bcb5cb643",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "d13463bfb082864b92dccff19e42c3321dcd40713d1bb0d4ad3ce488caa913bc",
+   "seq": 171,
+   "t": 149
+  },
+  {
+   "body": {
+    "human_distance_m": 1.82,
+    "payload_kg": 2.5,
+    "source": "cell"
+   },
+   "hash": "a85c7d41e819c52e7b316159894060500692a457f7972f0c1ed5b58fa3869255",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "cca881ed5607df3a16cdc26c693e7db9210d72ec32d7c0f247e68f3bcb5cb643",
+   "seq": 172,
+   "t": 150
+  },
+  {
+   "body": {
+    "human_distance_m": 2.01,
+    "payload_kg": 2.5,
+    "source": "cell"
+   },
+   "hash": "28bb40e3452eb9e6dd90cb2c0605b374f0d247dc9cab56f18fef6cfc40a105ce",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "a85c7d41e819c52e7b316159894060500692a457f7972f0c1ed5b58fa3869255",
+   "seq": 173,
+   "t": 151
+  },
+  {
+   "body": {
+    "human_distance_m": 1.94,
+    "payload_kg": 2.5,
+    "source": "cell"
+   },
+   "hash": "f98295a72ea604d542adf564bf6725181de3be89917abac1abdca0b28c765cc5",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "28bb40e3452eb9e6dd90cb2c0605b374f0d247dc9cab56f18fef6cfc40a105ce",
+   "seq": 174,
+   "t": 152
+  },
+  {
+   "body": {
+    "human_distance_m": 1.77,
+    "payload_kg": 2.5,
+    "source": "cell"
+   },
+   "hash": "8550083fcc410d4408f5397dd8fb94a19d76f60cfff5f0719e262285ce112e40",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "f98295a72ea604d542adf564bf6725181de3be89917abac1abdca0b28c765cc5",
+   "seq": 175,
+   "t": 153
+  },
+  {
+   "body": {
+    "human_distance_m": 2.06,
+    "payload_kg": 2.5,
+    "source": "cell"
+   },
+   "hash": "db4a1f28709e8226e1c6413534bee828c06ba512548ca5d30302f2a047559b01",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "8550083fcc410d4408f5397dd8fb94a19d76f60cfff5f0719e262285ce112e40",
+   "seq": 176,
+   "t": 154
+  },
+  {
+   "body": {
+    "human_distance_m": 1.88,
+    "payload_kg": 2.5,
+    "source": "cell"
+   },
+   "hash": "1e0ffc090fac16af31e303eac6ffb54c338c5078d83b065317e2f02cd8b14002",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "db4a1f28709e8226e1c6413534bee828c06ba512548ca5d30302f2a047559b01",
+   "seq": 177,
+   "t": 155
+  },
+  {
+   "body": {
+    "human_distance_m": 2.14,
+    "payload_kg": 2.5,
+    "source": "cell"
+   },
+   "hash": "f662c07d58b068be6487feafa0e5790eb1138827267303404dd45617c462ab41",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "1e0ffc090fac16af31e303eac6ffb54c338c5078d83b065317e2f02cd8b14002",
+   "seq": 178,
+   "t": 156
+  },
+  {
+   "body": {
+    "human_distance_m": 2.07,
+    "payload_kg": 2.5,
+    "source": "cell"
+   },
+   "hash": "23a521d5d1c4d9d2a10a0fdecffc10e425830771c1d1f1579fac919eb6d2d174",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "f662c07d58b068be6487feafa0e5790eb1138827267303404dd45617c462ab41",
+   "seq": 179,
+   "t": 157
+  },
+  {
+   "body": {
+    "human_distance_m": 2.09,
+    "payload_kg": 2.5,
+    "source": "cell"
+   },
+   "hash": "5a71c3828018d92bf56ae3a4d7da414ca7e7c2396ee87034aef8907c61da73f7",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "23a521d5d1c4d9d2a10a0fdecffc10e425830771c1d1f1579fac919eb6d2d174",
+   "seq": 180,
+   "t": 158
+  },
+  {
+   "body": {
+    "human_distance_m": 2.08,
+    "payload_kg": 2.5,
+    "source": "cell"
+   },
+   "hash": "790b18e4db3519e8baa9b3a692d6d1348bd91fd6158d9ccac943008800e201a9",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "5a71c3828018d92bf56ae3a4d7da414ca7e7c2396ee87034aef8907c61da73f7",
+   "seq": 181,
+   "t": 159
+  },
+  {
+   "body": {
+    "human_distance_m": 1.95,
+    "payload_kg": 2.5,
+    "source": "cell"
+   },
+   "hash": "02e6e4c3877c193a6da11a3be380100835cdb2c83fd0495856df42360cec6f6f",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "790b18e4db3519e8baa9b3a692d6d1348bd91fd6158d9ccac943008800e201a9",
+   "seq": 182,
+   "t": 160
+  },
+  {
+   "body": {
+    "human_distance_m": 1.86,
+    "payload_kg": 2.5,
+    "source": "cell"
+   },
+   "hash": "263fa8f17e0feb4bccbae399f2891a12a83f2084542754fc3996f8b84611dd0c",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "02e6e4c3877c193a6da11a3be380100835cdb2c83fd0495856df42360cec6f6f",
+   "seq": 183,
+   "t": 161
+  },
+  {
+   "body": {
+    "human_distance_m": 2.09,
+    "payload_kg": 2.5,
+    "source": "cell"
+   },
+   "hash": "04065180df9804e90f1b6ffc64560e96cb65faf1b8506a08dc24be9e07811a92",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "263fa8f17e0feb4bccbae399f2891a12a83f2084542754fc3996f8b84611dd0c",
+   "seq": 184,
+   "t": 162
+  },
+  {
+   "body": {
+    "human_distance_m": 2.05,
+    "payload_kg": 2.5,
+    "source": "cell"
+   },
+   "hash": "104475d23e8e37b9cf80eebaa61e2aa982967095432bca59175ca746f10e319f",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "04065180df9804e90f1b6ffc64560e96cb65faf1b8506a08dc24be9e07811a92",
+   "seq": 185,
+   "t": 163
+  },
+  {
+   "body": {
+    "human_distance_m": 2.1,
+    "payload_kg": 2.5,
+    "source": "cell"
+   },
+   "hash": "18988242322dbb744a92258c29396209bcad5b92b17f153f5b4cb794739a489e",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "104475d23e8e37b9cf80eebaa61e2aa982967095432bca59175ca746f10e319f",
+   "seq": 186,
+   "t": 164
+  },
+  {
+   "body": {
+    "human_distance_m": 2.0,
+    "payload_kg": 2.5,
+    "source": "cell"
+   },
+   "hash": "e9b6f8b145d4572e4a151c95212cadf26ef46d596acba3e6decd77752544ff83",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "18988242322dbb744a92258c29396209bcad5b92b17f153f5b4cb794739a489e",
+   "seq": 187,
+   "t": 165
+  },
+  {
+   "body": {
+    "human_distance_m": 2.03,
+    "payload_kg": 2.5,
+    "source": "cell"
+   },
+   "hash": "1c4d094127a3b0ac717ec9d42f3243be2534dbd886d0ac1a27799eb65e276e4b",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "e9b6f8b145d4572e4a151c95212cadf26ef46d596acba3e6decd77752544ff83",
+   "seq": 188,
+   "t": 166
+  },
+  {
+   "body": {
+    "human_distance_m": 1.95,
+    "payload_kg": 2.5,
+    "source": "cell"
+   },
+   "hash": "ff797ef486d4e8b79d37185890c2485ae6299af37610dbf1677318c33d0d99ef",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "1c4d094127a3b0ac717ec9d42f3243be2534dbd886d0ac1a27799eb65e276e4b",
+   "seq": 189,
+   "t": 167
+  },
+  {
+   "body": {
+    "human_distance_m": 2.01,
+    "payload_kg": 2.5,
+    "source": "cell"
+   },
+   "hash": "6956dd7b3c3a103c63908af0d31dab6bd430455f55b8451bc56758bddfd92b24",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "ff797ef486d4e8b79d37185890c2485ae6299af37610dbf1677318c33d0d99ef",
+   "seq": 190,
+   "t": 168
+  },
+  {
+   "body": {
+    "human_distance_m": 2.08,
+    "payload_kg": 2.5,
+    "source": "cell"
+   },
+   "hash": "a8f0326caedfa0563ae947a2bfc9f4c2c26a60eec243d1302b5cf39cb235ee05",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "6956dd7b3c3a103c63908af0d31dab6bd430455f55b8451bc56758bddfd92b24",
+   "seq": 191,
+   "t": 169
+  },
+  {
+   "body": {
+    "human_distance_m": 2.04,
+    "payload_kg": 2.5,
+    "source": "cell"
+   },
+   "hash": "2d3c962aa24f6484196b071e53ef0359e17a674ec195809dc65351952568fede",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "a8f0326caedfa0563ae947a2bfc9f4c2c26a60eec243d1302b5cf39cb235ee05",
+   "seq": 192,
+   "t": 170
+  },
+  {
+   "body": {
+    "human_distance_m": 1.83,
+    "payload_kg": 2.5,
+    "source": "cell"
+   },
+   "hash": "e8cd0c5e869091fe78eee308becf338fc9f3280b219b2ab4b3a299c67838119d",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "2d3c962aa24f6484196b071e53ef0359e17a674ec195809dc65351952568fede",
+   "seq": 193,
+   "t": 171
+  },
+  {
+   "body": {
+    "human_distance_m": 2.01,
+    "payload_kg": 2.5,
+    "source": "cell"
+   },
+   "hash": "99e5a0455d959093c2411992e73be163fde908da42c7d7f112513d703954e5f3",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "e8cd0c5e869091fe78eee308becf338fc9f3280b219b2ab4b3a299c67838119d",
+   "seq": 194,
+   "t": 172
+  },
+  {
+   "body": {
+    "human_distance_m": 2.0,
+    "payload_kg": 2.5,
+    "source": "cell"
+   },
+   "hash": "f4ac084a6df81c20b4f4959de6119f573cccaaa8f502b86c40d4d5e040cf5469",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "99e5a0455d959093c2411992e73be163fde908da42c7d7f112513d703954e5f3",
+   "seq": 195,
+   "t": 173
+  },
+  {
+   "body": {
+    "human_distance_m": 1.85,
+    "payload_kg": 2.5,
+    "source": "cell"
+   },
+   "hash": "a7d6a3732a8e1e7421249aa47cba8f12e53bbcedc4891f3880dd14837c8b4be4",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "f4ac084a6df81c20b4f4959de6119f573cccaaa8f502b86c40d4d5e040cf5469",
+   "seq": 196,
+   "t": 174
+  },
+  {
+   "body": {
+    "human_distance_m": 1.92,
+    "payload_kg": 2.5,
+    "source": "cell"
+   },
+   "hash": "1241a4dcba9f326f8523fb9cccf272e6522362860edaeff63388750aa16eff41",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "a7d6a3732a8e1e7421249aa47cba8f12e53bbcedc4891f3880dd14837c8b4be4",
+   "seq": 197,
+   "t": 175
+  },
+  {
+   "body": {
+    "human_distance_m": 1.79,
+    "payload_kg": 2.5,
+    "source": "cell"
+   },
+   "hash": "57bb559db0c5ba5f61a3708654c7c492c1021b8f96d1c8102ddbce938b5c3b65",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "1241a4dcba9f326f8523fb9cccf272e6522362860edaeff63388750aa16eff41",
+   "seq": 198,
+   "t": 176
+  },
+  {
+   "body": {
+    "human_distance_m": 2.12,
+    "payload_kg": 2.5,
+    "source": "cell"
+   },
+   "hash": "1b42ab9337f872ca1562f0fe9a0d5636955f2662f1301ddd520ee0f7a6e0533e",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "57bb559db0c5ba5f61a3708654c7c492c1021b8f96d1c8102ddbce938b5c3b65",
+   "seq": 199,
+   "t": 177
+  },
+  {
+   "body": {
+    "human_distance_m": 2.05,
+    "payload_kg": 2.5,
+    "source": "cell"
+   },
+   "hash": "9d1ca9c899f67567ab59876bc6b243de667d23da66c5c02c94f4c7ca87e368c0",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "1b42ab9337f872ca1562f0fe9a0d5636955f2662f1301ddd520ee0f7a6e0533e",
+   "seq": 200,
+   "t": 178
+  },
+  {
+   "body": {
+    "human_distance_m": 2.18,
+    "payload_kg": 2.5,
+    "source": "cell"
+   },
+   "hash": "49ea86f9addd831d210b85c6e17d3d459f41fe35c0484e33ac4e4421ec6ad3a8",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "9d1ca9c899f67567ab59876bc6b243de667d23da66c5c02c94f4c7ca87e368c0",
+   "seq": 201,
+   "t": 179
+  },
+  {
+   "body": {
+    "human_distance_m": 1.89,
+    "payload_kg": 2.5,
+    "source": "cell"
+   },
+   "hash": "d76f6ec6b64f2d2f1826e42fc21d8b4def8fa745e270f4f95f73445fc58ca773",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "49ea86f9addd831d210b85c6e17d3d459f41fe35c0484e33ac4e4421ec6ad3a8",
+   "seq": 202,
+   "t": 180
+  },
+  {
+   "body": {
+    "human_distance_m": 1.87,
+    "payload_kg": 2.5,
+    "source": "cell"
+   },
+   "hash": "a36fc22f43b6cb67db03bfe4d92f72e2e2682c66355db542ebc08c3d2e0e8680",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "d76f6ec6b64f2d2f1826e42fc21d8b4def8fa745e270f4f95f73445fc58ca773",
+   "seq": 203,
+   "t": 181
+  },
+  {
+   "body": {
+    "human_distance_m": 2.07,
+    "payload_kg": 2.5,
+    "source": "cell"
+   },
+   "hash": "b9d24f428b6ca0b03e981f86934b2ff3c01172bd68bc1be60963231faf886648",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "a36fc22f43b6cb67db03bfe4d92f72e2e2682c66355db542ebc08c3d2e0e8680",
+   "seq": 204,
+   "t": 182
+  },
+  {
+   "body": {
+    "human_distance_m": 2.08,
+    "payload_kg": 2.5,
+    "source": "cell"
+   },
+   "hash": "674dfba882ef1f327182afa04dae28c9d7f5d6a356f85e85a30586ff714a08e6",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "b9d24f428b6ca0b03e981f86934b2ff3c01172bd68bc1be60963231faf886648",
+   "seq": 205,
+   "t": 183
+  },
+  {
+   "body": {
+    "human_distance_m": 2.12,
+    "payload_kg": 2.5,
+    "source": "cell"
+   },
+   "hash": "6b943a596268476f5a204c970dff3cab7b26bb6ffa93049c5081686e8d697a8d",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "674dfba882ef1f327182afa04dae28c9d7f5d6a356f85e85a30586ff714a08e6",
+   "seq": 206,
+   "t": 184
+  },
+  {
+   "body": {
+    "human_distance_m": 1.89,
+    "payload_kg": 2.5,
+    "source": "cell"
+   },
+   "hash": "cce1e5205fad796eea521aef930f16636456d52cbe9d15c61e51c70d9ff03555",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "6b943a596268476f5a204c970dff3cab7b26bb6ffa93049c5081686e8d697a8d",
+   "seq": 207,
+   "t": 185
+  },
+  {
+   "body": {
+    "human_distance_m": 2.14,
+    "payload_kg": 2.5,
+    "source": "cell"
+   },
+   "hash": "95e35b723de06a2eba56ba81e63205aa50210b5abb8a4067dd851f3b9090d7a9",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "cce1e5205fad796eea521aef930f16636456d52cbe9d15c61e51c70d9ff03555",
+   "seq": 208,
+   "t": 186
+  },
+  {
+   "body": {
+    "human_distance_m": 1.92,
+    "payload_kg": 2.5,
+    "source": "cell"
+   },
+   "hash": "9cce5539847d4bbe752a1e1983b026bcc4082e49363b99e30de1c3d4d1c5baa0",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "95e35b723de06a2eba56ba81e63205aa50210b5abb8a4067dd851f3b9090d7a9",
+   "seq": 209,
+   "t": 187
+  },
+  {
+   "body": {
+    "human_distance_m": 2.03,
+    "payload_kg": 2.5,
+    "source": "cell"
+   },
+   "hash": "fad86e5b2b3833e9079e35d1998982cdd02acfd0c735245fb9f2c3a104a3b151",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "9cce5539847d4bbe752a1e1983b026bcc4082e49363b99e30de1c3d4d1c5baa0",
+   "seq": 210,
+   "t": 188
+  },
+  {
+   "body": {
+    "human_distance_m": 1.77,
+    "payload_kg": 2.5,
+    "source": "cell"
+   },
+   "hash": "df0c47d70a96c8819fabbb26a8af4ed430d236e129579e8a1b697f34dfcb68c1",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "fad86e5b2b3833e9079e35d1998982cdd02acfd0c735245fb9f2c3a104a3b151",
+   "seq": 211,
+   "t": 189
+  },
+  {
+   "body": {
+    "human_distance_m": 1.87,
+    "payload_kg": 2.5,
+    "source": "cell"
+   },
+   "hash": "238078435cee375e530729e3dc34b46569a90ac51b8e2f383d5e7160e532196d",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "df0c47d70a96c8819fabbb26a8af4ed430d236e129579e8a1b697f34dfcb68c1",
+   "seq": 212,
+   "t": 190
+  },
+  {
+   "body": {
+    "human_distance_m": 2.23,
+    "payload_kg": 2.5,
+    "source": "cell"
+   },
+   "hash": "53b78b727859290f7a1261c94378729cfb3524606acbfe49f56908a4b533b232",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "238078435cee375e530729e3dc34b46569a90ac51b8e2f383d5e7160e532196d",
+   "seq": 213,
+   "t": 191
+  },
+  {
+   "body": {
+    "human_distance_m": 2.12,
+    "payload_kg": 2.5,
+    "source": "cell"
+   },
+   "hash": "fbb070d2f6c57fea74b9d409fbd3304076d0f2d97fe9e624e4c1861fff9801a1",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "53b78b727859290f7a1261c94378729cfb3524606acbfe49f56908a4b533b232",
+   "seq": 214,
+   "t": 192
+  },
+  {
+   "body": {
+    "human_distance_m": 2.05,
+    "payload_kg": 2.5,
+    "source": "cell"
+   },
+   "hash": "05f494d41b2ee18277be6ca7e933542412375d2a139fc6b0b4b95442a58646b7",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "fbb070d2f6c57fea74b9d409fbd3304076d0f2d97fe9e624e4c1861fff9801a1",
+   "seq": 215,
+   "t": 193
+  },
+  {
+   "body": {
+    "human_distance_m": 2.09,
+    "payload_kg": 2.5,
+    "source": "cell"
+   },
+   "hash": "b0fb3590b0b6c0f1d02744c024814166c5b83f81eec165d9dc8c62470d50540e",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "05f494d41b2ee18277be6ca7e933542412375d2a139fc6b0b4b95442a58646b7",
+   "seq": 216,
+   "t": 194
+  },
+  {
+   "body": {
+    "human_distance_m": 2.0,
+    "payload_kg": 2.5,
+    "source": "cell"
+   },
+   "hash": "e7a6677784ef7b30b0cf700e869e03a7d81b688abd28ddb7516f4aaa2eb55f45",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "b0fb3590b0b6c0f1d02744c024814166c5b83f81eec165d9dc8c62470d50540e",
+   "seq": 217,
+   "t": 195
+  },
+  {
+   "body": {
+    "human_distance_m": 2.14,
+    "payload_kg": 2.5,
+    "source": "cell"
+   },
+   "hash": "fd54c90e2ef75c137958b4b2cb878f05b9798a5b133b40fb2fd7ef78094059b1",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "e7a6677784ef7b30b0cf700e869e03a7d81b688abd28ddb7516f4aaa2eb55f45",
+   "seq": 218,
+   "t": 196
+  },
+  {
+   "body": {
+    "human_distance_m": 1.88,
+    "payload_kg": 2.5,
+    "source": "cell"
+   },
+   "hash": "2f6d088b3f8b2436fd7741c890140e3395b55bdf25d45b3e0ccc65948db881d8",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "fd54c90e2ef75c137958b4b2cb878f05b9798a5b133b40fb2fd7ef78094059b1",
+   "seq": 219,
+   "t": 197
+  },
+  {
+   "body": {
+    "human_distance_m": 2.04,
+    "payload_kg": 2.5,
+    "source": "cell"
+   },
+   "hash": "613320792e1df560f6da2ac003385b680055545f3082150327d5a3ae314d8095",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "2f6d088b3f8b2436fd7741c890140e3395b55bdf25d45b3e0ccc65948db881d8",
+   "seq": 220,
+   "t": 198
+  },
+  {
+   "body": {
+    "human_distance_m": 2.22,
+    "payload_kg": 2.5,
+    "source": "cell"
+   },
+   "hash": "465f518f3cacc45493394e062857de82435d8f4091f673bd331adbb8b5cf1679",
+   "kind": "observation",
+   "node": "cell",
+   "prev": "613320792e1df560f6da2ac003385b680055545f3082150327d5a3ae314d8095",
+   "seq": 221,
+   "t": 199
+  }
+ ]
+}

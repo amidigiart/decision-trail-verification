@@ -1,0 +1,261 @@
+{
+ "attacks_on_B": {
+  "claim_a_different_twin_version": {
+   "detected": 20,
+   "trials": 20
+  },
+  "delete_the_explanation_shown": {
+   "detected": 20,
+   "trials": 20
+  },
+  "delete_the_twin_validation": {
+   "detected": 20,
+   "trials": 20
+  },
+  "insider_automatic_authorization_outside_policy": {
+   "detected": 20,
+   "trials": 20
+  },
+  "relabel_engineer_decision_as_automatic": {
+   "detected": 20,
+   "trials": 20
+  },
+  "remove_the_policy_record": {
+   "detected": 20,
+   "trials": 20
+  }
+ },
+ "baseline_assumptions": [
+  "the robot controller logs each adaptation (new speed scale) with controller time",
+  "the digital twin logs its simulation runs on its own server, with its own clock and no adaptation id",
+  "the safety monitor raises alarms but its estimate is not stored with the adaptation",
+  "the safety engineer's approval is a ticket in free text; no signature",
+  "nothing is signed or hash-chained; an adaptation manager that writes a new speed directly is not stopped"
+ ],
+ "elements": [
+  "trigger",
+  "twin_version",
+  "twin_prediction_and_uncertainty",
+  "safety_monitor_output",
+  "validated_before_execution",
+  "who_authorised",
+  "resulting_state"
+ ],
+ "limit_newton": 150.0,
+ "max_auto_uncertainty": 1.0,
+ "not_a_model_of": "any project, robot or digital twin; the cell, force model and numbers are invented",
+ "scenario": "collaborative robot cell that adapts its own speed; each adaptation validated on a digital twin",
+ "scenarios": {
+  "human_in_zone": {
+   "A": {
+    "resulting_state": 40,
+    "safety_monitor_output": 0,
+    "trigger": 40,
+    "twin_prediction_and_uncertainty": 0,
+    "twin_version": 0,
+    "validated_before_execution": 0,
+    "who_authorised": 30
+   },
+   "B": {
+    "resulting_state": 40,
+    "safety_monitor_output": 40,
+    "trigger": 40,
+    "twin_prediction_and_uncertainty": 40,
+    "twin_version": 40,
+    "validated_before_execution": 40,
+    "who_authorised": 40
+   },
+   "B_verifier_ok_runs": 10,
+   "automatic_decisions": 30,
+   "decisions": 40,
+   "engineer_decisions": 10,
+   "limit_exceeded_after_validation": {
+    "A": 0,
+    "B": 0
+   },
+   "unvalidated_automatic_adaptation": {
+    "A": 0,
+    "B": 0
+   },
+   "what": "a person enters the shared zone while the robot adapts"
+  },
+  "normal": {
+   "A": {
+    "resulting_state": 30,
+    "safety_monitor_output": 0,
+    "trigger": 30,
+    "twin_prediction_and_uncertainty": 0,
+    "twin_version": 0,
+    "validated_before_execution": 0,
+    "who_authorised": 30
+   },
+   "B": {
+    "resulting_state": 30,
+    "safety_monitor_output": 30,
+    "trigger": 30,
+    "twin_prediction_and_uncertainty": 30,
+    "twin_version": 30,
+    "validated_before_execution": 30,
+    "who_authorised": 30
+   },
+   "B_verifier_ok_runs": 10,
+   "automatic_decisions": 30,
+   "decisions": 30,
+   "engineer_decisions": 0,
+   "limit_exceeded_after_validation": {
+    "A": 0,
+    "B": 0
+   },
+   "unvalidated_automatic_adaptation": {
+    "A": 0,
+    "B": 0
+   },
+   "what": "two product changes; the twin validates both adaptations"
+  },
+  "novel_payload": {
+   "A": {
+    "resulting_state": 30,
+    "safety_monitor_output": 0,
+    "trigger": 30,
+    "twin_prediction_and_uncertainty": 0,
+    "twin_version": 0,
+    "validated_before_execution": 0,
+    "who_authorised": 30
+   },
+   "B": {
+    "resulting_state": 30,
+    "safety_monitor_output": 30,
+    "trigger": 30,
+    "twin_prediction_and_uncertainty": 30,
+    "twin_version": 30,
+    "validated_before_execution": 30,
+    "who_authorised": 30
+   },
+   "B_verifier_ok_runs": 10,
+   "automatic_decisions": 20,
+   "decisions": 30,
+   "engineer_decisions": 10,
+   "limit_exceeded_after_validation": {
+    "A": 0,
+    "B": 0
+   },
+   "unvalidated_automatic_adaptation": {
+    "A": 0,
+    "B": 0
+   },
+   "what": "a payload outside the twin's calibrated range"
+  },
+  "rogue_adaptation_manager": {
+   "A": {
+    "resulting_state": 30,
+    "safety_monitor_output": 0,
+    "trigger": 30,
+    "twin_prediction_and_uncertainty": 0,
+    "twin_version": 0,
+    "validated_before_execution": 0,
+    "who_authorised": 30
+   },
+   "B": {
+    "resulting_state": 30,
+    "safety_monitor_output": 30,
+    "trigger": 30,
+    "twin_prediction_and_uncertainty": 30,
+    "twin_version": 30,
+    "validated_before_execution": 30,
+    "who_authorised": 30
+   },
+   "B_verifier_ok_runs": 10,
+   "automatic_decisions": 20,
+   "decisions": 30,
+   "engineer_decisions": 10,
+   "limit_exceeded_after_validation": {
+    "A": 0,
+    "B": 0
+   },
+   "unvalidated_automatic_adaptation": {
+    "A": 10,
+    "B": 0
+   },
+   "what": "the manager tries an automatic adaptation the twin cannot vouch for"
+  },
+  "sim_to_real_gap": {
+   "A": {
+    "resulting_state": 30,
+    "safety_monitor_output": 0,
+    "trigger": 30,
+    "twin_prediction_and_uncertainty": 0,
+    "twin_version": 0,
+    "validated_before_execution": 0,
+    "who_authorised": 30
+   },
+   "B": {
+    "resulting_state": 30,
+    "safety_monitor_output": 30,
+    "trigger": 30,
+    "twin_prediction_and_uncertainty": 30,
+    "twin_version": 30,
+    "validated_before_execution": 30,
+    "who_authorised": 30
+   },
+   "B_verifier_ok_runs": 10,
+   "automatic_decisions": 30,
+   "decisions": 30,
+   "engineer_decisions": 0,
+   "limit_exceeded_after_validation": {
+    "A": 10,
+    "B": 10
+   },
+   "unvalidated_automatic_adaptation": {
+    "A": 0,
+    "B": 0
+   },
+   "what": "the twin is confident and wrong: the real cell exceeds the limit"
+  },
+  "twin_recalibrated": {
+   "A": {
+    "resulting_state": 30,
+    "safety_monitor_output": 0,
+    "trigger": 30,
+    "twin_prediction_and_uncertainty": 0,
+    "twin_version": 0,
+    "validated_before_execution": 0,
+    "who_authorised": 30
+   },
+   "B": {
+    "resulting_state": 30,
+    "safety_monitor_output": 30,
+    "trigger": 30,
+    "twin_prediction_and_uncertainty": 30,
+    "twin_version": 30,
+    "validated_before_execution": 30,
+    "who_authorised": 30
+   },
+   "B_verifier_ok_runs": 10,
+   "automatic_decisions": 30,
+   "decisions": 30,
+   "engineer_decisions": 0,
+   "limit_exceeded_after_validation": {
+    "A": 0,
+    "B": 0
+   },
+   "unvalidated_automatic_adaptation": {
+    "A": 0,
+    "B": 0
+   },
+   "what": "the digital twin is recalibrated mid-run (new version)"
+  }
+ },
+ "seeds": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9
+ ],
+ "steps_per_run": 200
+}

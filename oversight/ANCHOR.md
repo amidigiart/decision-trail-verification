@@ -1,4 +1,4 @@
-# Timestamp on Tezos (folders `sintef/` and `magic/`, one batch)
+# Timestamp on Tezos (folders `oversight/` and `vehicle-forensics/`, one batch)
 
 **The root of this folder**
 
@@ -6,7 +6,7 @@
 hashes, in the order listed, is:
 
 ```
-eaafa1dcc6785ba46e0b86a32c32d83fbbe535bd90312c90fdb500c200f57f26
+8f9c8bac9192ae687a7cfc588a790aac9fed55196a21bf9d4ce1a815f1760be7
 ```
 
 It uses the same scheme as `verify.py`:
@@ -17,6 +17,10 @@ It uses the same scheme as `verify.py`:
 
 **The anchored batch**
 
+The two folders were published as `sintef/` and `magic/` and renamed afterwards. The leaf labels below are
+the ones anchored on chain; the hashes do not depend on folder names.
+
+
 The roots of both folders are leaves of one batch anchored on the Tezos mainnet. Leaf 0 is the root of the
 version 2 batch (see `../v2/ANCHOR.md`), so all versions form one chain. The leaves, in order:
 
@@ -24,9 +28,9 @@ version 2 batch (see `../v2/ANCHOR.md`), so all versions form one chain. The lea
 |---|---|---|
 | 0 | previous anchored root (version 2 batch) | `806567ba79971f6b817e5dfd67da8934838f39410f64c06299810c9854b062f9` |
 | 1 | `sintef_pack_root` | `8f9c8bac9192ae687a7cfc588a790aac9fed55196a21bf9d4ce1a815f1760be7` |
-| 2 | `wastewater_report_json` (`sintef/results/wastewater_report.json`) | `8aba84ed1d451da121488659e30eb413e33416d30a715f83bc8ebb580d0eba9e` |
+| 2 | `wastewater_report_json` (`oversight/results/wastewater_report.json`) | `8aba84ed1d451da121488659e30eb413e33416d30a715f83bc8ebb580d0eba9e` |
 | 3 | `magic_pack_root` | `eaafa1dcc6785ba46e0b86a32c32d83fbbe535bd90312c90fdb500c200f57f26` |
-| 4 | `vehicle_report_json` (`magic/results/vehicle_report.json`) | `09ead063999c3c1fb407ec91be6e12dd49a163ebbfd8556e5ba412903e995f92` |
+| 4 | `vehicle_report_json` (`vehicle-forensics/results/vehicle_report.json`) | `09ead063999c3c1fb407ec91be6e12dd49a163ebbfd8556e5ba412903e995f92` |
 | 5 | `verifier_v3_py` (`verify.py`, same file in both folders) | `f0f0ff713b291a1bfed7737d898ddd0dcab9a20cbbbda934f0fd563815061bb0` |
 
 | | |

@@ -66,4 +66,7 @@ jobs:
             b=0; ( cd "$1" && python "$V32" "$2" "$3" "$4" > /dev/null ) || b=$?
             if [ "$a" -eq "$b" ]; then echo "same $1/$2 (exit $a)"; else echo "DIFF $1/$2 ($a vs $b)"; fail=1; fi
           done
+          # tezos-anchor-check, offline: it must reproduce the anchored roots of this pack from SHA256SUMS
+          [ "$(python tezos-anchor-check/tezos_anchor_check.py sums SHA256SUMS.txt | tr -d '\r')" = "048d5cc133e37d262027a7dbf686af43a84819ad4a3a94c01a3e83c54a16fc44" ] && echo "ok   anchor-check: pack root" || { echo "FAIL anchor-check: pack root"; fail=1; }
+          [ "$(python tezos-anchor-check/tezos_anchor_check.py sums key-revocation/SHA256SUMS.txt | tr -d '\r')" = "99f50ed2354f023319e1f057dd463f6447f657e3a7fcf1bc5bf36ed215edb874" ] && echo "ok   anchor-check: key-revocation root" || { echo "FAIL anchor-check: key-revocation root"; fail=1; }
           exit $fail

@@ -1,0 +1,2 @@
+31c2f2360bfe6517f1fa306d569c8fd0095bbb7a4acd5f81f69babff925f8d32  tezos_anchor_check.py
+c7dbde9c01e26dd040826fe59b12d30899b523f80d7a7f68147ccbb84c7f07e5  README.md

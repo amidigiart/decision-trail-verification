@@ -53,4 +53,17 @@ jobs:
           check self-adaptive-robot 1 samples/tampered_insider_automatic_outside_policy.json samples/cell_witness.json samples/signer_keys.json
           check self-adaptive-robot 0 samples/rogue_manager_trail.json samples/rogue_manager_witness.json samples/rogue_manager_signer_keys.json
           check self-adaptive-robot 0 samples/sim_to_real_gap_trail.json samples/sim_to_real_gap_witness.json samples/sim_to_real_gap_signer_keys.json
+          check key-revocation 0 samples/revocation_trail.json samples/revocation_witness.json samples/signer_keys.json
+          check key-revocation 1 samples/tampered_revoked_key_written_directly.json samples/tampered_revoked_key_witness.json samples/signer_keys.json
+          check key-revocation 1 samples/tampered_old_key_after_rotation.json samples/tampered_old_key_witness.json samples/signer_keys.json
+          check key-revocation 1 samples/tampered_thief_rotation.json samples/tampered_thief_rotation_witness.json samples/signer_keys.json
+          check key-revocation 1 samples/tampered_revocation_deleted.json samples/revocation_witness.json samples/signer_keys.json
+          # verifier 3.2 must judge every v2-format sample of the other folders exactly as their own verifier does
+          V32="$PWD/key-revocation/verify.py"
+          for line in "v2 samples/hybrid_trail.json samples/hybrid_witness.json samples/hybrid_authority_keys.json"                       "v2 samples/hybrid_quantum_forgery_appended_now.json samples/hybrid_witness.json samples/hybrid_authority_keys.json"                       "oversight samples/plant_trail.json samples/plant_witness.json samples/signer_keys.json"                       "oversight samples/tampered_insider_automatic_outside_policy.json samples/plant_witness.json samples/signer_keys.json"                       "vehicle-forensics samples/ota_incident_trail.json samples/ota_incident_witness.json samples/signer_keys.json"                       "vehicle-forensics samples/edited_after_incident_trail.json samples/edited_after_incident_witness.json samples/edited_after_incident_signer_keys.json"                       "self-adaptive-robot samples/cell_trail.json samples/cell_witness.json samples/signer_keys.json"                       "self-adaptive-robot samples/tampered_claims_another_twin_version.json samples/cell_witness.json samples/signer_keys.json"; do
+            set -- $line
+            a=0; ( cd "$1" && python verify.py "$2" "$3" "$4" > /dev/null ) || a=$?
+            b=0; ( cd "$1" && python "$V32" "$2" "$3" "$4" > /dev/null ) || b=$?
+            if [ "$a" -eq "$b" ]; then echo "same $1/$2 (exit $a)"; else echo "DIFF $1/$2 ($a vs $b)"; fail=1; fi
+          done
           exit $fail
